@@ -32,7 +32,8 @@ def main() -> None:
     Entry point for the script.
     """
     # Correct Path usage
-    target_path = Path("..") / "news_reports" / "world_peace_report"
+    project_dir = Path(__file__).parent.parent
+    target_path = project_dir / "news_reports" / "world_peace_report"
 
     # Ensure base directory exists
     target_path.mkdir(parents=True, exist_ok=True)
