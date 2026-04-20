@@ -71,7 +71,7 @@ git commit -m "Initial commit"
 ```
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git remote add origin https://github.com/shrg182/automate_study_hub3e22.git
 git branch -M main
 git push -u origin main
 ```
