@@ -91,7 +91,7 @@ def create_placeholder_python_scripts(base_path: Path) -> None:
     Args:
         base_path: Base directory for the world peace report structure.
     """
-    edited_dir = base_path / "world_peace_report_edited"
+    edited_dir = base_path
 
     script_templates: dict[str, str] = {
         "placeholder.py": (
@@ -126,6 +126,16 @@ def create_placeholder_python_scripts(base_path: Path) -> None:
             "def main() -> None:\n"
             "    \"\"\"Run the command-line interface.\"\"\"\n"
             "    print(\"CLI entry point\")\n\n\n"
+            "if __name__ == \"__main__\":\n"
+            "    main()\n"
+        ),
+        "styles.py": (
+            "#!/usr/bin/env python3\n"
+            "\"\"\"Styles for the world peace report.\"\"\"\n\n"
+            "from __future__ import annotations\n\n\n"
+            "def main() -> None:\n"
+            "    \"\"\"Run the styles module.\"\"\"\n"
+            "    print(\"Define styles here.\")\n\n\n"
             "if __name__ == \"__main__\":\n"
             "    main()\n"
         ),
