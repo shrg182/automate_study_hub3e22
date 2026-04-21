@@ -2,7 +2,13 @@
 """
 create_placeholder_files.py
 
-Create placeholder files for the world peace PDF report.
+Create placeholder files and starter scripts for the world peace PDF report.
+
+This script:
+- creates placeholder text files
+- creates README.md files
+- creates starter Python script files
+- creates missing parent directories automatically
 """
 
 from __future__ import annotations
@@ -10,56 +16,123 @@ from __future__ import annotations
 from pathlib import Path
 
 
-def create_placeholder_file(file_path: Path) -> None:
+def create_empty_file(file_path: Path) -> None:
     """
-    Create one placeholder file, along with any missing parent folders.
+    Create an empty file, along with any missing parent directories.
 
     Args:
-        file_path: The full path to the placeholder file.
+        file_path: Full path to the file to create.
     """
     file_path.parent.mkdir(parents=True, exist_ok=True)
-    file_path.touch(exist_ok=True)
-    print(f"Created placeholder file: {file_path.resolve()}")
+
+    if file_path.exists():
+        print(f"Skipped existing file: {file_path.resolve()}")
+        return
+
+    file_path.touch()
+    print(f"Created file: {file_path.resolve()}")
 
 
-def create_readme(readme_path: Path, content: str) -> None:
+def write_text_file(file_path: Path, content: str, overwrite: bool = True) -> None:
     """
-    Create or overwrite a README file.
+    Write text content to a file, creating parent directories if needed.
 
     Args:
-        readme_path: Path to the README file.
-        content: Content to write into the README.
+        file_path: Full path to the file.
+        content: Text content to write.
+        overwrite: Whether to overwrite the file if it already exists.
     """
-    readme_path.parent.mkdir(parents=True, exist_ok=True)
-    readme_path.write_text(content, encoding="utf-8")
-    print(f"Created README file: {readme_path.resolve()}")
+    file_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if file_path.exists() and not overwrite:
+        print(f"Skipped existing file: {file_path.resolve()}")
+        return
+
+    file_path.write_text(content, encoding="utf-8")
+    print(f"Wrote file: {file_path.resolve()}")
 
 
 def create_placeholder_files(base_path: Path) -> None:
     """
-    Create placeholder files in the specified base path.
+    Create placeholder text files and README files.
 
     Args:
-        base_path: The directory where placeholder files will be created.
+        base_path: Base directory for the world peace report structure.
     """
-    edited_placeholder = (
-        base_path / "world_peace_report_edited" / "placeholder.txt"
-    )
-    generated_placeholder = (
-        base_path / "world_peace_report_generated" / "placeholder.txt"
-    )
-    edited_readme = base_path / "world_peace_report_edited" / "README.md"
+    edited_dir = base_path / "world_peace_report_edited"
+    generated_dir = base_path / "world_peace_report_generated"
 
-    create_placeholder_file(edited_placeholder)
-    create_placeholder_file(generated_placeholder)
+    create_empty_file(edited_dir / "placeholder.txt")
+    create_empty_file(generated_dir / "placeholder.txt")
 
-    create_readme(
-        edited_readme,
+    write_text_file(
+        edited_dir / "README.md",
         (
             "# World Peace Report Edited\n\n"
-            "This directory contains edited versions of the world peace report.\n"
+            "This directory contains edited versions, notes, and draft "
+            "materials for the world peace report.\n"
         ),
     )
+
+    write_text_file(
+        generated_dir / "README.md",
+        (
+            "# World Peace Report Generated\n\n"
+            "This directory contains generated output files such as PDF "
+            "reports and related exports.\n"
+        ),
+    )
+
+
+def create_placeholder_python_scripts(base_path: Path) -> None:
+    """
+    Create starter Python script files for the edited report workflow.
+
+    Args:
+        base_path: Base directory for the world peace report structure.
+    """
+    edited_dir = base_path / "world_peace_report_edited"
+
+    script_templates: dict[str, str] = {
+        "placeholder.py": (
+            "#!/usr/bin/env python3\n"
+            "\"\"\"Placeholder Python script for the world peace report.\"\"\"\n\n"
+            "from __future__ import annotations\n\n\n"
+            "def main() -> None:\n"
+            "    \"\"\"Run the placeholder script.\"\"\"\n"
+            "    print(\"Placeholder script\")\n\n\n"
+            "if __name__ == \"__main__\":\n"
+            "    main()\n"
+        ),
+        "generator.py": (
+            "#!/usr/bin/env python3\n"
+            "\"\"\"PDF generator for the world peace report.\"\"\"\n\n"
+            "from __future__ import annotations\n\n\n"
+            "def main() -> None:\n"
+            "    \"\"\"Run the PDF generator.\"\"\"\n"
+            "    print(\"Generate report here.\")\n\n\n"
+            "if __name__ == \"__main__\":\n"
+            "    main()\n"
+        ),
+        "data_model.py": (
+            "#!/usr/bin/env python3\n"
+            "\"\"\"Data models for the world peace report.\"\"\"\n\n"
+            "from __future__ import annotations\n"
+        ),
+        "cli.py": (
+            "#!/usr/bin/env python3\n"
+            "\"\"\"Command-line entry point for the world peace report.\"\"\"\n\n"
+            "from __future__ import annotations\n\n\n"
+            "def main() -> None:\n"
+            "    \"\"\"Run the command-line interface.\"\"\"\n"
+            "    print(\"CLI entry point\")\n\n\n"
+            "if __name__ == \"__main__\":\n"
+            "    main()\n"
+        ),
+    }
+
+    for filename, content in script_templates.items():
+        write_text_file(edited_dir / filename, content, overwrite=False)
 
 
 def main() -> None:
@@ -71,6 +144,7 @@ def main() -> None:
     target_path.mkdir(parents=True, exist_ok=True)
 
     create_placeholder_files(target_path)
+    create_placeholder_python_scripts(target_path)
 
 
 if __name__ == "__main__":

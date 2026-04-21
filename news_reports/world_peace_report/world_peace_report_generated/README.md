@@ -1,3 +1,3 @@
-# world_peace_report_generated
+# World Peace Report Generated
 
-This directory stores generated PDF reports and other output files.
+This directory contains generated output files such as PDF reports and related exports.

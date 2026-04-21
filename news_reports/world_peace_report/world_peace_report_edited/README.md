@@ -1,3 +1,3 @@
-# world_peace_report_edited
+# World Peace Report Edited
 
-This directory stores edited source material, notes, draft text, and manually revised report content.
+This directory contains edited versions, notes, and draft materials for the world peace report.
