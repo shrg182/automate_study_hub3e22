@@ -6,7 +6,7 @@ Build the World Peace Negotiation Report PDF.
 
 This module handles:
 - document creation
-- title page section
+- title section
 - executive summary
 - negotiation dashboard table
 - analyst comments
@@ -49,8 +49,7 @@ def _format_report_date(report_content: ReportContent) -> str:
     Format the report date for display.
 
     Args:
-        report_content:
-            The report content object.
+        report_content: The report content object.
 
     Returns:
         A human-readable date string.
@@ -63,35 +62,42 @@ def add_header_footer(canvas, doc) -> None:
     Draw the page header and footer on each page.
 
     Args:
-        canvas:
-            ReportLab canvas object.
-        doc:
-            ReportLab document object.
+        canvas: ReportLab canvas object.
+        doc: ReportLab document object.
     """
     canvas.saveState()
 
-    # Header line
     canvas.setStrokeColor(NAVY)
     canvas.setLineWidth(0.7)
-    canvas.line(20 * mm, PAGE_HEIGHT - 18 * mm, PAGE_WIDTH - 20 * mm, PAGE_HEIGHT - 18 * mm)
+    canvas.line(
+        20 * mm,
+        PAGE_HEIGHT - 18 * mm,
+        PAGE_WIDTH - 20 * mm,
+        PAGE_HEIGHT - 18 * mm,
+    )
 
-    # Header text
     canvas.setFillColor(NAVY)
     canvas.setFont("Helvetica-Bold", 10)
-    canvas.drawString(20 * mm, PAGE_HEIGHT - 14 * mm, "Current World Peace Negotiation Report")
+    canvas.drawString(
+        20 * mm,
+        PAGE_HEIGHT - 14 * mm,
+        "Current World Peace Negotiation Report",
+    )
 
     canvas.setFont("Helvetica-Oblique", 8)
     canvas.drawRightString(PAGE_WIDTH - 20 * mm, PAGE_HEIGHT - 14 * mm, "by ChatGPT")
 
-    # Footer line
     canvas.setStrokeColor(LIGHT_GRAY)
     canvas.setLineWidth(0.5)
     canvas.line(20 * mm, 18 * mm, PAGE_WIDTH - 20 * mm, 18 * mm)
 
-    # Footer text
     canvas.setFillColor(colors.black)
     canvas.setFont("Helvetica", 8)
-    canvas.drawString(20 * mm, 12 * mm, "Prepared for situational awareness and discussion.")
+    canvas.drawString(
+        20 * mm,
+        12 * mm,
+        "Prepared for situational awareness and discussion.",
+    )
     canvas.drawRightString(PAGE_WIDTH - 20 * mm, 12 * mm, f"Page {doc.page}")
 
     canvas.restoreState()
@@ -102,10 +108,8 @@ def _build_title_section(report_content: ReportContent, styles: dict) -> list:
     Build the title section for the report.
 
     Args:
-        report_content:
-            Data for the report.
-        styles:
-            Dictionary of paragraph styles.
+        report_content: Data for the report.
+        styles: Dictionary of paragraph styles.
 
     Returns:
         A list of flowables.
@@ -132,10 +136,8 @@ def _build_executive_summary(report_content: ReportContent, styles: dict) -> lis
     Build the executive summary section.
 
     Args:
-        report_content:
-            Data for the report.
-        styles:
-            Dictionary of paragraph styles.
+        report_content: Data for the report.
+        styles: Dictionary of paragraph styles.
 
     Returns:
         A list of flowables.
@@ -151,41 +153,13 @@ def _build_executive_summary(report_content: ReportContent, styles: dict) -> lis
     return story
 
 
-def _make_status_paragraph(status_label: str, status_key: str, styles: dict) -> Paragraph:
-    """
-    Create a styled status label paragraph with a colored background.
-
-    Args:
-        status_label:
-            The label text to display.
-        status_key:
-            The style key used to select a background color.
-        styles:
-            Dictionary of paragraph styles.
-
-    Returns:
-        A Paragraph object with inline formatting.
-    """
-    background_hex = STATUS_COLOR_MAP.get(status_key, colors.gray).hexval()
-
-    # Inline background color helps create a pill-like status tag.
-    text = (
-        f"<para align='center'>"
-        f"<font color='white' backcolor='{background_hex}'>{status_label}</font>"
-        f"</para>"
-    )
-    return Paragraph(text, styles["status_label"])
-
-
 def _build_dashboard_table(report_content: ReportContent, styles: dict) -> Table:
     """
-    Build the main negotiation dashboard table.
+    Build the main negotiation dashboard table with improved styling.
 
     Args:
-        report_content:
-            Data for the report.
-        styles:
-            Dictionary of paragraph styles.
+        report_content: Data for the report.
+        styles: Dictionary of paragraph styles.
 
     Returns:
         A styled Table object.
@@ -199,39 +173,55 @@ def _build_dashboard_table(report_content: ReportContent, styles: dict) -> Table
         ]
     ]
 
-    for front in report_content.fronts:
+    status_row_colors: list[tuple[int, colors.Color]] = []
+
+    for row_index, front in enumerate(report_content.fronts, start=1):
         rows.append(
             [
                 Paragraph(front.front, styles["table_cell"]),
-                _make_status_paragraph(front.status_label, front.status_key, styles),
+                Paragraph(front.status_label, styles["status_label"]),
                 Paragraph(front.negotiating_picture, styles["table_cell"]),
                 Paragraph(front.near_term_read, styles["table_cell"]),
             ]
         )
+        status_row_colors.append(
+            (row_index, STATUS_COLOR_MAP.get(front.status_key, colors.grey))
+        )
 
     table = Table(
         rows,
-        colWidths=[42 * mm, 38 * mm, 71 * mm, 39 * mm],
+        colWidths=[110, 95, 190, 130],
         repeatRows=1,
         hAlign="LEFT",
     )
 
-    table.setStyle(
-        TableStyle(
+    table_style = [
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("TEXTCOLOR", (0, 0), (-1, 0), WHITE),
+        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+        ("FONTSIZE", (0, 0), (-1, 0), 9),
+        ("GRID", (0, 0), (-1, -1), 0.5, LIGHT_GRAY),
+        ("LINEBELOW", (0, 0), (-1, 0), 1, NAVY),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("LEFTPADDING", (0, 0), (-1, -1), 8),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 8),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [WHITE, VERY_LIGHT_GRAY]),
+    ]
+
+    for row_index, status_color in status_row_colors:
+        table_style.extend(
             [
-                ("BACKGROUND", (0, 0), (-1, 0), NAVY),
-                ("TEXTCOLOR", (0, 0), (-1, 0), WHITE),
-                ("GRID", (0, 0), (-1, -1), 0.5, LIGHT_GRAY),
-                ("VALIGN", (0, 0), (-1, -1), "TOP"),
-                ("TOPPADDING", (0, 0), (-1, -1), 6),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
-                ("LEFTPADDING", (0, 0), (-1, -1), 6),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [WHITE, VERY_LIGHT_GRAY]),
+                ("BACKGROUND", (1, row_index), (1, row_index), status_color),
+                ("TEXTCOLOR", (1, row_index), (1, row_index), WHITE),
+                ("ALIGN", (1, row_index), (1, row_index), "CENTER"),
+                ("FONTNAME", (1, row_index), (1, row_index), "Helvetica-Bold"),
+                ("VALIGN", (1, row_index), (1, row_index), "MIDDLE"),
             ]
         )
-    )
 
+    table.setStyle(TableStyle(table_style))
     return table
 
 
@@ -240,10 +230,8 @@ def _build_comments_section(report_content: ReportContent, styles: dict) -> list
     Build the comments section.
 
     Args:
-        report_content:
-            Data for the report.
-        styles:
-            Dictionary of paragraph styles.
+        report_content: Data for the report.
+        styles: Dictionary of paragraph styles.
 
     Returns:
         A list of flowables.
@@ -263,8 +251,7 @@ def build_report(output_path: str | Path) -> Path:
     Generate the PDF report and save it to disk.
 
     Args:
-        output_path:
-            Output path for the generated PDF.
+        output_path: Output path for the generated PDF.
 
     Returns:
         The resolved Path to the PDF file.
@@ -287,22 +274,13 @@ def build_report(output_path: str | Path) -> Path:
 
     story = []
 
-    # Title block
     story.extend(_build_title_section(report_content, styles))
-
-    # Divider
     story.append(HRFlowable(width="100%", thickness=1, color=LIGHT_NAVY))
     story.append(Spacer(1, 10))
-
-    # Executive summary
     story.extend(_build_executive_summary(report_content, styles))
-
-    # Main dashboard
     story.append(Paragraph("Negotiation Dashboard", styles["section_heading"]))
     story.append(_build_dashboard_table(report_content, styles))
     story.append(Spacer(1, 14))
-
-    # Comments
     story.extend(_build_comments_section(report_content, styles))
 
     doc.build(

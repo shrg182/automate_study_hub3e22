@@ -2,7 +2,7 @@
 """
 styles.py
 
-Centralized styles, colors, and table formatting helpers for the
+Centralized styles, colors, and formatting helpers for the
 World Peace Report module.
 """
 
@@ -13,7 +13,6 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 
 
-# Core color palette
 NAVY = colors.HexColor("#173A5E")
 LIGHT_NAVY = colors.HexColor("#EAF0F6")
 MID_GRAY = colors.HexColor("#666666")
@@ -21,7 +20,6 @@ LIGHT_GRAY = colors.HexColor("#D9DDE3")
 VERY_LIGHT_GRAY = colors.HexColor("#F6F7F9")
 WHITE = colors.white
 
-# Status colors
 STATUS_COLOR_MAP = {
     "fragile": colors.HexColor("#C97A00"),
     "stalled": colors.HexColor("#A66300"),
@@ -131,8 +129,8 @@ def build_styles() -> dict[str, ParagraphStyle]:
         name="StatusLabelStyle",
         parent=sample["BodyText"],
         fontName="Helvetica-Bold",
-        fontSize=8,
-        leading=9,
+        fontSize=8.5,
+        leading=10,
         textColor=WHITE,
         alignment=TA_CENTER,
     )
@@ -145,7 +143,6 @@ def build_styles() -> dict[str, ParagraphStyle]:
         leading=14,
         textColor=colors.black,
         leftIndent=10,
-        borderPadding=6,
         spaceAfter=8,
     )
 

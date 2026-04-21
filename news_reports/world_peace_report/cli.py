@@ -22,7 +22,7 @@ def parse_args() -> argparse.Namespace:
     Parse command-line arguments.
 
     Returns:
-        Parsed command-line arguments.
+        Parsed arguments namespace.
     """
     parser = argparse.ArgumentParser(
         description="Generate a PDF world peace negotiation report."
@@ -38,7 +38,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     """
-    Generate the PDF report from command-line input.
+    Generate the PDF report using command-line arguments.
     """
     args = parse_args()
     output_path = Path(args.output)

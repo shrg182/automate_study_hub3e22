@@ -2,7 +2,7 @@
 """
 data_model.py
 
-Data models and sample report content for the World Peace Report module.
+Data models and current sample content for the World Peace Report module.
 """
 
 from __future__ import annotations
@@ -22,12 +22,7 @@ class NegotiationFront:
         status_label:
             Human-readable status label shown in the dashboard table.
         status_key:
-            Style key used to color the status label.
-            Expected values include:
-            - "fragile"
-            - "stalled"
-            - "high_risk"
-            - "active"
+            Style key used to color the status cell.
         negotiating_picture:
             Brief description of the current negotiation situation.
         near_term_read:
@@ -56,9 +51,9 @@ class ReportContent:
         as_of_date:
             Report date.
         executive_summary:
-            Short summary bullets or paragraphs.
+            Short summary bullets.
         fronts:
-            List of negotiation fronts shown in the main dashboard.
+            Negotiation fronts shown in the dashboard table.
         comments:
             Additional analyst comments shown near the end of the report.
     """
@@ -76,12 +71,8 @@ def build_sample_report_content() -> ReportContent:
     """
     Return sample report content for PDF generation.
 
-    This sample content matches the type of report you were building:
-    a concise geopolitical briefing with a negotiation dashboard and
-    short analyst comments.
-
     Returns:
-        A ReportContent instance with sample negotiation data.
+        A ReportContent instance with current sample negotiation data.
     """
     fronts = [
         NegotiationFront(
@@ -89,90 +80,80 @@ def build_sample_report_content() -> ReportContent:
             status_label="Fragile / active",
             status_key="fragile",
             negotiating_picture=(
-                "A ceasefire framework remains diplomatically relevant, "
-                "but implementation gaps, renewed violence, and disputes "
-                "over sequencing continue to limit durable progress."
+                "Fighting and implementation disputes continue, but diplomacy "
+                "has widened beyond ceasefire mechanics to include governance, "
+                "humanitarian access, reconstruction logistics, and postwar "
+                "administrative arrangements."
             ),
             near_term_read=(
-                "Limited transactional progress is still possible, but a "
-                "broader political settlement remains blocked."
+                "Short-term progress is still possible, but the track remains "
+                "fragile and heavily dependent on sequencing, compliance, and "
+                "outside mediation."
             ),
         ),
         NegotiationFront(
             front="Russia-Ukraine",
-            status_label="Exploratory / stalled",
+            status_label="Exploratory / constrained",
             status_key="stalled",
             negotiating_picture=(
-                "Talks and diplomatic signals continue, but there is still "
-                "little evidence of substantive convergence on end-state terms."
+                "Negotiation signals still exist, but there is little public "
+                "evidence of strong convergence on a final political settlement. "
+                "The war context continues to limit diplomatic momentum."
             ),
             near_term_read=(
-                "The diplomatic track appears real, but concrete outcomes "
-                "remain thin in the near term."
+                "The channel is real, but near-term outcomes still appear narrow "
+                "and more tactical than transformative."
             ),
         ),
         NegotiationFront(
-            front="U.S.-Iran / Hormuz crisis",
-            status_label="Open window / high risk",
+            front="U.S.-Iran / Hormuz",
+            status_label="Open channel / high risk",
             status_key="high_risk",
             negotiating_picture=(
-                "A diplomatic opening exists, but escalation pressure remains "
-                "high and any new maritime or regional security incident could "
-                "sharply reduce negotiation space."
+                "Talks remain active, but the ceasefire timeline, distrust, and "
+                "competing regional interests keep the situation unstable. Gulf "
+                "states are openly concerned that talks could validate Iranian "
+                "Hormuz leverage without resolving wider security threats."
             ),
             near_term_read=(
-                "The opening is meaningful, but also vulnerable. One clash "
-                "could shut the window quickly."
+                "Diplomacy remains possible, but one maritime or regional shock "
+                "could sharply narrow the negotiating space."
             ),
         ),
         NegotiationFront(
-            front="UN peace and security diplomacy",
-            status_label="Active forum / limited enforcement",
+            front="UN peace diplomacy",
+            status_label="Active forum / limited leverage",
             status_key="active",
             negotiating_picture=(
-                "The UN remains central for legitimacy, messaging, and "
-                "coordination, but enforcement power continues to lag behind "
-                "the scale of active crises."
+                "The UN continues to support ceasefires and negotiations across "
+                "multiple fronts, stressing that there is no military solution, "
+                "but it still relies on member-state political will for outcomes."
             ),
             near_term_read=(
-                "The UN remains important for pressure, coordination, and "
-                "process support, even when it cannot impose outcomes."
+                "The UN remains important for legitimacy, pressure, and process, "
+                "but not decisive by itself."
             ),
         ),
     ]
 
     executive_summary = [
-        "Global peace negotiations remain fragmented rather than unified.",
-        "The most active diplomacy is still issue-specific and region-specific.",
-        "Ceasefire efforts can produce temporary relief, but durable political "
-        "settlements remain difficult.",
-        "Negotiation windows currently exist, yet trust deficits and battlefield "
-        "or regional escalation risks continue to constrain progress.",
+        "Global peace diplomacy remains fragmented and crisis-specific rather than unified.",
+        "The Gaza track is still the most operationally active, with negotiation now extending into reconstruction and governance questions.",
+        "Russia-Ukraine diplomacy continues, but visible movement toward a final settlement remains limited.",
+        "U.S.-Iran talks remain open, yet Hormuz-related risk and regional distrust continue to constrain confidence.",
     ]
 
     comments = [
-        (
-            "This report is designed as a situational-awareness briefing rather "
-            "than a definitive forecast. It summarizes negotiation dynamics in "
-            "a compact format for study and discussion."
-        ),
-        (
-            "The status labels are qualitative. They are meant to help readers "
-            "compare negotiation fronts quickly, not replace detailed country- "
-            "or conflict-level analysis."
-        ),
-        (
-            "A practical next step for this module would be to separate the "
-            "sample data from the presentation layer so the report can later "
-            "pull live data from APIs, feeds, or manually maintained JSON files."
-        ),
+        "This report is a situational-awareness briefing and not a prediction model.",
+        "Status labels are qualitative and designed for fast comparison across fronts.",
+        "A strong next improvement would be to separate live news input from layout code so the report can refresh itself automatically.",
     ]
 
     return ReportContent(
         title="Current World Peace Negotiation Report",
         subtitle="A concise geopolitical briefing on active negotiation fronts",
         author_line="by ChatGPT",
-        as_of_date=date.today(),
+        as_of_date=date(2026, 4, 21),
         executive_summary=executive_summary,
         fronts=fronts,
         comments=comments,
