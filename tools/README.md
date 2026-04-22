@@ -13,6 +13,8 @@ Delete chapter directories.
 
 [▶︎ 2026-04-20 6:56 PM](https://chatgpt.com/c/69e63813-80c4-83ea-8369-2e951402aff4)
 
+The utility files, create workspace and placeholder scripts, are moved to [news_reports 2026-04-22 12:50 PM ](news_reports/utilities)
+
 
 
 ## Scrap scripts for the table of contents.
