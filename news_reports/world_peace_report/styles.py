@@ -31,9 +31,6 @@ STATUS_COLOR_MAP = {
 def build_styles() -> dict[str, ParagraphStyle]:
     """
     Build and return all paragraph styles used in the PDF.
-
-    Returns:
-        A dictionary mapping style names to ParagraphStyle objects.
     """
     sample = getSampleStyleSheet()
 
@@ -146,6 +143,17 @@ def build_styles() -> dict[str, ParagraphStyle]:
         spaceAfter=8,
     )
 
+    vocabulary_style = ParagraphStyle(
+        name="VocabularyStyle",
+        parent=sample["BodyText"],
+        fontName="Helvetica",
+        fontSize=10,
+        leading=14,
+        textColor=colors.black,
+        leftIndent=10,
+        spaceAfter=5,
+    )
+
     return {
         "title": title_style,
         "subtitle": subtitle_style,
@@ -157,4 +165,5 @@ def build_styles() -> dict[str, ParagraphStyle]:
         "table_cell": table_cell_style,
         "status_label": status_label_style,
         "comment": comment_style,
+        "vocabulary": vocabulary_style,
     }

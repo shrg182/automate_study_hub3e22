@@ -20,9 +20,6 @@ from generator import build_report
 def parse_args() -> argparse.Namespace:
     """
     Parse command-line arguments.
-
-    Returns:
-        Parsed arguments namespace.
     """
     parser = argparse.ArgumentParser(
         description="Generate a PDF world peace negotiation report."

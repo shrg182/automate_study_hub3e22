@@ -3,14 +3,6 @@
 generator.py
 
 Build the World Peace Negotiation Report PDF.
-
-This module handles:
-- document creation
-- title section
-- executive summary
-- negotiation dashboard table
-- analyst comments
-- page header and footer
 """
 
 from __future__ import annotations
@@ -45,26 +37,12 @@ PAGE_WIDTH, PAGE_HEIGHT = A4
 
 
 def _format_report_date(report_content: ReportContent) -> str:
-    """
-    Format the report date for display.
-
-    Args:
-        report_content: The report content object.
-
-    Returns:
-        A human-readable date string.
-    """
+    """Format the report date for display."""
     return report_content.as_of_date.strftime("%B %d, %Y")
 
 
 def add_header_footer(canvas, doc) -> None:
-    """
-    Draw the page header and footer on each page.
-
-    Args:
-        canvas: ReportLab canvas object.
-        doc: ReportLab document object.
-    """
+    """Draw the page header and footer on each page."""
     canvas.saveState()
 
     canvas.setStrokeColor(NAVY)
@@ -104,16 +82,7 @@ def add_header_footer(canvas, doc) -> None:
 
 
 def _build_title_section(report_content: ReportContent, styles: dict) -> list:
-    """
-    Build the title section for the report.
-
-    Args:
-        report_content: Data for the report.
-        styles: Dictionary of paragraph styles.
-
-    Returns:
-        A list of flowables.
-    """
+    """Build the title section for the report."""
     story = []
 
     story.append(Spacer(1, 40))
@@ -132,16 +101,7 @@ def _build_title_section(report_content: ReportContent, styles: dict) -> list:
 
 
 def _build_executive_summary(report_content: ReportContent, styles: dict) -> list:
-    """
-    Build the executive summary section.
-
-    Args:
-        report_content: Data for the report.
-        styles: Dictionary of paragraph styles.
-
-    Returns:
-        A list of flowables.
-    """
+    """Build the executive summary section."""
     story = []
 
     story.append(Paragraph("Executive Summary", styles["section_heading"]))
@@ -154,16 +114,7 @@ def _build_executive_summary(report_content: ReportContent, styles: dict) -> lis
 
 
 def _build_dashboard_table(report_content: ReportContent, styles: dict) -> Table:
-    """
-    Build the main negotiation dashboard table with improved styling.
-
-    Args:
-        report_content: Data for the report.
-        styles: Dictionary of paragraph styles.
-
-    Returns:
-        A styled Table object.
-    """
+    """Build the main negotiation dashboard table with improved styling."""
     rows = [
         [
             Paragraph("Front", styles["table_header"]),
@@ -226,16 +177,7 @@ def _build_dashboard_table(report_content: ReportContent, styles: dict) -> Table
 
 
 def _build_comments_section(report_content: ReportContent, styles: dict) -> list:
-    """
-    Build the comments section.
-
-    Args:
-        report_content: Data for the report.
-        styles: Dictionary of paragraph styles.
-
-    Returns:
-        A list of flowables.
-    """
+    """Build the comments section."""
     story = []
 
     story.append(Paragraph("Comments", styles["section_heading"]))
@@ -246,15 +188,24 @@ def _build_comments_section(report_content: ReportContent, styles: dict) -> list
     return story
 
 
+def _build_vocabulary_section(report_content: ReportContent, styles: dict) -> list:
+    """
+    Build the vocabulary section using terms from the report text.
+    """
+    story = []
+
+    story.append(Paragraph("New Vocabulary", styles["section_heading"]))
+
+    for item in report_content.vocabulary:
+        text = f"<b>{item.term}</b>: {item.definition}"
+        story.append(Paragraph(text, styles["vocabulary"]))
+
+    return story
+
+
 def build_report(output_path: str | Path) -> Path:
     """
     Generate the PDF report and save it to disk.
-
-    Args:
-        output_path: Output path for the generated PDF.
-
-    Returns:
-        The resolved Path to the PDF file.
     """
     output_file = Path(output_path).expanduser().resolve()
     styles = build_styles()
@@ -282,6 +233,8 @@ def build_report(output_path: str | Path) -> Path:
     story.append(_build_dashboard_table(report_content, styles))
     story.append(Spacer(1, 14))
     story.extend(_build_comments_section(report_content, styles))
+    story.append(Spacer(1, 10))
+    story.extend(_build_vocabulary_section(report_content, styles))
 
     doc.build(
         story,

@@ -1,0 +1,13 @@
+==== Utilities ====
+
+# Tools used in Python study projects
+
+## To-do list
+
+[▶︎ To do list 2026-04-24 9:20 AM ](https://chatgpt.com/g/g-p-6762e6811cac8191866a6554d49273eb-tools/c/69da89d8-2f80-832b-a388-bc1a20f70336)
+
+
+## Move files from one directory to another directory
+
+[▶︎ move files 2026-04-24 9:24 AM ](https://chatgpt.com/g/g-p-6762e6811cac8191866a6554d49273eb-tools/c/69e8e09c-b6f0-83ea-ac14-21144cf0c03a)
+

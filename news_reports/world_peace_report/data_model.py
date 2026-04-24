@@ -15,18 +15,6 @@ from datetime import date
 class NegotiationFront:
     """
     Represent one negotiation front in the report.
-
-    Attributes:
-        front:
-            Name of the conflict, diplomatic front, or negotiation area.
-        status_label:
-            Human-readable status label shown in the dashboard table.
-        status_key:
-            Style key used to color the status cell.
-        negotiating_picture:
-            Brief description of the current negotiation situation.
-        near_term_read:
-            Short forward-looking analyst comment.
     """
 
     front: str
@@ -37,25 +25,25 @@ class NegotiationFront:
 
 
 @dataclass(slots=True)
+class VocabularyItem:
+    """
+    Represent one vocabulary item drawn from the report text.
+
+    Attributes:
+        term:
+            The vocabulary word or phrase.
+        definition:
+            A short learner-friendly meaning.
+    """
+
+    term: str
+    definition: str
+
+
+@dataclass(slots=True)
 class ReportContent:
     """
     Store the complete content needed to build the report.
-
-    Attributes:
-        title:
-            Main report title.
-        subtitle:
-            Secondary title line.
-        author_line:
-            Attribution line shown beneath the title.
-        as_of_date:
-            Report date.
-        executive_summary:
-            Short summary bullets.
-        fronts:
-            Negotiation fronts shown in the dashboard table.
-        comments:
-            Additional analyst comments shown near the end of the report.
     """
 
     title: str
@@ -65,6 +53,7 @@ class ReportContent:
     executive_summary: list[str]
     fronts: list[NegotiationFront]
     comments: list[str]
+    vocabulary: list[VocabularyItem]
 
 
 def build_sample_report_content() -> ReportContent:
@@ -110,14 +99,15 @@ def build_sample_report_content() -> ReportContent:
             status_label="Open channel / high risk",
             status_key="high_risk",
             negotiating_picture=(
-                "Talks remain active, but the ceasefire timeline, distrust, and "
-                "competing regional interests keep the situation unstable. Gulf "
-                "states are openly concerned that talks could validate Iranian "
-                "Hormuz leverage without resolving wider security threats."
+                "Negotiations remain active but unstable, with a temporary "
+                "ceasefire extended amid mutual accusations and continued "
+                "military pressure. Planned talks face delays as Iran rejects "
+                "negotiations under pressure and demands easing of coercive "
+                "measures before meaningful dialogue."
             ),
             near_term_read=(
-                "Diplomacy remains possible, but one maritime or regional shock "
-                "could sharply narrow the negotiating space."
+                "Diplomacy is still possible, but the risk of rapid escalation "
+                "remains high if talks stall or military incidents occur."
             ),
         ),
         NegotiationFront(
@@ -149,6 +139,49 @@ def build_sample_report_content() -> ReportContent:
         "A strong next improvement would be to separate live news input from layout code so the report can refresh itself automatically.",
     ]
 
+    vocabulary = [
+        VocabularyItem(
+            term="ceasefire",
+            definition="An agreement to stop fighting for a period of time.",
+        ),
+        VocabularyItem(
+            term="mediation",
+            definition="The act of helping two sides negotiate and reach an agreement.",
+        ),
+        VocabularyItem(
+            term="compliance",
+            definition="Following rules, agreements, or required actions.",
+        ),
+        VocabularyItem(
+            term="governance",
+            definition="The system or process of governing and managing an area or institution.",
+        ),
+        VocabularyItem(
+            term="logistics",
+            definition="The practical organization of supplies, transport, and operations.",
+        ),
+        VocabularyItem(
+            term="convergence",
+            definition="Movement toward the same position or conclusion.",
+        ),
+        VocabularyItem(
+            term="settlement",
+            definition="A formal agreement that resolves a dispute or conflict.",
+        ),
+        VocabularyItem(
+            term="coercive",
+            definition="Using pressure or force to make someone do something.",
+        ),
+        VocabularyItem(
+            term="escalation",
+            definition="An increase in the intensity or seriousness of a conflict.",
+        ),
+        VocabularyItem(
+            term="leverage",
+            definition="Power or influence used to affect a situation or negotiation.",
+        ),
+    ]
+
     return ReportContent(
         title="Current World Peace Negotiation Report",
         subtitle="A concise geopolitical briefing on active negotiation fronts",
@@ -157,4 +190,5 @@ def build_sample_report_content() -> ReportContent:
         executive_summary=executive_summary,
         fronts=fronts,
         comments=comments,
+        vocabulary=vocabulary,
     )

@@ -36,6 +36,8 @@ code .
 7. Step 7: Put in your first script
 
 8. Step 8: Run it in VS Code
+
+```text
 python_study/
 ├── .venv/
 ├── .vscode/
@@ -59,6 +61,7 @@ python_study/
 ├── hello.py
 ├── README.md
 └── requirements.txt
+```
 Setup completed.
 
 ## GitHub Operations
