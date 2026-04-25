@@ -13,7 +13,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-TODO_FILE: Path = Path("todo_list.txt")
+TODO_FILE: Path = Path.cwd().joinpath("tools", "todo_list.txt")
+CURRENT_TIME: str = __import__("datetime").datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
 def load_tasks() -> list[str]:
@@ -28,8 +29,8 @@ def load_tasks() -> list[str]:
 def save_tasks(tasks: list[str]) -> None:
     """Save tasks to the to-do list file."""
     with TODO_FILE.open("w", encoding="utf-8") as file:
-        for task in tasks:
-            file.write(f"{task}\n")
+        for i, task in enumerate(tasks):
+            file.write(f"{i + 1}. {task}\n")
 
 
 def display_tasks(tasks: list[str]) -> None:
@@ -51,7 +52,7 @@ def add_task(tasks: list[str]) -> None:
         print("No task entered. Nothing added.")
         return
 
-    formatted_task: str = f"[ ] {task}"
+    formatted_task: str = f"{task} [{CURRENT_TIME}]"
     tasks.append(formatted_task)
     save_tasks(tasks)
 
