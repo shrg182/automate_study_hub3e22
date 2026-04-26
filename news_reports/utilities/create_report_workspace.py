@@ -14,19 +14,20 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-
-DIRECTORY_DESCRIPTIONS: dict[str, str] = {
-    "world_peace_report_edited": (
+# Directory names and their descriptions for README files
+# Replace white_house_dinner_assassination with white_house_dinner
+DIRECTORY_DESCRIPTIONS: dict[str, str] = { # Directory names and their descriptions for README files
+    "white_house_dinner_assassination": (
         "This directory stores edited source material, notes, draft text, "
         "and manually revised report content."
     ),
-    "world_peace_report_generated": (
+    "white_house_dinner_assassination_generated": (
         "This directory stores generated PDF reports and other output files."
     ),
-    "world_peace_report_logs": (
+    "white_house_dinner_assassination_logs": (
         "This directory stores log files, execution notes, and processing history."
     ),
-    "world_peace_report_assets": (
+    "white_house_dinner_assassination_assets": (
         "This directory stores supporting assets such as images, charts, "
         "icons, and reference materials."
     ),
@@ -177,10 +178,10 @@ def build_workspace(base_path: Path) -> None:
         create_directory(directory)
         create_readme(directory, description)
 
-    edited_dir = base_path / "world_peace_report_edited"
-    generated_dir = base_path / "world_peace_report_generated"
-    logs_dir = base_path / "world_peace_report_logs"
-    assets_dir = base_path / "world_peace_report_assets"
+    edited_dir = base_path / "white_house_dinner_assassination"
+    generated_dir = base_path / "white_house_dinner_assassination_generated"
+    logs_dir = base_path / "white_house_dinner_assassination_logs"
+    assets_dir = base_path / "white_house_dinner_assassination_assets"
 
     create_notes_file(edited_dir)
     create_metadata_file(edited_dir)
@@ -195,7 +196,7 @@ def main() -> None:
     Entry point for the script.
     """
     project_dir = Path(__file__).resolve().parent.parent
-    target_path = project_dir / "news_reports" / "world_peace_report"
+    target_path = project_dir / "white_house_dinner_assassination"
 
     build_workspace(target_path)
 
