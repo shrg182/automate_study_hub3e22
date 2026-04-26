@@ -15,19 +15,19 @@ import json
 from pathlib import Path
 
 # Directory names and their descriptions for README files
-# Replace white_house_dinner_assassination with white_house_dinner
+# Replace white_house_dinner_security_incident with white_house_dinner
 DIRECTORY_DESCRIPTIONS: dict[str, str] = { # Directory names and their descriptions for README files
-    "white_house_dinner_assassination": (
+    "white_house_dinner_security_incident": (
         "This directory stores edited source material, notes, draft text, "
         "and manually revised report content."
     ),
-    "white_house_dinner_assassination_generated": (
+    "white_house_dinner_security_incident_generated": (
         "This directory stores generated PDF reports and other output files."
     ),
-    "white_house_dinner_assassination_logs": (
+    "white_house_dinner_security_incident_logs": (
         "This directory stores log files, execution notes, and processing history."
     ),
-    "white_house_dinner_assassination_assets": (
+    "white_house_dinner_security_incident_assets": (
         "This directory stores supporting assets such as images, charts, "
         "icons, and reference materials."
     ),
@@ -178,10 +178,10 @@ def build_workspace(base_path: Path) -> None:
         create_directory(directory)
         create_readme(directory, description)
 
-    edited_dir = base_path / "white_house_dinner_assassination"
-    generated_dir = base_path / "white_house_dinner_assassination_generated"
-    logs_dir = base_path / "white_house_dinner_assassination_logs"
-    assets_dir = base_path / "white_house_dinner_assassination_assets"
+    edited_dir = base_path / "white_house_dinner_security_incident"
+    generated_dir = base_path / "white_house_dinner_security_incident_generated"
+    logs_dir = base_path / "white_house_dinner_security_incident_logs"
+    assets_dir = base_path / "white_house_dinner_security_incident_assets"
 
     create_notes_file(edited_dir)
     create_metadata_file(edited_dir)
@@ -196,7 +196,7 @@ def main() -> None:
     Entry point for the script.
     """
     project_dir = Path(__file__).resolve().parent.parent
-    target_path = project_dir / "white_house_dinner_assassination"
+    target_path = project_dir / "white_house_dinner_security_incident"
 
     build_workspace(target_path)
 

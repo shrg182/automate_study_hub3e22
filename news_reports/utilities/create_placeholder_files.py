@@ -150,7 +150,7 @@ def main() -> None:
     Entry point for the script.
     """
     project_dir = Path(__file__).resolve().parent.parent
-    target_path = project_dir / "news_reports" / "world_peace_report"
+    target_path = project_dir / "white_house_dinner_security_incident"
     target_path.mkdir(parents=True, exist_ok=True)
 
     create_placeholder_files(target_path)

@@ -6,5 +6,3 @@ Use this file to store:
 - revision notes
 - section ideas
 - references to check
-
-
