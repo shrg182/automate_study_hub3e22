@@ -1,12 +1,24 @@
 #!/usr/bin/env python3
-"""Command-line entry point for the world peace report."""
 
 from __future__ import annotations
 
+import argparse
+from pathlib import Path
 
-def main() -> None:
-    """Run the command-line interface."""
-    print("CLI entry point")
+from generator import build_report
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", default="report.pdf")
+    args = parser.parse_args()
+
+    path = Path(args.output)
+
+    file = build_report(path)
+
+    print("Generated report successfully.")
+    print(f"Saved to: {file}")
 
 
 if __name__ == "__main__":
