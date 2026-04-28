@@ -67,6 +67,18 @@ def _build_comments(report, styles):
     return story
 
 
+def _build_editorial(report, styles):
+    story = [Paragraph("Editor Note", styles["section_heading"])]
+
+    # Placeholder for editorial content
+    story.append(Paragraph(
+        "This report combines AI-generated factual content from ChatGPT with analytical insights provided by Anthropic.",
+        styles["body"]
+    ))
+
+    return story
+
+
 def _build_vocab(report, styles):
     story = [Paragraph("New Vocabulary", styles["section_heading"])]
 
@@ -74,6 +86,26 @@ def _build_vocab(report, styles):
         story.append(
             Paragraph(f"<b>{v.term}</b>: {v.definition}", styles["vocabulary"])
         )
+
+    return story
+
+
+def _build_credits_section(styles: dict) -> list:
+    """
+    Build the attribution / credits section.
+    """
+    story = []
+
+    story.append(Paragraph("Credits", styles["section_heading"]))
+
+    story.append(
+        Paragraph(
+            "This report combines AI-generated factual content from ChatGPT "
+            "with analytical insights provided by Anthropic, an AI-powered "
+            "analysis platform.",
+            styles["credits"],
+        )
+    )
 
     return story
 
@@ -104,6 +136,8 @@ def build_report(output_path: str | Path) -> Path:
     story.extend(_build_risk(report, styles))
     story.extend(_build_comments(report, styles))
     story.extend(_build_vocab(report, styles))
+    story.append(Spacer(1, 12))
+    story.extend(_build_credits_section(styles))
 
     doc.build(story)
 

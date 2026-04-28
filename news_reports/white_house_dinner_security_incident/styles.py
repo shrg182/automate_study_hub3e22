@@ -39,4 +39,12 @@ def build_styles() -> dict[str, ParagraphStyle]:
             "vocabulary", parent=sample["BodyText"],
             leftIndent=10, spaceAfter=5
         ),
+        "credits": ParagraphStyle(
+            "credits",
+            parent=sample["BodyText"],
+            fontSize=9,
+            textColor=colors.grey,
+            alignment=TA_LEFT,
+            spaceBefore=6,
+        ),
     }

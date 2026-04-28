@@ -113,9 +113,17 @@ def build_sample_report_content() -> ReportContent:
         VocabularyItem("assassination attempt", "An effort to kill an important public figure."),
         VocabularyItem("intercepted", "Stopped before reaching a target."),
         VocabularyItem("detained", "Held by authorities for investigation."),
-        VocabularyItem("protocols", "Official security procedures."),
+        VocabularyItem("protocol", "An official security procedure."),
         VocabularyItem("breach", "A failure or gap in security."),
         VocabularyItem("perimeter", "The outer boundary of a protected area."),
+        VocabularyItem("vulnerability", "A weakness that can be exploited."),
+        VocabularyItem("lone actor", "An individual acting without support from a group."),
+        VocabularyItem("elevated risk", "A higher-than-normal level of threat."),
+        VocabularyItem("outlook", "An assessment of future conditions or risks."),
+        VocabularyItem("layered security", "A system using multiple levels of protection."),
+        VocabularyItem("surveillance", "Close monitoring for security purposes."),
+        VocabularyItem("subdued", "Brought under control by force."),
+        VocabularyItem("implication", "A possible consequence or effect."),
     ]
 
     return ReportContent(

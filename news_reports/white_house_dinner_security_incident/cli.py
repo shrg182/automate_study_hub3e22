@@ -10,7 +10,7 @@ from generator import build_report
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", default="report.pdf")
+    parser.add_argument("--output", default="white_house_dinner_security_incident.pdf")
     args = parser.parse_args()
 
     path = Path(args.output)
