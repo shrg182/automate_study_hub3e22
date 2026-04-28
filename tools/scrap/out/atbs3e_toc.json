@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Introduction",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html"
+  },
+  {
+    "title": "Chapter 1 - Python Basics",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html"
+  },
+  {
+    "title": "Chapter 2 - if-else and Flow Control",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html"
+  },
+  {
+    "title": "Chapter 3 - Loops",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html"
+  },
+  {
+    "title": "Chapter 4 - Functions",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html"
+  },
+  {
+    "title": "Chapter 5 - Debugging",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html"
+  },
+  {
+    "title": "Chapter 6 - Lists",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html"
+  },
+  {
+    "title": "Chapter 7 - Dictionaries and Structuring Data",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html"
+  },
+  {
+    "title": "Chapter 8 - Strings and Text Editing",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html"
+  },
+  {
+    "title": "Chapter 9 - Text Pattern Matching with Regular Expressions",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html"
+  },
+  {
+    "title": "Chapter 10 - Reading and Writing Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html"
+  },
+  {
+    "title": "Chapter 11 - Organizing Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html"
+  },
+  {
+    "title": "Chapter 12 - Designing and Deploying Command Line Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "title": "Chapter 13 - Web Scraping",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "title": "Chapter 14 - Excel Spreadsheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html"
+  },
+  {
+    "title": "Chapter 15 - Google Sheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html"
+  },
+  {
+    "title": "Chapter 16 - SQLite Databases",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html"
+  },
+  {
+    "title": "Chapter 17 - PDF and Word Documents",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html"
+  },
+  {
+    "title": "Chapter 18 - CSV, JSON, and XML Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html"
+  },
+  {
+    "title": "Chapter 19 - Keeping Time, Scheduling Tasks, and Launching Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html"
+  },
+  {
+    "title": "Chapter 20 - Sending Email, Texts, and Push Notifications",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html"
+  },
+  {
+    "title": "Chapter 21 - Making Graphs and Manipulating Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html"
+  },
+  {
+    "title": "Chapter 22 - Recognizing Text in Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html"
+  },
+  {
+    "title": "Chapter 23 - Controlling the Keyboard and Mouse",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html"
+  },
+  {
+    "title": "Chapter 24 - Text-to-Speech and Speech Recognition Engines",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html"
+  },
+  {
+    "title": "Appendix A - Installing Third-Party Packages",
+    "url": "https://automatetheboringstuff.com/3e/appendixa.html"
+  },
+  {
+    "title": "Appendix B - Answers to the Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/appendixb.html"
+  }
+]
