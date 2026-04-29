@@ -15,17 +15,17 @@ from pathlib import Path
 from typing import List, Dict
 
 
-JSON_FILE: Path = Path.cwd().resolve() / "out" / "atbs3e_toc.json"
+JSON_FILE: Path = Path.cwd() / 'out' / "atbs3e_toc.json"
 
 
 def load_toc(json_path: Path) -> List[Dict[str, str]]:
     """Load TOC data from a JSON file."""
     if not json_path.exists():
         raise FileNotFoundError(f"JSON file not found: {json_path}")
-    
+
     with json_path.open(mode="r", encoding="utf-8") as file:
         return json.load(file)
-    
+
 
 def display_toc(toc: List[Dict[str, str]]) -> None:
     """Print the table of contents in a readable format."""
@@ -33,10 +33,10 @@ def display_toc(toc: List[Dict[str, str]]) -> None:
 
     for index, item in enumerate(toc, start=1):
         title: str = item.get("title", "N/A")
-        link: str = item.get("link", 'N/A')
+        link: str = item.get("link", "N/A")
 
         print(f"{index:02d}. {title}")
-        print(f"    {link}\n")
+        print(f"     {link}\n")
 
 
 def main() -> None:
