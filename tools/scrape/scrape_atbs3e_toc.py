@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-scrape_atbs3e_toc.py
+scrapee_atbs3e_toc.py
 
-Scrape the table of contents from the ATBS3e website and save it to a file.
+scrapee the table of contents from the ATBS3e website and save it to a file.
 
 This script uses BeautifulSoup to parse the HTML content of the ATBS3e website and extract the table of contents. The extracted data is then saved to a text file for further use.
 """
@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup, Tag
 BASE_URL = "https://automatetheboringstuff.com/3e/"
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "tools" / "scrap" / "out"
+OUTPUT_DIR = PROJECT_ROOT / "tools" / "scrape" / "out"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 CSV_OUTPUT = OUTPUT_DIR / "atbs3e_toc.csv"
@@ -96,7 +96,7 @@ def save_json(items: list[TocItem], output_path: Path) -> None:
 
 
 def main() -> None:
-    """Run the scraping process."""
+    """Run the scrapeing process."""
     html = fetch_html(BASE_URL)
     toc_items = parse_toc(html, BASE_URL)
 

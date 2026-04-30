@@ -13,7 +13,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-TODO_FILE: Path = Path.cwd().joinpath("tools", "todo_list.txt")
+TODO_FILE: Path = Path.cwd().joinpath("tools", "todo_list_toc.txt")
 CURRENT_TIME: str = __import__("datetime").datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
