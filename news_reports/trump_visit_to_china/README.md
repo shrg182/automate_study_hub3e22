@@ -16,3 +16,16 @@
 ```bash
 python3 cli.py --output trump_china_visit_report.pdf
 ```
+
+## Create scripts
+
+**create_placeholder_scripts.py**
+
+```python
+scripts = [
+    "data_model",
+    "styles",
+    "generator",
+    "cli"
+]
+```
