@@ -15,3 +15,13 @@
 ## Readme file
 
 [README_sample.md](../practice/sample_scripts/README_sample.md)
+
+
+
+## Chapter Directories
+
+1. Scrape Table of Contents
+2. Scrape Chapter Topics
+3. Create Chapter Directories
+
+These tasks are made in tools/ directory.

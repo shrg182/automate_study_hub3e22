@@ -78,3 +78,11 @@ git remote add origin https://github.com/shrg182/automate_study_hub3e22.git
 git branch -M main
 git push -u origin main
 ```
+
+## Chapter Directories
+
+1. Scrape Table of Contents
+2. Scrape Chapter Topics
+3. Create Chapter Directories
+
+These tasks are made in tools/ directory.
