@@ -79,6 +79,8 @@ git branch -M main
 git push -u origin main
 ```
 
+Go to tools/github_issues/README.md 2026-05-08 4:44 PM
+
 ## Chapter Directories
 
 1. Scrape Table of Contents
