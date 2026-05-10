@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generator
+generator.py
 
 Generate the Trump China Visit Report PDF.
 """
@@ -15,89 +15,176 @@ from reportlab.platypus import (
     HRFlowable,
     Paragraph,
     SimpleDocTemplate,
-    Spacer, 
+    Spacer,
 )
 
 from data_model import build_sample_report_content
 from styles import build_styles
 
 
-def _format_date(d: date) -> str:
-    """Format a date as "Month Day, Year"."""
+def _format_date(d) -> str:
+    """
+    Format report date.
+    """
     return d.strftime("%B %d, %Y")
 
 
 def _build_title(report, styles) -> list:
-    """Build the title section of the report."""
-    elements = []
-    elements.append(Paragraph(report.title, styles["title"]))
-    elements.append(Paragraph(report.author_line, styles["author"]))
-    elements.append(Paragraph(f"As of {report.as_of_date}", styles["author"]))
-    elements.append(Spacer(1, 12))
-    return elements
+    return [
+        Paragraph(report.title, styles["title"]),
+        Paragraph(report.author_line, styles["author"]),
+        Paragraph(
+            f"As of {_format_date(report.as_of_date)}",
+            styles["author"],
+        ),
+        Spacer(1, 10),
+    ]
 
 
 def _build_breaking_news(report, styles) -> list:
-    """Build the breaking news section."""
-    elements = []
-    elements.append(Paragraph("Breaking News", styles["section_heading"]))
-    elements.append(Paragraph(report.breaking_news, styles["body"]))
-    return elements
+    return [
+        Paragraph("Breaking News", styles["section_heading"]),
+        Paragraph(report.breaking_news, styles["body"]),
+    ]
 
 
-def _build_bullet_section(title, items, styles) -> list:
-    """Build a section with bullet points."""
-    elements = []
-    elements.append(Paragraph(title, styles["section_heading"]))
+def _build_bullet_section(
+    title: str,
+    items: list[str],
+    styles,
+) -> list:
+    story = [
+        Paragraph(title, styles["section_heading"])
+    ]
+
     for item in items:
-        elements.append(Paragraph(f"• {item}", styles["bullet"]))
-    return elements
+        story.append(
+            Paragraph(f"• {item}", styles["bullet"])
+        )
+
+    return story
 
 
-def _build_text_section(title, text, styles) -> list:
-    """Build a section with a single block of text."""
-    elements = []
-    elements.append(Paragraph(title, styles["section_heading"]))
-    elements.append(Paragraph(text, styles["body"]))
-    return elements
+def _build_text_section(
+    title: str,
+    items: list[str],
+    styles,
+) -> list:
+    story = [
+        Paragraph(title, styles["section_heading"])
+    ]
+
+    for item in items:
+        story.append(
+            Paragraph(item, styles["body"])
+        )
+
+    return story
 
 
-def _build_vocabulary_section(vocab_items, styles) -> list:
-    """Build the vocabulary section."""
-    elements = []
-    elements.append(Paragraph("Vocabulary", styles["section_heading"]))
-    for item in vocab_items:
-        elements.append(Paragraph(f"{item.term}: {item.definition}", styles["vocabulary"]))
-    return elements
+def _build_vocabulary(report, styles) -> list:
+    story = [
+        Paragraph("New Vocabulary", styles["section_heading"])
+    ]
+
+    for item in report.vocabulary:
+        story.append(
+            Paragraph(
+                f"<b>{item.term}</b>: {item.definition}",
+                styles["vocabulary"],
+            )
+        )
+
+    return story
 
 
-def build_report(output_path: str | Path) -> None:
-    """Build the report PDF."""
-    output_path = Path(output_path)
-    report = build_sample_report_content()
+def _build_credits(report, styles) -> list:
+    return [
+        Paragraph("Credits", styles["section_heading"]),
+        Paragraph(report.credits, styles["credits"]),
+    ]
+
+
+def build_report(output_path: str | Path) -> Path:
+    """
+    Build the PDF report.
+
+    Args:
+        output_path: Output PDF path.
+
+    Returns:
+        Resolved output path.
+    """
+
+    output_file = Path(output_path).resolve()
+
     styles = build_styles()
+    report = build_sample_report_content()
 
     doc = SimpleDocTemplate(
-        output_path,
+        str(output_file),
         pagesize=A4,
-        rightMargin=20 * mm,
         leftMargin=20 * mm,
+        rightMargin=20 * mm,
         topMargin=20 * mm,
         bottomMargin=20 * mm,
+        title=report.title,
+        author="ChatGPT",
     )
 
-    elements = []
-    elements.extend(_build_title(report, styles))
-    elements.extend(_build_breaking_news(report, styles))
-    elements.extend(_build_bullet_section("Executive Summary", report.executive_summary, styles))
-    elements.extend(_build_bullet_section("Situation Analysis", report.situation_analysis, styles))
-    elements.extend(_build_bullet_section("Latest Updates", report.latest_updates, styles))
-    elements.extend(_build_bullet_section("Risk Assessment", report.risk_assessment, styles))
-    elements.extend(_build_text_section("Comments", "\n".join(report.comments), styles))
-    elements.extend(_build_vocabulary_section(report.vocabulary, styles))
-    elements.append(Spacer(1, 12))
-    elements.append(HRFlowable(width="100%", thickness=0.5, color=styles["credits"].textColor))
-    elements.append(Spacer(1, 6))
-    elements.append(Paragraph(report.credits, styles["credits"]))
+    story = []
 
-    doc.build(elements)
+    story.extend(_build_title(report, styles))
+
+    story.append(HRFlowable(width="100%"))
+    story.append(Spacer(1, 10))
+
+    story.extend(_build_breaking_news(report, styles))
+
+    story.extend(
+        _build_bullet_section(
+            "Executive Summary",
+            report.executive_summary,
+            styles,
+        )
+    )
+
+    story.extend(
+        _build_text_section(
+            "Situation Analysis",
+            report.situation_analysis,
+            styles,
+        )
+    )
+
+    story.extend(
+        _build_text_section(
+            "Latest Updates",
+            report.latest_updates,
+            styles,
+        )
+    )
+
+    story.extend(
+        _build_bullet_section(
+            "Risk Assessment",
+            report.risk_assessment,
+            styles,
+        )
+    )
+
+    story.extend(
+        _build_text_section(
+            "Comments",
+            report.comments,
+            styles,
+        )
+    )
+
+    story.extend(_build_vocabulary(report, styles))
+
+    story.extend(_build_credits(report, styles))
+
+    doc.build(story)
+
+    return output_file
