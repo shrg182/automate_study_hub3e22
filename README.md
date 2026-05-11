@@ -64,6 +64,20 @@ python_study/
 ```
 Setup completed.
 
+
+## .venv
+
+```bash
+mkdir -p ~/Python/automate_study_hub3e2
+cd ~/Python/automate_study_hub3e2
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
+code .
+```
+
+
+
 ## GitHub Operations
 
 
