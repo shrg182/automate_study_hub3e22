@@ -1,0 +1,75 @@
+# =========================================================
+# macOS
+# =========================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================================================
+# Python
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Type checking / linting
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================================================
+# VS Code
+# =========================================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# =========================================================
+# PyCharm
+# =========================================================
+
+.idea/
+
+# =========================================================
+# Logs / temporary files
+# =========================================================
+
+*.log
+*.tmp
+*.swp
+*.swo
+
+# =========================================================
+# Generated PDFs and reports (optional)
+# Uncomment if desired
+# =========================================================
+
+# *.pdf
+
+# =========================================================
+# Local secrets / environment variables
+# =========================================================
+
+.env
+.env.*
