@@ -123,3 +123,7 @@ python3 todo_list.py --todo-dir work_tasks
 python3 todo_list.py --todo-dir personal_tasks
 python3 todo_list.py --todo-dir chapters/chapter_11
 ```
+
+```bash
+python3 todo_list.py --todo-dir personal_tasks
+```
