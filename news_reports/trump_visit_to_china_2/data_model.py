@@ -72,10 +72,27 @@ def build_sample_report_content() -> ReportContent:
             "The Taiwan issue continues to be a major point of contention, with potential implications for regional security.",
         ],
         latest_updates=[
-            "President Trump met with Chinese President Xi Jinping for a bilateral summit.",
-            "The two leaders discussed trade, with China agreeing to increase purchases of US goods.",
-            "No major breakthroughs were announced on the Taiwan issue or maritime security.",
-        ],
+        (
+            "Reuters reported that Donald Trump is traveling to Beijing for a summit "
+            "with Xi Jinping expected to begin Thursday and continue through Friday."
+        ),
+        (
+            "The summit is expected to take place at Beijing's Temple of Heaven, "
+            "giving the meeting strong diplomatic and symbolic significance."
+        ),
+        (
+            "Key agenda items are expected to include trade, agriculture, Boeing aircraft, "
+            "AI and semiconductor controls, rare earths, Taiwan, Iran, and maritime security."
+        ),
+        (
+            "Trump stated that he does not need Xi Jinping's help regarding Iran, "
+            "although the issue is still expected to be discussed during the visit."
+        ),
+        (
+            "U.S. corporate leaders and global markets are closely monitoring the summit "
+            "for signs of commercial agreements or easing of U.S.-China tensions."
+        ),
+    ]
         risk_assessment=[
             "The visit has the potential to ease tensions but also carries risks of miscommunication and unmet expectations.",
             "The trade truce may be fragile and could unravel if not supported by concrete actions.",
