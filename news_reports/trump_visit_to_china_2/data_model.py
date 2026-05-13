@@ -57,9 +57,9 @@ def build_sample_report_content() -> ReportContent:
     ]
 
     return ReportContent(
-        title="Trump China Visit Report",
-        author_line="By Jane Doe, Senior Analyst",
-        as_of_date=date(2026, 5, 12),
+        title="Trump China Visit Report Update",
+        author_line="By ChatGPT",
+        as_of_date=date(2026, 5, 13),
         breaking_news="President Trump has arrived in Beijing for a state visit, marking a significant moment in US-China relations.",
         executive_summary=[
             "President Trump's visit to China is a critical opportunity to address key issues in the bilateral relationship.",
@@ -71,28 +71,47 @@ def build_sample_report_content() -> ReportContent:
             "The trade truce has provided some relief but underlying issues remain unresolved.",
             "The Taiwan issue continues to be a major point of contention, with potential implications for regional security.",
         ],
-        latest_updates=[
-        (
-            "Reuters reported that Donald Trump is traveling to Beijing for a summit "
-            "with Xi Jinping expected to begin Thursday and continue through Friday."
-        ),
-        (
-            "The summit is expected to take place at Beijing's Temple of Heaven, "
-            "giving the meeting strong diplomatic and symbolic significance."
-        ),
-        (
-            "Key agenda items are expected to include trade, agriculture, Boeing aircraft, "
-            "AI and semiconductor controls, rare earths, Taiwan, Iran, and maritime security."
-        ),
-        (
-            "Trump stated that he does not need Xi Jinping's help regarding Iran, "
-            "although the issue is still expected to be discussed during the visit."
-        ),
-        (
-            "U.S. corporate leaders and global markets are closely monitoring the summit "
-            "for signs of commercial agreements or easing of U.S.-China tensions."
-        ),
-    ]
+latest_updates = [
+    (
+        "President Donald Trump is now airborne and traveling to Beijing "
+        "for his May 13–15 state visit to China."
+    ),
+    (
+        "Chinese authorities have finalized preparations for the summit, "
+        "including ceremonial events and meetings expected at Beijing's "
+        "Temple of Heaven."
+    ),
+    (
+        "Trump is expected to hold high-level talks with Xi Jinping on "
+        "trade, tariffs, artificial intelligence, semiconductor controls, "
+        "rare earth exports, Taiwan, Iran, and maritime security."
+    ),
+    (
+        "Major U.S. business leaders accompanying or linked to the trip "
+        "include executives from Boeing, Apple, Tesla, Mastercard, "
+        "BlackRock, and other major corporations."
+    ),
+    (
+        "Financial markets and global investors are closely monitoring "
+        "the summit for signs of new trade agreements, tariff relief, "
+        "or expanded market access."
+    ),
+    (
+        "Taiwan remains one of the most sensitive agenda items, with "
+        "U.S. officials emphasizing that there should be no destabilizing "
+        "change in the Indo-Pacific region."
+    ),
+    (
+        "The Iran conflict is also expected to be discussed, although "
+        "Trump has publicly stated that he does not require Xi Jinping's "
+        "assistance regarding Iran."
+    ),
+    (
+        "Analysts expect the summit to produce symbolic diplomatic progress "
+        "and limited commercial agreements, while broader strategic rivalry "
+        "between the United States and China is expected to continue."
+    ),
+],
         risk_assessment=[
             "The visit has the potential to ease tensions but also carries risks of miscommunication and unmet expectations.",
             "The trade truce may be fragile and could unravel if not supported by concrete actions.",
@@ -104,5 +123,9 @@ def build_sample_report_content() -> ReportContent:
             "The international community will be closely watching the outcomes of this visit.",
         ],
         vocabulary=vocabulary,
-        credits="Report compiled by Jane Doe, Senior Analyst. Data sourced from official statements and reputable news outlets.",
+        credits=(
+            "This report combines AI-generated factual content from ChatGPT with analytical structuring "
+            "designed for educational and informational purposes. Current-event details should be checked "
+            "against primary or reputable news sources before publication."
+        ),
     )   

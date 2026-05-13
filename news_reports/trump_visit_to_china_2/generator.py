@@ -124,24 +124,7 @@ def build_report(output_path: str | Path) -> None:
 
     story.extend(_build_title(report, build_styles()))
 
-    story.append(HRFlowable(width="100%", thickness=1, color="black", spaceBefore=10, spaceAfter=10))
-    story.extend(_build_breaking_news(report, build_styles()))
-
-    story.extend(
-        _build_text_section(
-            "Executive Summary",
-            report.executive_summary,
-            build_styles(),
-        )
-    )
-
-    story.extend(
-        _build_text_section(
-            "Situation Analysis",
-            report.situation_analysis,
-            build_styles(),
-        )
-    )
+    story.append(HRFlowable(width="100%", thickness=1, color="black", spaceBefore=10, spaceAfter=10)) 
 
     story.extend(
         _build_bullet_section(
@@ -149,18 +132,7 @@ def build_report(output_path: str | Path) -> None:
             report.latest_updates,
             build_styles(),
         )
-    )
-
-    story.extend(
-        _build_bullet_section(
-            "Risk Assessment",
-            report.risk_assessment,
-            build_styles(),
-        )
-    )
-
-    story.extend(_build_vocabulary(report, build_styles()))
-
+    ) 
 
     story.extend(_build_credits(report, build_styles()))
 

@@ -45,3 +45,7 @@ def main() -> None:
 
     print("Generated report successfully.")
     print(f"Saved to: {generated_file}")
+
+
+if __name__ == "__main__":
+    main()

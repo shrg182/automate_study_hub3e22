@@ -29,3 +29,10 @@ scripts = [
     "cli"
 ]
 ```
+
+
+## Trump visit China 2
+
+```bash
+python3 cli.py --output trump_china_visit_report_20260513.pdf
+```
