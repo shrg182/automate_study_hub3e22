@@ -13,3 +13,10 @@
 1. World Peace Negotiations
 2. White House Security Incident
 3. Trump visit to China. 2026-05-08 2:37 PM
+
+
+## Scripts for the template
+
+### Trump Visit to China
+**create_placeholder_scripts.py**
+

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-OUTPUT_DIR = Path("news_reports") / "trump_visit_to_china_2"
+OUTPUT_DIR = Path("news_reports") / "trump_visit_to_china_3"
 
 SCRIPT_NAMES =  [
     "data_model",
