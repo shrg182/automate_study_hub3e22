@@ -5,7 +5,7 @@ cli.py
 Command-line interface for generating the PDF report.
 
 Usage:
-    python3 cli.py --output trump_china_visit_report_202605132.pdf
+    python3 cli.py --output trump_china_visit_report_20260514.pdf
 """
 
 from __future__ import annotations
@@ -25,11 +25,11 @@ def parse_args() -> argparse.Namespace:
     )
 
     parser.add_argument(
-        "--output", "-o", 
-        type=str | Path, 
-        default=Path("report.pdf"), 
+        "--output", "-o",
+        type=str or Path,
+        default=Path("report.pdf"),
         help="Output file path.")
-    
+
     return parser.parse_args()
 
 
@@ -38,7 +38,7 @@ def main() -> None:
 
     args = parse_args()
 
-    output_path = Path(args.output)
+    output_path = args.output
 
     generated_file = build_report(output_path)
 
