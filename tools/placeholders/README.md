@@ -10,6 +10,16 @@
 
 Reference to the previous project automate_study_hub3e2 made by PyCharm
 
+## To-do list
+
+
+
+
 
 ## 1. Chapter Directories
+
+**create_chapter_directories.py**
+
+TODO: [ ] retrieve contents from CSV or JSON file
+[ ] populate chapter directories
 

@@ -9,6 +9,7 @@ Usage:
     python3 todo_list.py
     python3 todo_list.py --todo-dir work_tasks
     python3 todo_list.py --todo-dir personal_tasks
+    python3 todo_list.py --todo-dir tools/placeholders
 """
 
 from __future__ import annotations
@@ -23,7 +24,8 @@ TODO_FILENAME: str = "todo_list.txt"
 
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
-    parser = argparse.ArgumentParser(description="A simple command-line to-do list manager.")
+    parser = argparse.ArgumentParser(
+        description="A simple command-line to-do list manager.")
 
     parser.add_argument(
         "--todo-dir",
@@ -45,10 +47,10 @@ def load_tasks(todo_file: Path) -> list[str]:
     """Load tasks from the to-do list file."""
     if not todo_file.exists():
         return []
-    
+
     with todo_file.open("r", encoding="utf-8") as file:
         return [line.strip() for line in file if line.strip()]
-    
+
 
 def save_tasks(tasks: list[str], todo_file: Path) -> None:
     """Save tasks to the to-do list file."""
@@ -89,26 +91,26 @@ def mark_task_completed(tasks: list[str], todo_file: Path) -> None:
         return
 
     try:
-        task_number: int = int(input("Enter the task number to mark as completed: ").strip())
+        task_number: int = int(
+            input("Enter the task number to mark as completed: ").strip())
     except ValueError:
         print("Invalid input. Please enter a valid task number.")
         return
-    
+
     if not 1 <= task_number <= len(tasks):
         print("Invalid task number.")
         return
-    
+
     task = tasks[task_number - 1]
 
     if task.startswith("[x] "):
         print("Task is already marked as completed.")
         return
-    
+
     if task.startswith("[ ] "):
         tasks[task_number - 1] = task.replace("[ ] ", "[x] ", 1)
     else:
         tasks[task_number - 1] = f"[x] {task}"
-
 
     save_tasks(tasks, todo_file)
     print(f"Marked task as completed: {task[4:]}")
@@ -122,15 +124,16 @@ def remove_task(tasks: list[str], todo_file: Path) -> None:
         return
 
     try:
-        task_number: int = int(input("Enter the task number to remove: ").strip())
+        task_number: int = int(
+            input("Enter the task number to remove: ").strip())
     except ValueError:
         print("Invalid input. Please enter a valid task number.")
         return
-    
+
     if not 1 <= task_number <= len(tasks):
         print("Invalid task number.")
         return
-    
+
     removed_task: str = tasks.pop(task_number - 1)
     save_tasks(tasks, todo_file)
     print(f"Removed task: {removed_task[4:]}")
@@ -144,15 +147,16 @@ def edit_task(tasks: list[str], todo_file: Path) -> None:
         return
 
     try:
-        task_number: int = int(input("Enter the task number to edit: ").strip())
+        task_number: int = int(
+            input("Enter the task number to edit: ").strip())
     except ValueError:
         print("Invalid input. Please enter a valid task number.")
         return
-    
+
     if not 1 <= task_number <= len(tasks):
         print("Invalid task number.")
         return
-    
+
     old_task: str = tasks[task_number - 1]
 
     if old_task.startswith("[x] "):
@@ -170,7 +174,7 @@ def edit_task(tasks: list[str], todo_file: Path) -> None:
     if not new_description:
         print("Task description cannot be empty.")
         return
-    
+
     tasks[task_number - 1] = f"{status}{new_description}"
     save_tasks(tasks, todo_file)
 
@@ -182,13 +186,14 @@ def clear_tasks(tasks: list[str], todo_file: Path) -> None:
     if not tasks and not todo_file.exists():
         print("No tasks to clear.")
         return
-    
-    confirmation = input("Are you sure you want to clear all tasks? This action cannot be undone. (yes/no): ").strip().lower()
+
+    confirmation = input(
+        "Are you sure you want to clear all tasks? This action cannot be undone. (yes/no): ").strip().lower()
 
     if confirmation != "yes":
         print("Clear operation cancelled.")
         return
-    
+
     tasks.clear()
 
     if todo_file.exists():

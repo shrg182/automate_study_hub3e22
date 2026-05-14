@@ -1,0 +1,2 @@
+[ ] retrieve contents from CSV or JSON file
+[ ] populate chapter directories
