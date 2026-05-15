@@ -23,3 +23,7 @@ Reference to the previous project automate_study_hub3e2 made by PyCharm
 TODO: [ ] retrieve contents from CSV or JSON file
 [ ] populate chapter directories
 
+
+## 2. Utility files: README.md and USAGE.md
+
+**populate_utility_files_in_chapter_directory.py**
