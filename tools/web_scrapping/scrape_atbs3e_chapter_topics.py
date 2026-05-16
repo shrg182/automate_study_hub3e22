@@ -25,7 +25,7 @@ CHAPTER_URL_TEMPLATE = "https://automatetheboringstuff.com/3e/chapter{num}.html"
 CHAPTER_RANGE = range(25)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "tools" / "scrape"
+OUTPUT_DIR = PROJECT_ROOT / "tools" / "web_scrapping" / "out"
 
 CSV_OUTPUT = OUTPUT_DIR / "atbs3e_chapter_topics.csv"
 JSON_OUTPUT = OUTPUT_DIR / "atbs3e_chapter_topics.json"
