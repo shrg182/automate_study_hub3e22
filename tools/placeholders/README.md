@@ -27,3 +27,8 @@ TODO: [ ] retrieve contents from CSV or JSON file
 ## 2. Utility files: README.md and USAGE.md
 
 **populate_utility_files_in_chapter_directory.py**
+
+[chatgpt 2026-05-16 11:46 AM ](https://chatgpt.com/g/g-p-6762e6811cac8191866a6554d49273eb-tools/c/6789d2b2-9a8c-8008-8edd-ebb767c79242)
+
+This:
+[chatgpt 2026-05-16 11:46 AM ](https://chatgpt.com/c/6921e85d-24c8-8330-b37c-a6ef7661fe59)

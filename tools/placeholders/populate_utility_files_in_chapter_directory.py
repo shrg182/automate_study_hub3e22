@@ -18,7 +18,7 @@ Usage:
     python3 populate_utility_files_in_chapter_directory.py
     python3 populate_utility_files_in_chapter_directory.py 
         --toc-file tools/web_scraping/out/atbs3e_toc.json 
-        --chpaters-dir chpaters
+        --chapters-dir chapters
 
     python3 populate_utility_files_in_chapter_directory.py --dry-run
 
@@ -214,3 +214,78 @@ def populate_utility_files(
         dry_run: bool,
         override: bool
 ) -> None:
+    """Populate utility files in chapter directories based on TOC data."""
+    if not toc_file.is_file():
+        logging.error(
+            f"TOC file '{toc_file}' does not exist or is not a file.")
+        return
+
+    toc_data = load_json(toc_file)
+    chapter_items = extract_chapter_items(toc_data)
+
+    if not chapter_items:
+        logging.warning("No valid chapter items found in TOC.")
+        return
+
+    files_written = 0
+
+    for chapter in chapter_items:
+        chapter_dir = chapters_dir / chapter["dirname"]
+
+        if not chapter_dir.is_dir():
+            logging.warning(
+                f"Chapter directory '{chapter_dir}' does not exist. Skipping.")
+            continue
+
+        for filename, template in DEFAULT_UTITLITY_FILES.items():
+            content = template.format(title=chapter["title"])
+            target_file = chapter_dir / filename
+
+            if write_file(
+                path=target_file,
+                content=content,
+                dry_run=dry_run,
+                override=override
+            ):
+                files_written += 1
+
+    logging.info(
+        f"Finished populating utility files. Total files created: {files_written}")
+
+
+def main() -> None:
+    """Main function to execute the script."""
+    args = parse_args()
+
+    logging.basicConfig(
+        level=logging.DEBUG if args.verbose else logging.INFO,
+        format='[%(levelname)s] %(message)s'
+    )
+
+    base_dir = args.base_dir
+
+    toc_file = (
+        args.toc_file.resolve()
+        if args.toc_file
+        else base_dir / "tools" / "web_scraping" / "out" / "atbs3e_toc.json"
+    )
+
+    chapters_dir = (
+        args.chapters_dir.resolve()
+        if args.chapters_dir
+        else base_dir / "chapters"
+    )
+
+    populate_utility_files(
+        base_dir=base_dir,
+        toc_file=toc_file,
+        chapters_dir=chapters_dir,
+        dry_run=args.dry_run,
+        override=args.override
+    )
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

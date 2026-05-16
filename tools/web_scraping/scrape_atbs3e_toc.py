@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup, Tag
 BASE_URL = "https://automatetheboringstuff.com/3e/"
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "tools" / "scrape" / "out"
+OUTPUT_DIR = PROJECT_ROOT / "tools" / "web_scraping" / "out"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 CSV_OUTPUT = OUTPUT_DIR / "atbs3e_toc.csv"
@@ -46,13 +46,13 @@ def fetch_html(url: str) -> str:
 def find_toc_heading(soup: BeautifulSoup) -> Tag | None:
     """Find the heading that contains the table of contents."""
     heading = soup.find(
-        lambda tag: tag.name in ["h1", "h2", "h3", "h4", "h5", "h6"] 
+        lambda tag: tag.name in ["h1", "h2", "h3", "h4", "h5", "h6"]
         and "Table of Contents" in tag.text
     )
 
     if not isinstance(heading, Tag):
         raise ValueError("Could not find the table of contents heading.")
-    
+
     return heading
 
 
@@ -64,7 +64,7 @@ def parse_toc(html: str, base_url: str) -> list[TocItem]:
     toc_list = toc_heading.find_next("ul")
     if not isinstance(toc_list, Tag):
         raise ValueError("Could not find the table of contents list.")
-    
+
     toc_items: list[TocItem] = []
 
     for link in toc_list.find_all("a", href=True):
@@ -86,7 +86,7 @@ def save_csv(items: list[TocItem], output_path: Path) -> None:
         for item in items:
             writer.writerow(asdict(item))
 
-    
+
 def save_json(items: list[TocItem], output_path: Path) -> None:
     """Save the table of contents items to a JSON file."""
     data = [asdict(item) for item in items]
