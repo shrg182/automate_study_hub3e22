@@ -1,0 +1,164 @@
+# Usage Guide
+
+### {chapter_title}
+
+_Auto-generated on {generated_datetime}_
+
+> 📖 **Chapter Page:** {chapter_page_url}  
+> 🔗 **ATBS Chapter Link:** {atbs_chapter_url}
+
+**Directory:** `{chapter_directory_name}`
+
+---
+
+## Overview
+
+This file explains how to run the scripts in this directory.
+
+---
+
+## Before Running Scripts
+
+From the project root, activate the virtual environment:
+
+```bash
+source .venv/bin/activate
+```
+
+Check that Python is using the project virtual environment:
+
+```bash
+which python
+python --version
+```
+
+---
+
+## Run Scripts
+
+Run a script from the project root:
+
+```bash
+python {relative_chapter_directory}/example_01.py
+```
+
+Or change into this directory first:
+
+```bash
+cd {relative_chapter_directory}
+python example_01.py
+```
+
+---
+
+## Common Commands
+
+List files:
+
+```bash
+ls
+```
+
+Show current directory:
+
+```bash
+pwd
+```
+
+Run a Python file:
+
+```bash
+python filename.py
+```
+
+Run with help option, if supported:
+
+```bash
+python filename.py --help
+```
+
+---
+
+## Script Examples
+
+### `example_01.py`
+
+```bash
+python example_01.py
+```
+
+Description:
+
+```text
+Add description later.
+```
+
+### `example_02.py`
+
+```bash
+python example_02.py
+```
+
+Description:
+
+```text
+Add description later.
+```
+
+### `example_03.py`
+
+```bash
+python example_03.py
+```
+
+Description:
+
+```text
+Add description later.
+```
+
+---
+
+## Troubleshooting
+
+### Problem: `python: command not found`
+
+Try:
+
+```bash
+python3 filename.py
+```
+
+### Problem: wrong Python environment
+
+Check:
+
+```bash
+which python
+```
+
+Expected result should point to the project `.venv`.
+
+### Problem: module not found
+
+Install missing packages inside the virtual environment:
+
+```bash
+pip install package_name
+```
+
+Or install all project requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Ask questions
+
+Use this section to collect questions about running scripts.
+
+- Which script should be tested first?
+- Does this script need command-line arguments?
+- Should the output be saved to a file?

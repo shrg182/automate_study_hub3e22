@@ -1,0 +1,40 @@
+# {chapter_title}
+
+### ({parent_directory_name})
+
+_Auto-generated on {generated_datetime}_
+
+> 📖 **Chapter Page:** {chapter_page_url}  
+> 🔗 **ATBS Chapter Link:** {atbs_chapter_url}
+
+**[▶︎ {chapter_directory_name}]()**
+
+## Overview
+
+- Placeholder README for `{chapter_directory_name}`.
+- Replace with actual content later.
+
+## Getting Started
+
+1. See `USAGE.md` for details.
+2. Add project notes and examples.
+
+## Sample Scripts
+
+| Script | Description |
+|---|---|
+| `example_01.py` | Add description later. |
+| `example_02.py` | Add description later. |
+| `example_03.py` | Add description later. |
+
+## Notes
+
+Add study notes, important concepts, and reminders here.
+
+## Ask questions
+
+Use this section to collect questions for review.
+
+- What is the main purpose of this chapter?
+- Which scripts need more examples?
+- What concepts should be reviewed again?
