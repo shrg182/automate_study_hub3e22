@@ -37,18 +37,12 @@ from pathlib import Path
 from typing import Any
 
 
-<<<<<<< HEAD
-DEFAULT_UTILITY_FILES: dict[str, str] = {
-    "README.md": "# {title}\n\nReview and utility notes for **{title}**.\n",
-    "USAGE.md": "# Usage: {title}\n\nAdd command examples here.\n",
-=======
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = PROJECT_ROOT / "tools" / "web_scraping" / "out"
 
-DEFAULT_UTITLITY_FILES: dict[str, str] = {
+DEFAULT_UTILITY_FILES: dict[str, str] = {
     "README.md": "# {title}\n\nThis directory contains utility files for {title}.\n\nReview and utility notes for **{title}**.\n",
     "USAGE.md": "# Usage Instructions for {title}\n\nThis file provides usage instructions for the utilities: {title}\n\nAnd command examples here.\n",
->>>>>>> 45e9200b0f4742ed5c6eff7522902eaec32d716d
     "utils.py": '''#!/usr/bin/env python3
 """
 utils.py
@@ -78,13 +72,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--base-dir",
         type=Path,
-<<<<<<< HEAD
-        default=Path.cwd(),
-        help="Project root directory. Default: current working directory.",
-=======
         default=PROJECT_ROOT,
         help="Base directory to search for chapter directories (default: current working directory)"
->>>>>>> 45e9200b0f4742ed5c6eff7522902eaec32d716d
     )
     parser.add_argument(
         "--toc-file",
@@ -137,112 +126,9 @@ def load_json(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as file:
         return json.load(file)
 
-<<<<<<< HEAD
 
-def extract_chapter_items(
-    toc_data: Any,
-    include_introduction: bool = False,
-    include_appendices: bool = True,
-) -> list[dict[str, Any]]:
-    """
-    Extract chapter, introduction, and appendix records from ATBS TOC JSON.
-
-    Expected item format:
-        {
-            "title": "Chapter 1 - Python Basics",
-            "url": "https://..."
-        }
-    """
-    if isinstance(toc_data, dict):
-        raw_items = toc_data.get("chapters") or toc_data.get(
-            "items") or toc_data.get("toc") or []
-    elif isinstance(toc_data, list):
-        raw_items = toc_data
-    else:
-        return []
-
-    items: list[dict[str, Any]] = []
-
-    for item in raw_items:
-        if not isinstance(item, dict):
-            continue
-
-        full_title = str(item.get("title", "")).strip()
-        url = str(item.get("url", "")).strip()
-
-        if not full_title:
-            continue
-
-        # Introduction
-        if include_introduction and full_title.lower() == "introduction":
-            items.append(
-                {
-                    "kind": "introduction",
-                    "number": 0,
-                    "title": "Introduction",
-                    "dirname": "chapter_00_introduction",
-                    "url": url,
-                }
-            )
-            continue
-
-        # Chapter: "Chapter 1 - Python Basics"
-        chapter_match = re.match(
-            r"^\s*chapter\s+(\d+)\s*[-:]\s*(.+?)\s*$",
-            full_title,
-            re.IGNORECASE,
-        )
-        if chapter_match:
-            number = int(chapter_match.group(1))
-            title = chapter_match.group(2).strip()
-            slug = to_snake_case(title)
-            dirname = f"chapter_{number:02d}_{slug}"
-
-            items.append(
-                {
-                    "kind": "chapter",
-                    "number": number,
-                    "title": title,
-                    "dirname": dirname,
-                    "url": url,
-                }
-            )
-            continue
-
-        # Appendix: "Appendix A - Installing Third-Party Packages"
-        appendix_match = re.match(
-            r"^\s*appendix\s+([a-z])\s*[-:]\s*(.+?)\s*$",
-            full_title,
-            re.IGNORECASE,
-        )
-        if include_appendices and appendix_match:
-            letter = appendix_match.group(1).lower()
-            title = appendix_match.group(2).strip()
-            slug = to_snake_case(title)
-            dirname = f"appendix_{letter}_{slug}"
-
-            items.append(
-                {
-                    "kind": "appendix",
-                    "letter": letter,
-                    "title": title,
-                    "dirname": dirname,
-                    "url": url,
-                }
-            )
-
-    return items
-    """
-    Extract chapter records from flexible TOC JSON structures.
-
-    Supports:
-    1. {"chapters": [...]}
-    2. [...]
-    """
-=======
 def extract_chapter_items(toc_data: Any) -> list[dict[str, str]]:
     """Extract chapter and appendix items from ATBS3e TOC JSON."""
->>>>>>> 45e9200b0f4742ed5c6eff7522902eaec32d716d
     if isinstance(toc_data, dict):
         raw_items = (
             toc_data.get("chapters")
@@ -259,30 +145,6 @@ def extract_chapter_items(toc_data: Any) -> list[dict[str, str]]:
 
     for item in raw_items:
         if not isinstance(item, dict):
-<<<<<<< HEAD
-            continue
-
-        chapter_label = str(item.get("chapter", "")).strip()
-        title = str(item.get("title", "")).strip()
-
-        if not chapter_label.lower().startswith("chapter"):
-            continue
-
-        match = re.search(r"(\d+)", chapter_label)
-        if not match:
-            continue
-
-        number = int(match.group(1))
-        slug = to_snake_case(title)
-        dirname = f"chapter_{number:02d}" + (f"_{slug}" if slug else "")
-
-        chapter_items.append(
-            {
-                "number": number,
-                "title": title or f"Chapter {number}",
-                "dirname": dirname,
-            }
-=======
             logging.warning("Skipping non-dict item in TOC: %s", item)
             continue
 
@@ -310,7 +172,6 @@ def extract_chapter_items(toc_data: Any) -> list[dict[str, str]]:
             r"^Chapter\s+(\d+)\s*[-:]\s*(.+)$",
             full_title,
             re.IGNORECASE,
->>>>>>> 45e9200b0f4742ed5c6eff7522902eaec32d716d
         )
         if chapter_match:
             number = int(chapter_match.group(1))
@@ -398,17 +259,13 @@ def populate_utility_files(
         chapter_dir = chapters_dir / chapter["dirname"]
 
         if not chapter_dir.is_dir():
-<<<<<<< HEAD
-            logging.warning("Chapter directory not found: %s", chapter_dir)
-            continue
-=======
-            try:                
+            try:
                 chapter_dir.mkdir(parents=True, exist_ok=True)
                 logging.info(f"Created chapter directory: '{chapter_dir}'")
             except Exception as e:
-                logging.error(f"Error creating chapter directory '{chapter_dir}': {e}")
-                continue    
->>>>>>> 45e9200b0f4742ed5c6eff7522902eaec32d716d
+                logging.error(
+                    f"Error creating chapter directory '{chapter_dir}': {e}")
+                continue
 
         for filename, template in DEFAULT_UTILITY_FILES.items():
             content = template.format(title=chapter["title"])
