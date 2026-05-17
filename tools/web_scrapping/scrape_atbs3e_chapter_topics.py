@@ -5,8 +5,8 @@ scrape_atbs3e_chapter_topics.py
 Scrape subtitle headings from each ATBS 3e chapter page.
 
 Output:
-    tools/scrape/atbs3e_chapter_topics.csv
-    tools/scrape/atbs3e_chapter_topics.json
+    tools/web_scraping/out/atbs3e_chapter_topics.csv
+    tools/web_scraping/out/atbs3e_chapter_topics.json
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ CHAPTER_URL_TEMPLATE = "https://automatetheboringstuff.com/3e/chapter{num}.html"
 CHAPTER_RANGE = range(25)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "tools" / "web_scrapping" / "out"
+OUTPUT_DIR = PROJECT_ROOT / "tools" / "web_scraping" / "out"
 
 CSV_OUTPUT = OUTPUT_DIR / "atbs3e_chapter_topics.csv"
 JSON_OUTPUT = OUTPUT_DIR / "atbs3e_chapter_topics.json"
