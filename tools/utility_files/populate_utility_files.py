@@ -14,6 +14,7 @@ Usage:
     python3 tools/utility_files/populate_utility_files.py
     python3 tools/utility_files/populate_utility_files.py --overwrite
     python3 tools/utility_files/populate_utility_files.py --dry-run
+
 """
 
 from __future__ import annotations
@@ -24,101 +25,22 @@ import logging
 import re
 import unicodedata
 from pathlib import Path
-from typing import Any
+from typing import Any, Final
+from datetime import datetime
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "tools" / "web_scraping" / "out"
-TEMPLATE_DIR = PROJECT_ROOT / "tools" / "utility_files" / "templates"
-CHAPTERS_DIR = PROJECT_ROOT / "chapters"
 
-DEFAULT_UTILITY_FILES: dict[str, str] = {
-    "README.md": "# {title}\n\nThis directory contains utility files for {title}.\n\nReview and utility notes for **{title}**.\n",
-    "USAGE.md": "# Usage Instructions for {title}\n\nThis file provides usage instructions for the utilities: {title}\n\nAnd command examples here.\n",
-    "utils.py": '''#!/usr/bin/env python3
-"""utils.py
-Utility helpers for {title}.
-"""
+PROJECT_ROOT: Final[Path] = Path(__file__).resolve().parents[2]
 
-from __future__ import annotations
+DEFAULT_CHAPTERS_DIR: Final[Path] = PROJECT_ROOT / "chapters"
+DEFAULT_TEMPLATE_DIR: Final[Path] = PROJECT_ROOT / \
+    "tools" / "utility_files" / "templates"
 
-def main() -> None:
-    """Run a small utility demo."""
-    print("Utility file for {title}")
-if __name__ == "__main__":
-    main()
-''',
+DEFAULT_JSON_CANDIDATE_FILE: Final[Path] = (
+    PROJECT_ROOT / "tools" / "web_scraping" / "out" / "atbs3e_toc.json"
+)
+
+TEMPLATE_TO_OUTPUT: Final[dict[str, str]] = {
+    "README.md.template": "README.md",
+    "USAGE.md.template": "USAGE.md",
+    "utils.py.template": "utils.py",
 }
-
-def parse_args() -> argparse.Namespace:
-    """Parse command-line arguments."""
-    parser = argparse.ArgumentParser(
-        description="Populate utility files in ATBS chapter directories."
-    )
-    parser.add_argument(
-        "--base-dir",
-        type=Path,
-        default=PROJECT_ROOT,
-        help="Base directory for the project (default: current project root)",
-    )
-    parser.add_argument(
-        "--toc-file",
-        type=Path,
-        default=OUTPUT_DIR / "atbs3e_toc.json",
-        help="Path to the JSON file containing chapter information (default: tools/web_scraping/out/atbs3e_toc.json)",
-    )
-    parser.add_argument(
-        "--chapters-dir",
-        type=Path,
-        default=CHAPTERS_DIR,
-        help="Directory containing chapter subdirectories (default: chapters)",
-    )
-    parser.add_argument(
-        "--overwrite",
-        action="store_true",
-        help="Overwrite existing utility files if they already exist",
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Perform a dry run without creating or modifying any files",
-    )
-    return parser.parse_args()
-
-
-def main() -> None:
-    """Main function to populate utility files."""
-    args = parse_args()
-
-    # Load chapter information from the TOC JSON file
-    with open(args.toc_file, "r", encoding="utf-8") as f:
-        toc_data = json.load(f)
-
-    for chapter in toc_data:
-        chapter_num = chapter.get("chapter_num")
-        title = chapter.get("title", f"Chapter {chapter_num}")
-        chapter_dir_name = f"chapter{chapter_num:02d}"
-        chapter_dir = args.chapters_dir / chapter_dir_name
-
-        if not chapter_dir.exists():
-            logging.warning(f"Chapter directory does not exist: {chapter_dir}")
-            continue
-
-        context = {"title": title}
-
-        for filename, template_content in DEFAULT_UTILITY_FILES.items():
-            output_path = chapter_dir / filename
-            content = template_content.format(**context)
-
-            if output_path.exists() and not args.overwrite:
-                logging.info(f"File already exists and will not be overwritten: {output_path}")
-                continue
-
-            if args.dry_run:
-                logging.info(f"Dry run: would create/overwrite file at {output_path} with content:\n{content}\n")
-            else:
-                output_path.write_text(content, encoding="utf-8")
-                logging.info(f"Created/overwritten file at {output_path}")
-
-
-if __name__ == "__main__":
-    main()
