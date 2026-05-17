@@ -35,3 +35,14 @@ python3 todo_list.py --todo-dir chapters/chapter_11
 3. Create Chapter Directories
 
 These tasks are made in tools/ directory.
+
+
+## Web Scraping
+
+The previous folder was accidentally removed and could not restore from either GitHub or Trash.
+
+Do it again by reviewing [▶︎ chatgpt 2026-05-17 10:58 AM ](https://chatgpt.com/g/g-p-69d6676fff908191a75cba648ed0034f-visual-studio-code/c/69f36cb2-3478-83ea-885c-caef1b750824)
+
+1. Scrape TOC
+2. Scrape chapter topics
+   

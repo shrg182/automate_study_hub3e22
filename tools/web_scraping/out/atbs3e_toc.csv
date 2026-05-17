@@ -1,0 +1,26 @@
+chapter_num,title,url
+0,Introduction,https://automatetheboringstuff.com/3e/chapter0.html
+1,Chapter 1 - Python Basics,https://automatetheboringstuff.com/3e/chapter1.html
+2,Chapter 2 - if-else and Flow Control,https://automatetheboringstuff.com/3e/chapter2.html
+3,Chapter 3 - Loops,https://automatetheboringstuff.com/3e/chapter3.html
+4,Chapter 4 - Functions,https://automatetheboringstuff.com/3e/chapter4.html
+5,Chapter 5 - Debugging,https://automatetheboringstuff.com/3e/chapter5.html
+6,Chapter 6 - Lists,https://automatetheboringstuff.com/3e/chapter6.html
+7,Chapter 7 - Dictionaries and Structuring Data,https://automatetheboringstuff.com/3e/chapter7.html
+8,Chapter 8 - Strings and Text Editing,https://automatetheboringstuff.com/3e/chapter8.html
+9,Chapter 9 - Text Pattern Matching with Regular Expressions,https://automatetheboringstuff.com/3e/chapter9.html
+10,Chapter 10 - Reading and Writing Files,https://automatetheboringstuff.com/3e/chapter10.html
+11,Chapter 11 - Organizing Files,https://automatetheboringstuff.com/3e/chapter11.html
+12,Chapter 12 - Designing and Deploying Command Line Programs,https://automatetheboringstuff.com/3e/chapter12.html
+13,Chapter 13 - Web Scraping,https://automatetheboringstuff.com/3e/chapter13.html
+14,Chapter 14 - Excel Spreadsheets,https://automatetheboringstuff.com/3e/chapter14.html
+15,Chapter 15 - Google Sheets,https://automatetheboringstuff.com/3e/chapter15.html
+16,Chapter 16 - SQLite Databases,https://automatetheboringstuff.com/3e/chapter16.html
+17,Chapter 17 - PDF and Word Documents,https://automatetheboringstuff.com/3e/chapter17.html
+18,"Chapter 18 - CSV, JSON, and XML Files",https://automatetheboringstuff.com/3e/chapter18.html
+19,"Chapter 19 - Keeping Time, Scheduling Tasks, and Launching Programs",https://automatetheboringstuff.com/3e/chapter19.html
+20,"Chapter 20 - Sending Email, Texts, and Push Notifications",https://automatetheboringstuff.com/3e/chapter20.html
+21,Chapter 21 - Making Graphs and Manipulating Images,https://automatetheboringstuff.com/3e/chapter21.html
+22,Chapter 22 - Recognizing Text in Images,https://automatetheboringstuff.com/3e/chapter22.html
+23,Chapter 23 - Controlling the Keyboard and Mouse,https://automatetheboringstuff.com/3e/chapter23.html
+24,Chapter 24 - Text-to-Speech and Speech Recognition Engines,https://automatetheboringstuff.com/3e/chapter24.html

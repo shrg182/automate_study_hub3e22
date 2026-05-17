@@ -1,0 +1,4545 @@
+[
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Who Is This Book For?",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1378"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Coding Conventions Used in This Book",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1379"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "What Is Programming?",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1381"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "What Is Python?",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1383"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Common Myths About Programming",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1385"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 3,
+    "title": "Programmers Don’t Need to Know Much Math",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1386"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 3,
+    "title": "You Are Not Too Old to Learn Programming",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1388"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 3,
+    "title": "AI Won’t Replace Programmers",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1390"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "About This Book",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1391"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Downloading and Installing Python",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1393"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Downloading and Installing Mu",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1394"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Starting Mu",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1395"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Starting IDLE",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1396"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "The Interactive Shell",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1397"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "How to Find Help",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1398"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Asking Smart Programming Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1400"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "New to the Third Edition",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1402"
+  },
+  {
+    "chapter_num": 0,
+    "chapter_title": "INTRODUCTION",
+    "heading_level": 2,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter0.html#calibre_link-1404"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 2,
+    "title": "1 PYTHON BASICS",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1406"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "Entering Expressions into the Interactive Shell",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1407"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "The Integer, Floating-Point, and String Data Types",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1409"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "String Concatenation and Replication",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1410"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "Storing Values in Variables",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1411"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "Assignment Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1412"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "Variable Names",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1413"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "Your First Program",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1415"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "Dissecting the Program",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1416"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "Comments",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1417"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "The print() Function",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1418"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "The input() Function",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1419"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "The Greeting Message",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1421"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "The len() Function",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1422"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "The str(), int(), and float() Functions",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1423"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "The type() Function",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1425"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 4,
+    "title": "The round() and abs() Functions",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1426"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "How Computers Store Data with Binary Numbers",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1427"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1428"
+  },
+  {
+    "chapter_num": 1,
+    "chapter_title": "1 PYTHON BASICS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter1.html#calibre_link-1430"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 2,
+    "title": "2 IF-ELSE AND FLOW CONTROL",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1433"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Boolean Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1434"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Comparison Operators",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1435"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Boolean Operators",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1437"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Mixing Boolean and Comparison Operators",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1438"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Components of Flow Control",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1439"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 4,
+    "title": "Conditions",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1440"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 4,
+    "title": "Blocks of Code",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1441"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 4,
+    "title": "Program Execution",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1442"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Flow Control Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1443"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 4,
+    "title": "if",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1444"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 4,
+    "title": "else",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1445"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 4,
+    "title": "elif",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1446"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "A Short Program: Opposite Day",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1450"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "A Short Program: Dishonest Capacity Calculator",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1451"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1452"
+  },
+  {
+    "chapter_num": 2,
+    "chapter_title": "2 IF-ELSE AND FLOW CONTROL",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter2.html#calibre_link-1453"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 2,
+    "title": "3 LOOPS",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1455"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "while Loop Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1456"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 4,
+    "title": "An Annoying while Loop",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1459"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 4,
+    "title": "break Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1461"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 4,
+    "title": "continue Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1462"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "for Loops and the range() Function",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1466"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 4,
+    "title": "An Equivalent while Loop",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1468"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 4,
+    "title": "Arguments to range()",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1469"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "Importing Modules",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1470"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "Ending a Program Early with sys.exit()",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1472"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "A Short Program: Guess the Number",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1473"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "A Short Program: Rock, Paper, Scissors",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1474"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1477"
+  },
+  {
+    "chapter_num": 3,
+    "chapter_title": "3 LOOPS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter3.html#calibre_link-1478"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 2,
+    "title": "4 FUNCTIONS",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1480"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Creating Functions",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1481"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Arguments and Parameters",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1482"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Return Values and return Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1483"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "The None Value",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1484"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Named Parameters",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1485"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "The Call Stack",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1486"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Local and Global Scopes",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1488"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 4,
+    "title": "Scope Rules",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1489"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 5,
+    "title": "Code That Is in the Global Scope Can’t Use Local Variables",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1491"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 5,
+    "title": "Code That Is in a Local Scope Can’t Use Variables in Other Local Scopes",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1492"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 5,
+    "title": "Code That Is in a Local Scope Can Use Global Variables",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1493"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 5,
+    "title": "Local and Global Variables Can Have the Same Name",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1494"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 4,
+    "title": "The global Statement",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1495"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 4,
+    "title": "Scope Identification",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1496"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Exception Handling",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1498"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "A Short Program: Zigzag",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1500"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "A Short Program: Spike",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1501"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1502"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1504"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1505"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 4,
+    "title": "The Collatz Sequence",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1506"
+  },
+  {
+    "chapter_num": 4,
+    "chapter_title": "4 FUNCTIONS",
+    "heading_level": 4,
+    "title": "Input Validation",
+    "url": "https://automatetheboringstuff.com/3e/chapter4.html#calibre_link-1507"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 2,
+    "title": "5 DEBUGGING",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1509"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 3,
+    "title": "Raising Exceptions",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1510"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 3,
+    "title": "Assertions",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1511"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 3,
+    "title": "Logging",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1512"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 4,
+    "title": "The logging Module",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1513"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 4,
+    "title": "Logfiles",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1514"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 4,
+    "title": "A Poor Practice: Debugging with print()",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1515"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 4,
+    "title": "Logging Levels",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1516"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 4,
+    "title": "Disabled Logging",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1518"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 3,
+    "title": "Mu’s Debugger",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1519"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 4,
+    "title": "Debugging an Addition Program",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1520"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 4,
+    "title": "Setting Breakpoints",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1522"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1524"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1525"
+  },
+  {
+    "chapter_num": 5,
+    "chapter_title": "5 DEBUGGING",
+    "heading_level": 3,
+    "title": "Practice Program: Debugging Coin Toss",
+    "url": "https://automatetheboringstuff.com/3e/chapter5.html#calibre_link-1526"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 2,
+    "title": "6 LISTS",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1528"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "The List Data Type",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1529"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Indexes",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1530"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Negative Indexes",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1531"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Slices",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1532"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "The len() Function",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1533"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Value Updates",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1534"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Concatenation and Replication",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1535"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "del Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1536"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Working with Lists",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1537"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "for Loops and Lists",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1538"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "The in and not in Operators",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1539"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "The Multiple Assignment Trick",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1540"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "List Item Enumeration",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1541"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Random Selection and Ordering",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1542"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Augmented Assignment Operators",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1543"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Methods",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1544"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Finding Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1545"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Adding Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1546"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Removing Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1547"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Sorting Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1548"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Reversing Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1549"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Short-Circuiting Boolean Operators",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1551"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "A Short Program: Magic 8 Ball with a List",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1552"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Sequence Data Types",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1553"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Mutable and Immutable Data Types",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1554"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "The Tuple Data Type",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1555"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "List and Tuple Type Conversion",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1556"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "References",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1557"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Arguments",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1558"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "The copy() and deepcopy() Functions",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1559"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "A Short Program: The Matrix Screensaver",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1560"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1561"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1562"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1563"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Comma Code",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1564"
+  },
+  {
+    "chapter_num": 6,
+    "chapter_title": "6 LISTS",
+    "heading_level": 4,
+    "title": "Coin Flip Streaks",
+    "url": "https://automatetheboringstuff.com/3e/chapter6.html#calibre_link-1565"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 2,
+    "title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1566"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 3,
+    "title": "The Dictionary Data Type",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1567"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Comparing Dictionaries and Lists",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1568"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Returning Keys and Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1569"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Checking Whether a Key Exists",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1570"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Setting Default Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1571"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 3,
+    "title": "Model Real-World Things Using Data Structures",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1572"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Step 1: Set Up the Program",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1574"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Step 2: Create a Chessboard Template",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1575"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Step 3: Print the Current Chessboard",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1576"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Step 4: Manipulate the Chessboard",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1579"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 3,
+    "title": "Nested Dictionaries and Lists",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1581"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1583"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1584"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1585"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Chess Dictionary Validator",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1586"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "Fantasy Game Inventory",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1587"
+  },
+  {
+    "chapter_num": 7,
+    "chapter_title": "7 DICTIONARIES AND STRUCTURING DATA",
+    "heading_level": 4,
+    "title": "List-to-Dictionary Loot Conversion",
+    "url": "https://automatetheboringstuff.com/3e/chapter7.html#calibre_link-1588"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 2,
+    "title": "8 STRINGS AND TEXT EDITING",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1590"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "Working with Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1591"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "String Literals",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1592"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 5,
+    "title": "Double Quotes",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1593"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 5,
+    "title": "Escape Sequences",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1594"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 5,
+    "title": "Raw Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1595"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 5,
+    "title": "Multiline Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1596"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 5,
+    "title": "Multiline Comments",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1597"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Indexes and Slices",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1598"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "The in and not in Operators",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1599"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "F-Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1600"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "F-String Alternatives: %s and format()",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1601"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "Useful String Methods",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1602"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Changing the Case",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1603"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Checking String Characteristics",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1604"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Checking the Start or End of a String",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1605"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Joining and Splitting Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1606"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Justifying and Centering Text",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1607"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Removing Whitespace",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1608"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "Numeric Code Points of Characters",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1609"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "Copying and Pasting Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1610"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Step 1: Copy and Paste from the Clipboard",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1611"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Step 2: Separate the Lines of Text",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1612"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 4,
+    "title": "Step 3: Join the Modified Lines",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1613"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "A Short Program: Pig Latin",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1614"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1618"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1619"
+  },
+  {
+    "chapter_num": 8,
+    "chapter_title": "8 STRINGS AND TEXT EDITING",
+    "heading_level": 3,
+    "title": "Practice Program: Table Printer",
+    "url": "https://automatetheboringstuff.com/3e/chapter8.html#calibre_link-1620"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 2,
+    "title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1624"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Finding Text Patterns Without Regular Expressions",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1625"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Finding Text Patterns with Regular Expressions",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1627"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "The Syntax of Regular Expressions",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1628"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Grouping with Parentheses",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1629"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Using Escape Characters",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1630"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching Characters from Alternate Groups",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1631"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Returning All Matches",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1632"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Qualifier Syntax: What Characters to Match",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1633"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Using Character Classes and Negative Character Classes",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1634"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Using Shorthand Character Classes",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1635"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching Everything with the Dot Character",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1636"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Being Careful What You Match For",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1637"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Quantifier Syntax: How Many Qualifiers to Match",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1638"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching an Optional Pattern",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1639"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching Zero or More Qualifiers",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1640"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching One or More Qualifiers",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1641"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching a Specific Number of Qualifiers",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1642"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Greedy and Non-greedy Matching",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1643"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching Everything",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1644"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Matching Newline Characters",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1645"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Matching at the Start and End of a String",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1646"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Case-Insensitive Matching",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1649"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Substituting Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1650"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Managing Complex Regexes with Verbose Mode",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1651"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Combining re.IGNORECASE, re.DOTALL, and re.VERBOSE",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1652"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Step 1: Create a Regex for Phone Numbers",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1654"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Step 2: Create a Regex for Email Addresses",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1655"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Step 3: Find All Matches in the Clipboard Text",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1656"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Step 4: Join the Matches into a String",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1658"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1659"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Humre: A Module for Human-Readable Regexes",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1660"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1661"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1663"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1664"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Strong Password Detection",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1665"
+  },
+  {
+    "chapter_num": 9,
+    "chapter_title": "9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS",
+    "heading_level": 4,
+    "title": "Regex Version of the strip() Method",
+    "url": "https://automatetheboringstuff.com/3e/chapter9.html#calibre_link-1666"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 2,
+    "title": "10 READING AND WRITING FILES",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1667"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 3,
+    "title": "Files and Filepaths",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1668"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Standardizing Path Separators",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1669"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Joining Paths",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1670"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Accessing the Current Working Directory",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1671"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Accessing the Home Directory",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1672"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Specifying Absolute vs. Relative Paths",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1673"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Creating New Folders",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1674"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Handling Absolute and Relative Paths",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1675"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Getting the Parts of a Filepath",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1676"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Finding File Sizes and Timestamps",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1677"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Finding Files Using Glob Patterns",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1678"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Checking Path Validity",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1679"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 3,
+    "title": "The File Reading and Writing Process",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1680"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Opening Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1681"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Reading the Contents of Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1682"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Writing to Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1683"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Using with Statements",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1684"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 3,
+    "title": "Saving Variables with the shelve Module",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1685"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Step 1: Store the Quiz Data in a Dictionary",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1686"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Step 2: Create the Quiz File",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1687"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Step 3: Create the Answer Options",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1689"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Step 4: Write the Content to the Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1691"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1693"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1694"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1695"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Mad Libs",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1696"
+  },
+  {
+    "chapter_num": 10,
+    "chapter_title": "10 READING AND WRITING FILES",
+    "heading_level": 4,
+    "title": "Regex Search",
+    "url": "https://automatetheboringstuff.com/3e/chapter10.html#calibre_link-1697"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 2,
+    "title": "11 ORGANIZING FILES",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1699"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 3,
+    "title": "The shutil Module",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1700"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Copying Files and Folders",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1701"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Moving and Renaming Files and Folders",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1702"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Permanently Deleting Files and Folders",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1703"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Deleting to the Recycle Bin",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1704"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 3,
+    "title": "Walking a Directory Tree",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1705"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 3,
+    "title": "Compressing Files with the zipfile Module",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1706"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Creating and Adding to ZIP Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1707"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Reading ZIP Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1708"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Extracting from ZIP Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1709"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Step 1: Figure Out the ZIP File’s Name",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1710"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Step 2: Create the New ZIP File",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1712"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Step 3: Walk the Directory Tree",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1714"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Ideas for Other Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1715"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1716"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1717"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1718"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Selectively Copying",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1719"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Deleting Unneeded Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1720"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Renumbering Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1721"
+  },
+  {
+    "chapter_num": 11,
+    "chapter_title": "11 ORGANIZING FILES",
+    "heading_level": 4,
+    "title": "Converting Dates from American- to European-Style",
+    "url": "https://automatetheboringstuff.com/3e/chapter11.html#calibre_link-1722"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 2,
+    "title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html#calibre_link-1724"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "A Program by Any Other Name",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Using the Terminal",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "The cd, pwd, dir, and ls Commands",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "The PATH Environment Variable",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "PATH Editing",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 5,
+    "title": "Windows",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 5,
+    "title": "macOS and Linux",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "The which and where Commands",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Virtual Environments",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Installing Python Packages with pip",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Self-Aware Python Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Text-Based Program Design",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Short Command Names",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Command Line Arguments",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Clipboard I/O",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Colorful Text with Bext",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Terminal Clearing",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Sound and Text Notification",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "A Short Program: Snowstorm",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Pop-up Message Boxes with PyMsgBox",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Deploying Python Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Windows",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "macOS",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Ubuntu Linux",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "A Short Program: Copying the Current Working Directory",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Windows",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "macOS",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Ubuntu Linux",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "A Short Program: Clipboard Recorder",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Windows",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "macOS",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 4,
+    "title": "Ubuntu Linux",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Compiling Python Programs with PyInstaller",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 12,
+    "chapter_title": "12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS",
+    "heading_level": 3,
+    "title": "Practice Program: Make Your Programs Deployable",
+    "url": "https://automatetheboringstuff.com/3e/chapter12.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 2,
+    "title": "13 WEB SCRAPING",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1765"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "HTTP and HTTPS",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1766"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 1: Figure Out the URL",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1767"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 2: Handle the Command Line Arguments",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1768"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 3: Retrieve the Clipboard Content",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1769"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1770"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Downloading Files from the Web with the requests Module",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1771"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Downloading Web Pages",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1772"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Checking for Errors",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1773"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Saving Downloaded Files to the Hard Drive",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1774"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Accessing a Weather API",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1776"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Requesting a Latitude and Longitude",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1777"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Fetching the Current Weather",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1779"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Getting a Weather Forecast",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1780"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Exploring APIs",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1781"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Understanding HTML",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1782"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Exploring the Format",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1783"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Viewing a Web Page’s Source",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1784"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Opening Your Browser’s Developer Tools",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1785"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Finding HTML Elements",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1787"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Parsing HTML with Beautiful Soup",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1789"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Creating a Beautiful Soup Object",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1790"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Finding an Element",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1791"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Getting Data from an Element’s Attributes",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1792"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 1: Get the Search Page",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1793"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 2: Find All Results",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1795"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 3: Open Web Browsers for Each Result",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1796"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 1: Design the Program",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1798"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 2: Download the Web Page",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1800"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 3: Find and Download the Comic Image",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1802"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Step 4: Save the Image and Find the Previous Comic",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1804"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Controlling the Browser with Selenium",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1807"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Starting a Selenium-Controlled Browser",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1808"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Clicking Browser Buttons",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1809"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Finding Elements on the Page",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1810"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Clicking Elements on the Page",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1811"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Filling Out and Submitting Forms",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1812"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Sending Special Keys",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1813"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Controlling the Browser with Playwright",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1814"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Starting a Playwright-Controlled Browser",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1815"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Clicking Browser Buttons",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Finding Elements on the Page",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Clicking Elements on the Page",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Filling Out and Submitting Forms",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Sending Special Keys",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1822"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1823"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1824"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Image Site Downloader",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1825"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "2048",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1826"
+  },
+  {
+    "chapter_num": 13,
+    "chapter_title": "13 WEB SCRAPING",
+    "heading_level": 4,
+    "title": "Link Verification",
+    "url": "https://automatetheboringstuff.com/3e/chapter13.html#calibre_link-1827"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 2,
+    "title": "14 EXCEL SPREADSHEETS",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1828"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Reading Excel Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1829"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Opening a Workbook",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1830"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Getting Sheets from the Workbook",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1831"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Getting Cells from the Sheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1832"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Converting Between Column Letters and Numbers",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1833"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Getting Rows and Columns",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1834"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Step 1: Read the Spreadsheet Data",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1837"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Step 2: Populate the Data Structure",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1839"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Step 3: Write the Results to a File",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1840"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1841"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Writing Excel Documents",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1842"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Creating and Saving Excel Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1843"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Creating and Removing Sheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1844"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Writing Values to Cells",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1845"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Step 1: Set Up a Data Structure with the Updated Information",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1846"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Step 2: Check All Rows and Update Incorrect Prices",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1847"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Setting the Font Style of Cells",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1849"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Formulas",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1850"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Adjusting Rows and Columns",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1851"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Setting Row Height and Column Width",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1852"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Merging and Unmerging Cells",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1853"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Freezing Panes",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1854"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Charts",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1855"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1856"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1857"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1858"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Multiplication Table Maker",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1859"
+  },
+  {
+    "chapter_num": 14,
+    "chapter_title": "14 EXCEL SPREADSHEETS",
+    "heading_level": 4,
+    "title": "Blank Row Inserter",
+    "url": "https://automatetheboringstuff.com/3e/chapter14.html#calibre_link-1860"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 2,
+    "title": "15 GOOGLE SHEETS",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1861"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Installing and Setting Up EZSheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1862"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Creating a New Google Cloud Project",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1863"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Enabling the Sheets and Drive APIs",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1864"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Configuring the OAuth Consent Screen",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1865"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Creating Credentials",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1866"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Logging In with the Credentials File",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1867"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Revoking the Credentials File",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1868"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Spreadsheet Objects",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1869"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Creating, Uploading, and Listing Spreadsheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1870"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Accessing Spreadsheet Attributes",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1871"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Downloading and Uploading Spreadsheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1872"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Deleting Spreadsheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1873"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Sheet Objects",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1874"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Reading and Writing Data",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1875"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 5,
+    "title": "Addressing Columns and Rows",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1876"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 5,
+    "title": "Reading and Writing Entire Columns and Rows",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1877"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Creating, Moving, and Deleting Sheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1878"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Copying Sheets",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1879"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Google Forms",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1880"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Step 1: Audit the Fake Blockchain",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1881"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Step 2: Make Transactions",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1882"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Working with Google Sheets Quotas",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1883"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1884"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1885"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1886"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Downloading Google Forms Data",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1887"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Converting Spreadsheets to Other Formats",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1888"
+  },
+  {
+    "chapter_num": 15,
+    "chapter_title": "15 GOOGLE SHEETS",
+    "heading_level": 4,
+    "title": "Finding Mistakes in a Spreadsheet",
+    "url": "https://automatetheboringstuff.com/3e/chapter15.html#calibre_link-1889"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 2,
+    "title": "16 SQLITE DATABASES",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1890"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Spreadsheets vs. Databases",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1891"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "SQLite vs. Other SQL Databases",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1892"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Creating Databases and Tables",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1893"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Connecting to Databases",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1894"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Creating Tables",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1895"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Defining Data Types",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1896"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Listing Tables and Columns",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1897"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "CRUD Database Operations",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1898"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Inserting Data into the Database",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1899"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 5,
+    "title": "Transactions",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1900"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 5,
+    "title": "SQL Injection Attacks",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1901"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Reading Data from the Database",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1902"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 5,
+    "title": "Looping over Query Results",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1903"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 5,
+    "title": "Filtering Retrieved Data",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1905"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 5,
+    "title": "Ordering the Results",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1906"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 5,
+    "title": "Limiting the Number of Results",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1907"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 5,
+    "title": "Creating Indexes for Faster Data Reading",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1908"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Updating Data in the Database",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1909"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Deleting Data from the Database",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1910"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Rolling Back Transactions",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1911"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Backing Up Databases",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1912"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Altering and Dropping Tables",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1913"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Joining Multiple Tables with Foreign Keys",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1914"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "In-Memory Databases and Backups",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1915"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Copying Databases",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1916"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "SQLite Apps",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1917"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1918"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1919"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1920"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Cat Vaccination Checker",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1921"
+  },
+  {
+    "chapter_num": 16,
+    "chapter_title": "16 SQLITE DATABASES",
+    "heading_level": 4,
+    "title": "Meal Ingredients Database",
+    "url": "https://automatetheboringstuff.com/3e/chapter16.html#calibre_link-1922"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 2,
+    "title": "17 PDF AND WORD DOCUMENTS",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1923"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 3,
+    "title": "PDF Documents",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1924"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Extracting Text",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1925"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Post-Processing with AI",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1926"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Extracting Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1927"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Creating PDFs from Other Pages",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1928"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 5,
+    "title": "Rotating Pages",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1929"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 5,
+    "title": "Inserting Blank Pages",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1930"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 5,
+    "title": "Adding Watermarks and Overlays",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1931"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 5,
+    "title": "Encrypting and Decrypting PDFs",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1932"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Step 1: Find All PDF Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1933"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Step 2: Open Each PDF",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1934"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Step 3: Save the Results",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1935"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1936"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 3,
+    "title": "Word Documents",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1937"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Reading Word Documents",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1938"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Getting the Full Text from a .docx File",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1939"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Styling Paragraph and Run Objects",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1940"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Applying Run Attributes",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1941"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Writing Word Documents",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1942"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Adding Headings",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1943"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Adding Line and Page Breaks",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1944"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Adding Pictures",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1945"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1946"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1947"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1948"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "PDF Paranoia",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1949"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "Custom Invitations",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1950"
+  },
+  {
+    "chapter_num": 17,
+    "chapter_title": "17 PDF AND WORD DOCUMENTS",
+    "heading_level": 4,
+    "title": "PDF Password Breaker",
+    "url": "https://automatetheboringstuff.com/3e/chapter17.html#calibre_link-1951"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 2,
+    "title": "18 CSV, JSON, AND XML FILES",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1952"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 3,
+    "title": "The CSV Format",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1953"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Reading CSV Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1954"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Accessing Data in a for Loop",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1955"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Writing CSV Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1956"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Using Tabs Instead of Commas",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1957"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Handling Header Rows",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1958"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Step 1: Loop Through Each File",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1960"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Step 2: Read the File",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1961"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Step 3: Write the New CSV File",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1963"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1964"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 3,
+    "title": "Versatile Plaintext Formats",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1965"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "JSON",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1966"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 5,
+    "title": "Reading JSON Data",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1967"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 5,
+    "title": "Writing JSON Data",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1968"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 4,
+    "title": "XML",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1969"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 5,
+    "title": "Reading XML Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1970"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 5,
+    "title": "Writing XML Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1971"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1972"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1973"
+  },
+  {
+    "chapter_num": 18,
+    "chapter_title": "18 CSV, JSON, AND XML FILES",
+    "heading_level": 3,
+    "title": "Practice Program: Excel-to-CSV Converter",
+    "url": "https://automatetheboringstuff.com/3e/chapter18.html#calibre_link-1974"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 2,
+    "title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1977"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 3,
+    "title": "The time Module",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1978"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Returning the Epoch Timestamp",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1979"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Pausing Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1980"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Step 1: Set Up the Program to Track Times",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1981"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Step 2: Track and Print Lap Times",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1982"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1983"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 3,
+    "title": "The datetime Module",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1984"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Representing Duration",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1985"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Pausing Until a Specific Date",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1986"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Converting datetime Objects into Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1987"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Converting Strings into datetime Objects",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1988"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 3,
+    "title": "Launching Other Programs from Python",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1990"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Passing Command Line Arguments to Processes",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1991"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Receiving Output Text from Launched Commands",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1992"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Running Task Scheduler, launchd, and cron",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1993"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Opening Files with Default Applications",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1994"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Step 1: Count Down",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1995"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Step 2: Play the Sound File",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1997"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-1999"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-2000"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-2001"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Prettified Stopwatch",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-2002"
+  },
+  {
+    "chapter_num": 19,
+    "chapter_title": "19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS",
+    "heading_level": 4,
+    "title": "Friday the 13th Finder",
+    "url": "https://automatetheboringstuff.com/3e/chapter19.html#calibre_link-2003"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 2,
+    "title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2005"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 3,
+    "title": "The Gmail API",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2006"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Enabling the API",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2007"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Sending Mail",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2008"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Reading Mail",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2009"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Searching for Mail",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2010"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Downloading Attachments",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2011"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 3,
+    "title": "SMS Email Gateways",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2012"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 3,
+    "title": "Push Notifications",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2013"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Sending Notifications",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2014"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Transmitting Metadata",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2015"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Receiving Notifications",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2016"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2018"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2019"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2020"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Umbrella Reminder",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2021"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Auto Unsubscriber",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2022"
+  },
+  {
+    "chapter_num": 20,
+    "chapter_title": "20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS",
+    "heading_level": 4,
+    "title": "Email-Based Computer Control",
+    "url": "https://automatetheboringstuff.com/3e/chapter20.html#calibre_link-2023"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 2,
+    "title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2025"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Computer Image Fundamentals",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2026"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Colors and RGBA Values",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2027"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Coordinates and Box Tuples",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2028"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Manipulating Images with Pillow",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2029"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Working with the Image Data Type",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2031"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Cropping Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2032"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Pasting Images onto Other Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2033"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Resizing Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2034"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Rotating and Flipping Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2035"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Changing Individual Pixels",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2036"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Step 1: Open the Logo Image",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2038"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Step 2: Loop Over All Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2040"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Step 3: Resize the Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2041"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Step 4: Add the Logo and Save the Changes",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2043"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Ideas for Similar Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2045"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Drawing on Images",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2046"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Shapes",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2047"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 5,
+    "title": "Points",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2048"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 5,
+    "title": "Lines",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2049"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 5,
+    "title": "Rectangles",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2050"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 5,
+    "title": "Ellipses",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2051"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 5,
+    "title": "Polygons",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2052"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 5,
+    "title": "A Drawing Example",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2053"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Text",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2054"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Copying and Pasting Images to the Clipboard",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2055"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Creating Graphs with Matplotlib",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2056"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Line Graphs and Scatter Plots",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2057"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Bar Graphs and Pie Charts",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2058"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Additional Components",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2059"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2061"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2063"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2064"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Tile Maker",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2065"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Identifying Photo Folders on the Hard Drive",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2066"
+  },
+  {
+    "chapter_num": 21,
+    "chapter_title": "21 MAKING GRAPHS AND MANIPULATING IMAGES",
+    "heading_level": 4,
+    "title": "Creating Custom Seating Cards",
+    "url": "https://automatetheboringstuff.com/3e/chapter21.html#calibre_link-2067"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 2,
+    "title": "22 RECOGNIZING TEXT IN IMAGES",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2068"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 3,
+    "title": "Installing Tesseract and PyTesseract",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2069"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "Windows",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2070"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "macOS",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2071"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "Linux",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2072"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "PyTesseract",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2073"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 3,
+    "title": "OCR Fundamentals",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2074"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "Preprocessing an Image",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2075"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "Fixing Mistakes Using Large Language Models",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2076"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 3,
+    "title": "Recognizing Text in Non-English Languages",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2077"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 3,
+    "title": "The NAPS2 Scanner Application",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2078"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "Installing and Setting Up NAPS2",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2079"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "Running NAPS2 from Python",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2080"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 4,
+    "title": "Specifying Input",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2082"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2083"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2084"
+  },
+  {
+    "chapter_num": 22,
+    "chapter_title": "22 RECOGNIZING TEXT IN IMAGES",
+    "heading_level": 3,
+    "title": "Practice Program: Browser Text Scraper",
+    "url": "https://automatetheboringstuff.com/3e/chapter22.html#calibre_link-2085"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 2,
+    "title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2089"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Setting Up Accessibility Apps on macOS",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2090"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Staying on Track",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2091"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Pauses and Fail-Safes",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2092"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Logouts",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2093"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Controlling Mouse Movement",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2094"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Moving the Mouse",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2095"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Getting the Current Position",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2096"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Controlling Mouse Interaction",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2097"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Clicking",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2098"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Dragging",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2099"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Scrolling",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2100"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Planning Your Mouse Movements",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2101"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Taking Screenshots",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2102"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Image Recognition",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2103"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Getting Window Information",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2104"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Obtaining the Active Window",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2105"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Finding Windows with Other Functions",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2106"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Manipulating Windows",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2107"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Controlling the Keyboard",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2109"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Sending Key Press Strings",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2110"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Specifying Key Names",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2111"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Pressing and Releasing the Keyboard",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2112"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Running Hotkey Combinations",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2113"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Setting Up GUI Automation Scripts",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2114"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Displaying Message Boxes",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2116"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2117"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2119"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2120"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Looking Busy",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2121"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Reading Text Fields with the Clipboard",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2122"
+  },
+  {
+    "chapter_num": 23,
+    "chapter_title": "23 CONTROLLING THE KEYBOARD AND MOUSE",
+    "heading_level": 4,
+    "title": "Writing a Game-Playing Bot",
+    "url": "https://automatetheboringstuff.com/3e/chapter23.html#calibre_link-2123"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 2,
+    "title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2125"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 3,
+    "title": "Text-to-Speech Engine",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2126"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 4,
+    "title": "Generating Speech",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2127"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 4,
+    "title": "Saving Speech Audio to WAV Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2128"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 3,
+    "title": "Speech Recognition",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2129"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 3,
+    "title": "Creating Subtitle Files",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2130"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 3,
+    "title": "Downloading Videos from Websites",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2131"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 3,
+    "title": "Summary",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2132"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 3,
+    "title": "Practice Questions",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2133"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 3,
+    "title": "Practice Programs",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2134"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 4,
+    "title": "Adding Voice to Guess the Number",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2135"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 4,
+    "title": "Singing “99 Bottles of Beer”",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2136"
+  },
+  {
+    "chapter_num": 24,
+    "chapter_title": "24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES",
+    "heading_level": 4,
+    "title": "YouTube Transcriber",
+    "url": "https://automatetheboringstuff.com/3e/chapter24.html#calibre_link-2137"
+  }
+]
