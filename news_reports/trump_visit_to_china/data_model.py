@@ -44,16 +44,24 @@ def build_sample_report_content() -> ReportContent:
         ReportContent instance.
     """
     vocabulary = [
-        VocabularyItem("state visit", "An official visit by a head of state to another country."),
-        VocabularyItem("bilateral relations", "Relations between two countries."),
+        VocabularyItem(
+            "state visit", "An official visit by a head of state to another country."),
+        VocabularyItem("bilateral relations",
+                       "Relations between two countries."),
         VocabularyItem("trade truce", "A temporary easing of trade conflict."),
         VocabularyItem("tariffs", "Taxes placed on imported goods."),
-        VocabularyItem("rare earths", "Minerals used in electronics, defense systems, and clean technology."),
-        VocabularyItem("strategic rivalry", "Competition for influence and power between states."),
-        VocabularyItem("Taiwan issue", "The diplomatic and security dispute over Taiwan's status and future."),
-        VocabularyItem("maritime security", "Security related to oceans, sea routes, and naval activity."),
-        VocabularyItem("business delegation", "A group of business leaders traveling for official meetings."),
-        VocabularyItem("diplomatic leverage", "Influence used to gain advantage in negotiations."),
+        VocabularyItem(
+            "rare earths", "Minerals used in electronics, defense systems, and clean technology."),
+        VocabularyItem("strategic rivalry",
+                       "Competition for influence and power between states."),
+        VocabularyItem(
+            "Taiwan issue", "The diplomatic and security dispute over Taiwan's status and future."),
+        VocabularyItem("maritime security",
+                       "Security related to oceans, sea routes, and naval activity."),
+        VocabularyItem("business delegation",
+                       "A group of business leaders traveling for official meetings."),
+        VocabularyItem("diplomatic leverage",
+                       "Influence used to gain advantage in negotiations."),
     ]
 
     return ReportContent(
