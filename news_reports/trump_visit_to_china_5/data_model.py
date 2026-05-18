@@ -2,20 +2,13 @@
 """
 data_model
 
-Placeholder script.
+Data structures and current contents for the Trump China Visit Report
 
 TODO:
-    - Add description.
-    - Add functionality.
+    - Add dataclasses, i.e. Vocabulary and ReportContent.
+    - Add data model parts.
     - Add main program logic.
 """
 
 from __future__ import annotations
 
-
-def main() -> None:
-    """Run the script."""
-    print("This is a placeholder script for data_model.")
-
-if __name__ == "__main__":
-    main()
