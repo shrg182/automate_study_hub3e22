@@ -44,3 +44,128 @@ TEMPLATE_TO_OUTPUT: Final[dict[str, str]] = {
     "USAGE.md.template": "USAGE.md",
     "utils.py.template": "utils.py",
 }
+
+
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Populate utility files in ATBS chapter directories."
+    )
+
+    parser.add_argument(
+        "--json-file",
+        type=Path,
+        default=DEFAULT_JSON_CANDIDATE_FILE,
+        help="JSON file with chapter information (default: tools/web_scraping/out/atbs3e_toc.json)",
+    )
+
+    parser.add_argument(
+        "--chapters-dir",
+        type=Path,
+        default=DEFAULT_CHAPTERS_DIR,
+        help="Directory containing chapter subdirectories (default: chapters)",
+    )
+
+    parser.add_argument(
+        "--template-dir",
+        type=Path,
+        default=DEFAULT_TEMPLATE_DIR,
+        help="Directory containing template files (default: tools/utility_files/templates)",
+    )
+
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Overwrite existing utility files if they already exist",
+    )
+
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Perform a dry run without writing any files, just log the intended actions",
+    )
+
+    return parser.parse_args()
+
+
+def find_default_json_file() -> Path:
+    """Find a default JSON file candidate in the expected output directory."""
+    if DEFAULT_JSON_CANDIDATE_FILE.is_file():
+        return DEFAULT_JSON_CANDIDATE_FILE
+    return None
+
+    candidates = list(
+        (PROJECT_ROOT / "tools" / "web_scraping" / "out").glob("*.json"))
+    raise FileNotFoundError(
+        f"No JSON file found in expected location. Checked: {DEFAULT_JSON_CANDIDATE_FILE} and {candidates}"
+    )
+
+
+def load_json(json_file: Path) -> list[dict[str, Any]]:
+    """Load chapter information from a JSON file."""
+    with json_file.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if not isinstance(data, list):
+        raise ValueError(
+            f"Expected JSON data to be a list of chapter items, got {type(data)}")
+
+    return data
+
+
+def extract_chapter_number(chapter_title: str, url: str) -> int | None:
+    """Extract chapter number from title or URL."""
+    title_match = re.search(r"Chapter\s+(\d+)", chapter_title, re.IGNORECASE)
+    if title_match:
+        return int(title_match.group(1))
+
+    url_match = re.search(r"chapter(\d+)\.html", url, re.IGNORECASE)
+    if url_match:
+        return int(url_match.group(1))
+
+    return None
+
+
+def clean_chapter_title(title: str) -> str:
+    """Clean chapter title by removing 'Chapter X:' prefix."""
+    cleaned = re.sub(
+        r"^\s*chapter\s+\d+\s*:\s*", "", title, flags=re.IGNORECASE
+    )
+
+    return cleaned.strip()
+
+
+def to_snake_case(text: str) -> str:
+    """Convert text to snake_case."""
+    normalized = unicodedata.normalize("NFKD", text)
+    ascii_only = "".join(
+        ch for ch in normalized if not unicodedata.combining(ch)
+    )
+    ascii_only = ascii_only.replace("&", " and ").replace("-", " ")
+    ascii_only = re.sub(r"[^A-Za-z0-9 _]+", " ", ascii_only)
+    snake = re.sub(r"\s+", "_", ascii_only).strip("_").lower()
+    return re.sub(r"_+", "_", snake)
+
+
+def make_chapter_directory_name(chapter_title: str, chapter_number: int | None) -> str:
+    """Create a directory name for the chapter."""
+    cleaned_title = clean_chapter_title(chapter_title)
+    snake_title = to_snake_case(cleaned_title)
+
+    if chapter_number is not None:
+        return f"chapter_{chapter_number:02d}_{snake_title}"
+    else:
+        return f"chapter_{snake_title}"
+
+
+def load_templates(template_dir: Path) -> dict[str, str]:
+    """Load template files from the specified directory."""
+    templates = {}
+    for template_filename in TEMPLATE_TO_OUTPUT.keys():
+        template_path = template_dir / template_filename
+        if not template_path.is_file():
+            raise FileNotFoundError(
+                f"Template file not found: {template_path}")
+        templates[template_filename] = template_path.read_text(
+            encoding="utf-8")
+    return templates

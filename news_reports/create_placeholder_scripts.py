@@ -9,9 +9,9 @@ from __future__ import annotations
 
 from pathlib import Path
 
-OUTPUT_DIR = Path("news_reports") / "trump_visit_to_china_3"
+OUTPUT_DIR = Path("news_reports") / "trump_visit_to_china_4"
 
-SCRIPT_NAMES =  [
+SCRIPT_NAMES = [
     "data_model",
     "styles",
     "generator",
@@ -62,7 +62,7 @@ def main() -> None:
     """Main function to create placeholder scripts."""
     for script_name in SCRIPT_NAMES:
         create_placeholder_scripts(OUTPUT_DIR, script_name)
-        
+
 
 if __name__ == "__main__":
     main()
