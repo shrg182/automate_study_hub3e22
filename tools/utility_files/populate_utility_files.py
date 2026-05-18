@@ -160,12 +160,7 @@ def make_chapter_directory_name(chapter_title: str, chapter_number: int | None) 
 
 def load_templates(template_dir: Path) -> dict[str, str]:
     """Load template files from the specified directory."""
-    templates = {}
-    for template_filename in TEMPLATE_TO_OUTPUT.keys():
-        template_path = template_dir / template_filename
-        if not template_path.is_file():
-            raise FileNotFoundError(
-                f"Template file not found: {template_path}")
-        templates[template_filename] = template_path.read_text(
-            encoding="utf-8")
-    return templates
+    templates: dict[str, str] = {}
+
+    for template_file in TEMPLATE_TO_OUTPUT:
+        
