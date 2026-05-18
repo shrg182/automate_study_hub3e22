@@ -162,5 +162,123 @@ def load_templates(template_dir: Path) -> dict[str, str]:
     """Load template files from the specified directory."""
     templates: dict[str, str] = {}
 
-    for template_file in TEMPLATE_TO_OUTPUT:
-        
+    for template_name in TEMPLATE_TO_OUTPUT:
+        template_path = template_dir / template_name
+
+        if not template_path.exists():
+            raise FileNotFoundError(
+                f"Template file not found: {template_path}")
+
+        templates[template_name] = template_path.read_text(encoding="utf-8")
+
+    return templates
+
+
+def render_template(template: str, values: dict[str, str]) -> str:
+    """Render a template by replacing placeholders with actual values."""
+
+    class SafeDict(dict):
+        def __missing__(self, key: str) -> str:
+            return "{" + key + "}"
+
+    return template.format_map(SafeDict(values))
+
+
+def build_template_values(
+    chapter_number: int,
+    chapter_title: str,
+    chapter_url: str,
+    chapter_dir_name: str,
+) -> dict[str, str]:
+    """Build a dictionary of values for rendering the template."""
+    clean_title = clean_chapter_title(chapter_title)
+    generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    return {
+        "chapter_number": str(chapter_number),
+        "chapter_title": chapter_title,
+        "chapter_clean_title": clean_chapter_title(chapter_title),
+        "chapter_url": chapter_url,
+        "chapter_dir_name": chapter_dir_name,
+        "generated_at": generated_at,
+        "project_root": str(PROJECT_ROOT),
+    }
+
+
+def populate_file(
+    output_path: Path,
+    content: str,
+    overwrite: bool = False,
+    dry_run: bool = False,
+) -> str:
+    """
+    Populate a file with the given content, respecting overwrite and dry-run options.
+    Returns a message indicating the action taken.
+    """
+    if output_path.exists() and not overwrite:
+        return "skipped (already exists)"
+
+    if dry_run:
+        if output_path.exists():
+            return "would overwrite (dry run)"
+        return "would create (dry run)"
+
+    output_path.write_text(content, encoding="utf-8")
+
+    if output_path.exists():
+        return "overwritten"
+    else:
+        return "created"
+
+
+def populate_chapter_files(
+    chapter_info: dict[str, Any],
+    templates: dict[str, str],
+    chapters_dir: Path,
+    overwrite: bool = False,
+    dry_run: bool = False,
+) -> dict[str, str]:
+    """Populate utility files for a single chapter based on the provided information and templates."""
+    chapter_title = chapter_info.get("title", "Unknown Chapter")
+    chapter_url = chapter_info.get("url", "")
+
+    chapter_number = extract_chapter_number(chapter_title, chapter_url)
+    chapter_dir_name = make_chapter_directory_name(
+        chapter_title, chapter_number)
+
+    chapter_dir = chapters_dir / chapter_dir_name
+    if not chapter_dir.exists():
+        if not dry_run:
+            chapter_dir.mkdir(parents=True)
+        logging.info(f"Created directory: {chapter_dir}")
+
+    template_values = build_template_values(
+        chapter_number=chapter_number or 0,
+        chapter_title=chapter_title,
+        chapter_url=chapter_url,
+        chapter_dir_name=chapter_dir_name,
+    )
+
+    results = {}
+
+    for template_name, output_filename in TEMPLATE_TO_OUTPUT.items():
+        template_content = templates.get(template_name)
+
+        if template_content is None:
+            logging.warning(f"Template not found: {template_name}")
+            continue
+
+        rendered_content = render_template(template_content, template_values)
+        output_path = chapter_dir / output_filename
+
+        action_result = populate_file(
+            output_path=output_path,
+            content=rendered_content,
+            overwrite=overwrite,
+            dry_run=dry_run,
+        )
+
+        results[output_filename] = action_result
+        logging.info(f"{output_filename}: {action_result} at {output_path}")
+
+    return results
