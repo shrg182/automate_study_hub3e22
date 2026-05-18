@@ -8,8 +8,11 @@ This script generates placeholder scripts for the Trump visit to China news repo
 from __future__ import annotations
 
 from pathlib import Path
+from typing_extensions import Final
 
-OUTPUT_DIR = Path("news_reports") / "trump_visit_to_china_4"
+
+PROJECT_ROOT: Final[Path] = Path(__file__).resolve().parents[2]
+OUTPUT_DIR = PROJECT_ROOT / "news_reports" / "trump_visit_to_china_5"
 
 SCRIPT_NAMES = [
     "data_model",
