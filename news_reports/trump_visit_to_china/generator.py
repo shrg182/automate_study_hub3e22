@@ -41,13 +41,6 @@ def _build_title(report, styles) -> list:
     ]
 
 
-def _build_breaking_news(report, styles) -> list:
-    return [
-        Paragraph("Breaking News", styles["section_heading"]),
-        Paragraph(report.breaking_news, styles["body"]),
-    ]
-
-
 def _build_bullet_section(
     title: str,
     items: list[str],
@@ -138,24 +131,6 @@ def build_report(output_path: str | Path) -> Path:
 
     story.append(HRFlowable(width="100%"))
     story.append(Spacer(1, 10))
-
-    story.extend(_build_breaking_news(report, styles))
-
-    story.extend(
-        _build_bullet_section(
-            "Executive Summary",
-            report.executive_summary,
-            styles,
-        )
-    )
-
-    story.extend(
-        _build_text_section(
-            "Situation Analysis",
-            report.situation_analysis,
-            styles,
-        )
-    )
 
     story.extend(
         _build_text_section(

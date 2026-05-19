@@ -31,14 +31,9 @@ class ReportContent:
     title: str
     author_line: str
     as_of_date: date
-    breaking_news: str
-    executive_summary: list[str]
-    situation_analysis: list[str]
     international_comments: dict
     domestic_us_comments: dict
     vocabulary: list[VocabularyItem]
-    chatgpt_comments: list[str]
-    appendices: list[dict]
 
 
 def build_sample_report_content() -> ReportContent:
@@ -48,128 +43,53 @@ def build_sample_report_content() -> ReportContent:
     Returns:
         ReportContent instance.
     """
-    vocabulary = []
-    vocabulary.extend([
+    vocabulary = [
         VocabularyItem(
             "strategic stability",
-            "A condition in which major powers avoid serious conflict and maintain balance."
+            "A balance that helps major powers avoid serious conflict."
         ),
         VocabularyItem(
             "bilateral relations",
-            "Relations and interactions between two countries."
+            "Political, economic, and security ties between two countries."
         ),
         VocabularyItem(
             "Indo-Pacific",
-            "The geopolitical region spanning the Indian and Pacific Oceans."
-        ),
-        VocabularyItem(
-            "geopolitical risk",
-            "The possibility that international political events may affect economic or security conditions."
-        ),
-        VocabularyItem(
-            "trade exposure",
-            "The degree to which an economy or company depends on international trade."
-        ),
-        VocabularyItem(
-            "supply chain",
-            "The network used to produce, transport, and distribute goods."
-        ),
-        VocabularyItem(
-            "market access",
-            "The ability to sell products or services in a foreign market."
-        ),
-        VocabularyItem(
-            "maritime security",
-            "Security involving oceans, sea routes, shipping, and naval activity."
-        ),
-        VocabularyItem(
-            "Strait of Hormuz",
-            "A strategically important waterway connecting the Persian Gulf to global shipping routes."
-        ),
-        VocabularyItem(
-            "diplomatic leverage",
-            "Political or economic influence used during negotiations."
-        ),
-        VocabularyItem(
-            "symbolic diplomacy",
-            "Diplomatic actions intended mainly to convey political meaning or goodwill."
-        ),
-        VocabularyItem(
-            "strategic breakthrough",
-            "A major achievement that significantly changes geopolitical relations."
-        ),
-        VocabularyItem(
-            "commercial opportunity",
-            "A chance to expand business activity or economic gain."
-        ),
-        VocabularyItem(
-            "financial market",
-            "A system where financial assets such as stocks, bonds, and currencies are traded."
-        ),
-        VocabularyItem(
-            "cautious optimism",
-            "Hopefulness combined with careful concern about possible risks."
-        ),
-        VocabularyItem(
-            "ceremonial diplomacy",
-            "The use of formal ceremonies and symbolic events in international relations."
-        ),
-        VocabularyItem(
-            "regional stability",
-            "A stable political and security situation within a geographic region."
-        ),
-        VocabularyItem(
-            "technology dependence",
-            "Reliance on another country or company for important technologies."
+            "The region linking the Indian and Pacific Oceans."
         ),
         VocabularyItem(
             "strategic rivalry",
             "Long-term competition between countries for power and influence."
         ),
         VocabularyItem(
-            "international commentary",
-            "Public analysis or opinions expressed by foreign governments, analysts, or media."
+            "market access",
+            "The ability to sell goods or services in another country's market."
         ),
-    ])
+        VocabularyItem(
+            "maritime security",
+            "Protection of sea routes, shipping, and naval activity."
+        ),
+        VocabularyItem(
+            "diplomatic leverage",
+            "Influence used to gain advantage in negotiations."
+        ),
+        VocabularyItem(
+            "symbolic diplomacy",
+            "Ceremonies or gestures used to send a political message."
+        ),
+        VocabularyItem(
+            "cautious optimism",
+            "Hopefulness mixed with concern about possible risks."
+        ),
+        VocabularyItem(
+            "supply chain",
+            "The network that produces, transports, and delivers goods."
+        ),
+    ]
 
     return ReportContent(
         title="Trump China Visit Report",
         author_line="By ChatGPT",
         as_of_date=date(2026, 5, 18),
-        breaking_news=(
-            "President Trump's 2026 visit to China focused on diplomatic symbolism, "
-            "trade, technology competition, Taiwan, regional security, and the effort "
-            "to keep U.S.-China communication channels open."
-        ),
-        executive_summary=[
-            (
-                "The summit lowered short-term diplomatic tension but did not resolve "
-                "the deeper strategic rivalry between Washington and Beijing."
-            ),
-            (
-                "Economic topics, including aircraft, agriculture, semiconductors, "
-                "financial services, and market access, received major attention."
-            ),
-            (
-                "Taiwan, export controls, maritime security, and Middle East instability "
-                "remained sensitive issues with long-term security consequences."
-            ),
-        ],
-        situation_analysis=[
-            (
-                "The visit used high-profile ceremonial settings to project stability "
-                "and respect while both governments attempted to manage competition."
-            ),
-            (
-                "American business participation showed that commercial interests remain "
-                "closely tied to U.S.-China diplomacy, even as national security concerns "
-                "continue to shape policy."
-            ),
-            (
-                "International reactions were generally cautious: many observers welcomed "
-                "dialogue but did not expect the summit to erase major structural disputes."
-            ),
-        ],
         international_comments={
             "Asia": {
                 "China": [
@@ -327,162 +247,4 @@ def build_sample_report_content() -> ReportContent:
             ],
         },
         vocabulary=vocabulary,
-        chatgpt_comments=[
-
-            (
-                "The 2026 Trump-China summit demonstrated that both Washington and Beijing "
-                "remain willing to maintain direct leader-level communication despite "
-                "continuing strategic rivalry."
-            ),
-
-            (
-                "Much of the visit focused on symbolic diplomacy, including the Temple of Heaven "
-                "and Zhongnanhai events, which projected stability and mutual respect while "
-                "reducing immediate political tension."
-            ),
-
-            (
-                "The participation of major American corporate leaders highlighted the growing "
-                "connection between geopolitics, technology competition, finance, manufacturing, "
-                "and global supply chains."
-            ),
-
-            (
-                "Trade and commercial issues appeared to provide the most realistic area for "
-                "short-term cooperation, particularly in aviation, agriculture, semiconductors, "
-                "financial services, and market access."
-            ),
-
-            (
-                "Taiwan remained the most sensitive and strategically dangerous issue discussed "
-                "during the summit, with both governments attempting to avoid escalation while "
-                "maintaining their core political positions."
-            ),
-
-            (
-                "The summit suggested that the United States and China are entering a period "
-                "of managed competition rather than direct confrontation or full strategic partnership."
-            ),
-
-            (
-                "The discussions regarding Iran and the Strait of Hormuz demonstrated how "
-                "U.S.-China relations are increasingly connected to broader global security issues "
-                "beyond East Asia."
-            ),
-
-            (
-                "The visit produced strong diplomatic imagery and warmer public rhetoric, "
-                "but relatively few fully confirmed long-term agreements."
-            ),
-
-            (
-                "International reactions generally viewed the summit as stabilizing in the "
-                "short term, although most analysts do not expect deep structural disagreements "
-                "between the two countries to disappear."
-            ),
-
-            (
-                "Overall, the visit reflected the modern reality that economic competition, "
-                "national security, advanced technology, and diplomacy are now deeply interconnected "
-                "within global politics."
-            ),
-        ],
-        appendices=[
-            {
-                "title": "Appendix A — Major Topics Discussed During the Summit",
-                "content": [
-                    "Trade and tariffs",
-                    "Semiconductor export controls",
-                    "Artificial intelligence and advanced technology",
-                    "Rare earth exports and supply chains",
-                    "Taiwan and Indo-Pacific security",
-                    "Maritime security and naval stability",
-                    "Iran and the Strait of Hormuz",
-                    "Agricultural exports and Boeing aircraft purchases",
-                    "Financial-market access and investment",
-                    "Leader-level diplomacy and strategic stability",
-                ],
-            },
-
-            {
-                "title": "Appendix B — Major Locations Visited",
-                "content": [
-                    "Beijing Capital International Airport",
-                    "Great Hall of the People",
-                    "Temple of Heaven (Tiantan Park)",
-                    "Zhongnanhai leadership compound",
-                    "State banquet venues in Beijing",
-                ],
-            },
-
-            {
-                "title": "Appendix C — Major American Business Delegation Members",
-                "content": [
-                    "Elon Musk — Tesla and SpaceX",
-                    "Tim Cook — Apple",
-                    "Jensen Huang — Nvidia",
-                    "Kelly Ortberg — Boeing",
-                    "Larry Fink — BlackRock",
-                    "Stephen Schwarzman — Blackstone",
-                    "Jane Fraser — Citigroup",
-                    "Michael Miebach — Mastercard",
-                    "Ryan McInerney — Visa",
-                    "Cristiano Amon — Qualcomm",
-                    "Larry Culp — GE Aerospace",
-                    "Brian Sikes — Cargill",
-                ],
-            },
-
-            {
-                "title": "Appendix D — Key Diplomatic Themes",
-                "content": [
-                    "Strategic stability",
-                    "Managed competition",
-                    "Economic interdependence",
-                    "Technology rivalry",
-                    "Supply-chain resilience",
-                    "Symbolic diplomacy",
-                    "Regional security",
-                    "Market access negotiations",
-                ],
-            },
-
-            {
-                "title": "Appendix E — Frequently Referenced Terms",
-                "content": [
-                    "Indo-Pacific",
-                    "Taiwan issue",
-                    "Strategic rivalry",
-                    "Trade truce",
-                    "Export controls",
-                    "Rare earths",
-                    "Market access",
-                    "Geopolitical risk",
-                    "Leader-level diplomacy",
-                    "Ceremonial diplomacy",
-                ],
-            },
-
-            {
-                "title": "Appendix F — Summary Assessment",
-                "content": [
-                    (
-                        "The 2026 Trump-China summit reduced immediate diplomatic tensions "
-                        "and improved communication channels between Washington and Beijing."
-                    ),
-                    (
-                        "The visit achieved symbolic diplomatic success but produced "
-                        "limited confirmed long-term strategic breakthroughs."
-                    ),
-                    (
-                        "Economic cooperation remains possible in selected sectors despite "
-                        "continuing geopolitical rivalry."
-                    ),
-                    (
-                        "Taiwan remains the most sensitive issue affecting long-term "
-                        "U.S.-China stability."
-                    ),
-                ],
-            },
-        ]
     )

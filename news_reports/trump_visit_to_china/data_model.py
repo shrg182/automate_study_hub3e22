@@ -26,9 +26,6 @@ class ReportContent:
     title: str
     author_line: str
     as_of_date: date
-    breaking_news: str
-    executive_summary: list[str]
-    situation_analysis: list[str]
     latest_updates: list[str]
     risk_assessment: list[str]
     comments: list[str]
@@ -68,38 +65,6 @@ def build_sample_report_content() -> ReportContent:
         title="Trump China Visit Report",
         author_line="by ChatGPT",
         as_of_date=date(2026, 5, 9),
-        breaking_news=(
-            "U.S. President Donald Trump is expected to visit Beijing on "
-            "May 14–15, 2026, for meetings with Chinese President Xi Jinping. "
-            "The visit is being framed as a high-stakes effort to reinforce a "
-            "fragile trade truce and manage rising tensions over Taiwan, "
-            "technology controls, rare earths, and regional security."
-        ),
-        executive_summary=[
-            "Trump is expected to meet Xi Jinping in Beijing on May 14–15, 2026.",
-            "The visit is expected to focus on trade, Taiwan, technology, rare earths, and maritime security.",
-            "Reuters reported that CEOs from major U.S. companies, including Nvidia and Boeing, were invited to join the China trip.",
-            "Taiwanese officials have warned that Beijing may try to maneuver on Taiwan-related issues during the summit.",
-        ],
-        situation_analysis=[
-            (
-                "The visit comes at a sensitive point in U.S.-China relations. "
-                "Both governments appear interested in preventing further economic "
-                "deterioration, but neither side is likely to abandon core strategic positions."
-            ),
-            (
-                "For Washington, key concerns include Taiwan, export controls, market access, "
-                "industrial supply chains, and the role of Chinese rare earths in global manufacturing."
-            ),
-            (
-                "For Beijing, the summit offers a chance to seek tariff relief, stabilize business ties, "
-                "and test whether Trump is willing to make practical concessions in exchange for trade or investment gains."
-            ),
-            (
-                "The presence of U.S. corporate leaders would add an economic dimension to the visit, "
-                "signaling that business access and investment may be part of the broader diplomatic package."
-            ),
-        ],
         latest_updates=[
             (
                 "Reuters reported that Trump is preparing to visit Beijing on May 14 and 15, "

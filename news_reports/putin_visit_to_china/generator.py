@@ -2,7 +2,7 @@
 """
 generator.py
 
-Generate the Trump China Visit Report PDF.
+Generate the Putin China Visit Report PDF.
 """
 
 from __future__ import annotations
@@ -60,31 +60,19 @@ def _build_bullet_section(title: str, items: list[str], styles) -> list:
     return story
 
 
-def _build_nested_comments(title: str, comment_groups: dict, styles) -> list:
+def _build_grouped_section(title: str, groups: dict[str, list[str]], styles) -> list:
     story = [_paragraph(title, styles["section_heading"])]
 
-    for group_name, group_value in comment_groups.items():
-        story.append(_paragraph(str(group_name), styles["subsection_heading"]))
-
-        if isinstance(group_value, dict):
-            for source_name, comments in group_value.items():
-                story.append(
-                    Paragraph(
-                        f"<b>{escape(str(source_name))}</b>",
-                        styles["body"],
-                    )
-                )
-                for comment in comments:
-                    story.append(Paragraph(f"&#8226; {escape(comment)}", styles["bullet"]))
-        else:
-            for comment in group_value:
-                story.append(Paragraph(f"&#8226; {escape(comment)}", styles["bullet"]))
+    for group_name, items in groups.items():
+        story.append(_paragraph(group_name, styles["subsection_heading"]))
+        for item in items:
+            story.append(Paragraph(f"&#8226; {escape(item)}", styles["bullet"]))
 
     return story
 
 
 def _build_vocabulary(report, styles) -> list:
-    story = [_paragraph("New Vocabulary", styles["section_heading"])]
+    story = [_paragraph("Vocabulary", styles["section_heading"])]
 
     for item in report.vocabulary:
         story.append(
@@ -97,13 +85,24 @@ def _build_vocabulary(report, styles) -> list:
     return story
 
 
-def _build_credits(styles) -> list:
+def _build_sources(report, styles) -> list:
+    story = [_paragraph("Sources", styles["section_heading"])]
+
+    for source in report.sources:
+        story.append(
+            Paragraph(
+                f"<b>{escape(source.name)}</b>: {escape(source.url)}",
+                styles["source"],
+            )
+        )
+
+    return story
+
+
+def _build_credits(report, styles) -> list:
     return [
         _paragraph("Credits", styles["section_heading"]),
-        _paragraph(
-            "Generated with ReportLab from the local study-hub data model.",
-            styles["credits"],
-        ),
+        _paragraph(report.credits, styles["credits"]),
     ]
 
 
@@ -139,22 +138,19 @@ def build_report(output_path: str | Path) -> Path:
     story.extend(_build_title(report, styles))
     story.append(HRFlowable(width="100%"))
     story.append(Spacer(1, 10))
+    story.extend(_build_text_section("Lead", [report.lead], styles))
+    story.extend(_build_bullet_section("Latest Updates", report.latest_updates, styles))
+    story.extend(_build_grouped_section("Key Themes", report.key_themes, styles))
     story.extend(
-        _build_nested_comments(
+        _build_grouped_section(
             "International Comments",
             report.international_comments,
             styles,
         )
     )
-    story.extend(
-        _build_nested_comments(
-            "Domestic U.S. Comments",
-            report.domestic_us_comments,
-            styles,
-        )
-    )
     story.extend(_build_vocabulary(report, styles))
-    story.extend(_build_credits(styles))
+    story.extend(_build_sources(report, styles))
+    story.extend(_build_credits(report, styles))
 
     doc.build(story)
 
@@ -163,7 +159,7 @@ def build_report(output_path: str | Path) -> Path:
 
 def main() -> None:
     """Generate the default PDF when this file is run directly."""
-    generated_file = build_report("trump_china_visit_report_20260518.pdf")
+    generated_file = build_report("putin_china_visit_report_20260519.pdf")
     print(f"Generated report: {generated_file}")
 
 
