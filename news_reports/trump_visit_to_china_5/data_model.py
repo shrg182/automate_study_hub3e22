@@ -13,8 +13,6 @@ TODO:
 from __future__ import annotations
 
 from dataclasses import dataclass
-
-from dataclasses import dataclass
 from datetime import date
 
 
@@ -38,7 +36,7 @@ class ReportContent:
     situation_analysis: list[str]
     international_comments: dict
     domestic_us_comments: dict
-    vocabulary: list[str]
+    vocabulary: list[VocabularyItem]
     chatgpt_comments: list[str]
     appendices: list[dict]
 
@@ -135,9 +133,43 @@ def build_sample_report_content() -> ReportContent:
     ])
 
     return ReportContent(
-        title="Trump China Visit Report"
-        author_line="By ChatGPT"
-        as_of_date=date(2026, 5, 18)
+        title="Trump China Visit Report",
+        author_line="By ChatGPT",
+        as_of_date=date(2026, 5, 18),
+        breaking_news=(
+            "President Trump's 2026 visit to China focused on diplomatic symbolism, "
+            "trade, technology competition, Taiwan, regional security, and the effort "
+            "to keep U.S.-China communication channels open."
+        ),
+        executive_summary=[
+            (
+                "The summit lowered short-term diplomatic tension but did not resolve "
+                "the deeper strategic rivalry between Washington and Beijing."
+            ),
+            (
+                "Economic topics, including aircraft, agriculture, semiconductors, "
+                "financial services, and market access, received major attention."
+            ),
+            (
+                "Taiwan, export controls, maritime security, and Middle East instability "
+                "remained sensitive issues with long-term security consequences."
+            ),
+        ],
+        situation_analysis=[
+            (
+                "The visit used high-profile ceremonial settings to project stability "
+                "and respect while both governments attempted to manage competition."
+            ),
+            (
+                "American business participation showed that commercial interests remain "
+                "closely tied to U.S.-China diplomacy, even as national security concerns "
+                "continue to shape policy."
+            ),
+            (
+                "International reactions were generally cautious: many observers welcomed "
+                "dialogue but did not expect the summit to erase major structural disputes."
+            ),
+        ],
         international_comments={
             "Asia": {
                 "China": [
@@ -238,7 +270,7 @@ def build_sample_report_content() -> ReportContent:
                     ),
                 ],
             },
-        }
+        },
 
         domestic_us_comments={
             "Republican Supporters": [
@@ -293,7 +325,8 @@ def build_sample_report_content() -> ReportContent:
                     "but strategically unresolved."
                 ),
             ],
-        }
+        },
+        vocabulary=vocabulary,
         chatgpt_comments=[
 
             (
@@ -353,7 +386,7 @@ def build_sample_report_content() -> ReportContent:
                 "national security, advanced technology, and diplomacy are now deeply interconnected "
                 "within global politics."
             ),
-        ]
+        ],
         appendices=[
             {
                 "title": "Appendix A — Major Topics Discussed During the Summit",
@@ -453,12 +486,3 @@ def build_sample_report_content() -> ReportContent:
             },
         ]
     )
-
-
-def _build_appendices_section(report, styles) -> list:
-    """
-    Build appendices section.
-    """
-    story = [
-        Paragraph()
-    ]
