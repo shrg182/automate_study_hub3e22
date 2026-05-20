@@ -18,5 +18,14 @@
 ## Scripts for the template
 
 ### Trump Visit to China
+
+
+## Placeholder script for a scaffold of a news report
+
 **create_placeholder_scripts.py**
 
+## News Report Points
+
+Create a script like to-do list like /Users/ruixingshi/Python/automate_study_hub3e22/todo_list.py
+
+**news_report_request_list.py**
