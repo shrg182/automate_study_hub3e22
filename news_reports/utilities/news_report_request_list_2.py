@@ -7,6 +7,7 @@ The generated CSV can be used as instructions for future news report generation.
 Usage:
     python3 news_report_request_list.py
     python3 news_report_request_list.py --report-folder putin_visit_to_china_3
+    python3
 """
 
 from __future__ import annotations
