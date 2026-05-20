@@ -25,6 +25,8 @@ Usage:
     python3 news_report_request_list.py
     python3 news_report_request_list.py --report-folder putin_visit_to_china_3
     python3 news_report_request_list.py --report-folder putin_visit_to_china_3 --defaults-only
+    python3 news_report_request_list.py --report-folder cuba_crisis
+    
 """
 
 from __future__ import annotations
@@ -113,7 +115,8 @@ def normalize_folder_name(folder_name: str) -> str:
     """Normalize a user-provided folder name for filesystem use."""
 
     cleaned = folder_name.strip().replace(" ", "_")
-    cleaned = "".join(char for char in cleaned if char.isalnum() or char in "-_")
+    cleaned = "".join(
+        char for char in cleaned if char.isalnum() or char in "-_")
     return cleaned.lower()
 
 
@@ -159,7 +162,8 @@ def load_requirements(csv_path: Path) -> list[ReportRequirement]:
                 order=int(row.get("order") or index),
                 requirement=row.get("requirement", "").strip(),
                 include=parse_include(row.get("include", "yes")),
-                specific_requirements=row.get("specific_requirements", "").strip(),
+                specific_requirements=row.get(
+                    "specific_requirements", "").strip(),
             )
             for index, row in enumerate(reader, start=1)
             if row.get("requirement", "").strip()
@@ -178,7 +182,8 @@ def save_requirements(requirements: list[ReportRequirement], csv_path: Path) -> 
     with csv_path.open("w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=CSV_FIELDNAMES)
         writer.writeheader()
-        writer.writerows(requirement.to_csv_row() for requirement in requirements)
+        writer.writerows(requirement.to_csv_row()
+                         for requirement in requirements)
 
     print(f"Saved CSV: {csv_path.resolve()}")
 
@@ -296,7 +301,8 @@ def remove_requirement(requirements: list[ReportRequirement]) -> None:
 def reset_to_defaults(requirements: list[ReportRequirement]) -> None:
     """Reset the list to default requirements."""
 
-    confirmation = input("Type YES to reset all requirements to defaults: ").strip()
+    confirmation = input(
+        "Type YES to reset all requirements to defaults: ").strip()
     if confirmation != "YES":
         print("Reset cancelled.")
         return
@@ -355,7 +361,8 @@ def main() -> None:
     """Run the news report request CSV builder."""
 
     args = parse_args()
-    folder_name = normalize_folder_name(args.report_folder) if args.report_folder else ""
+    folder_name = normalize_folder_name(
+        args.report_folder) if args.report_folder else ""
     if not folder_name:
         folder_name = prompt_report_folder()
 

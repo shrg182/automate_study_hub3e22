@@ -29,3 +29,30 @@
 Create a script like to-do list like /Users/ruixingshi/Python/automate_study_hub3e22/todo_list.py
 
 **news_report_request_list.py**
+
+news_report_request_list.py
+
+1. Create a folder for the news report
+2. Write a list of the requirements for the report:
+    Breaking News / Leads
+    Key Themes
+    Executive Summary
+    Situation Analysis
+    Latest Updates
+    Risk Assessment
+    Comments
+    New Vocabulary
+    Sources
+    Credits
+
+3. Option to add items in the requirement list
+4. Each requirement has an option to add specific requirements.
+
+In general, this script produces a CSV file by user's inputs. This CSV file
+will be used as the instruction for future news report generation.
+
+Usage:
+    python3 news_report_request_list.py
+    python3 news_report_request_list.py --report-folder putin_visit_to_china_3
+    python3 news_report_request_list.py --report-folder putin_visit_to_china_3 --defaults-only
+    python3 news_report_request_list.py --report-folder cuba_crisis
