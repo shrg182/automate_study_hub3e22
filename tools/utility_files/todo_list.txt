@@ -1,0 +1,4 @@
+[ ] get chapter directories, tree structure
+[ ] populate README.md, USAGE.md, utility in each directory and subdirectories
+[ ] edit contents in the templates
+[ ] script name is populate_utility_files_in_chapters.py

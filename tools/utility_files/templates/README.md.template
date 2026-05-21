@@ -1,18 +1,26 @@
 # {chapter_title}
 
-### ({parent_directory_name})
+### {relative_directory}
 
 _Auto-generated on {generated_datetime}_
 
 > 📖 **Chapter Page:** {chapter_page_url}  
 > 🔗 **ATBS Chapter Link:** {atbs_chapter_url}
 
-**[▶︎ {chapter_directory_name}]()**
+**Directory:** `{chapter_directory_name}`
 
 ## Overview
 
-- Placeholder README for `{chapter_directory_name}`.
-- Replace with actual content later.
+This directory belongs to `{chapter_dir_name}`.
+
+Use it for notes, scripts, examples, and helper files related to
+**{chapter_clean_title}**.
+
+## Directory Tree
+
+```text
+{directory_tree}
+```
 
 ## Getting Started
 

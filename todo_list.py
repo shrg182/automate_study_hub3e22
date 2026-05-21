@@ -10,6 +10,7 @@ Usage:
     python3 todo_list.py --todo-dir work_tasks
     python3 todo_list.py --todo-dir personal_tasks
     python3 todo_list.py --todo-dir tools/placeholders
+    python3 todo_list.py --todo-dir tools/utility_files
 """
 
 from __future__ import annotations

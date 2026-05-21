@@ -8,12 +8,21 @@ _Auto-generated on {generated_datetime}_
 > 🔗 **ATBS Chapter Link:** {atbs_chapter_url}
 
 **Directory:** `{chapter_directory_name}`
+**Relative path:** `{relative_directory}`
 
 ---
 
 ## Overview
 
-This file explains how to run the scripts in this directory.
+This file explains how to run scripts in this directory.
+
+---
+
+## Directory Tree
+
+```text
+{directory_tree}
+```
 
 ---
 
@@ -45,7 +54,7 @@ python {relative_chapter_directory}/example_01.py
 Or change into this directory first:
 
 ```bash
-cd {relative_chapter_directory}
+cd {relative_directory}
 python example_01.py
 ```
 

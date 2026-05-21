@@ -56,3 +56,4 @@ Usage:
     python3 news_report_request_list.py --report-folder putin_visit_to_china_3
     python3 news_report_request_list.py --report-folder putin_visit_to_china_3 --defaults-only
     python3 news_report_request_list.py --report-folder cuba_crisis
+    python3 news_report_request_list.py --report-folder cuba_crisis
