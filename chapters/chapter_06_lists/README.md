@@ -1,5 +1,48 @@
-# Lists
+# Chapter 06 Lists
 
-This directory contains utility files for Lists.
+### chapters/chapter_06_lists
 
-Review and utility notes for **Lists**.
+_Auto-generated on 2026-05-21 19:58:57_
+
+> 📖 **Chapter Page:**   
+> 🔗 **ATBS Chapter Link:** 
+
+**Directory:** `chapter_06_lists`
+
+## Overview
+
+This directory belongs to `chapter_06_lists`.
+
+Use it for notes, scripts, examples, and helper files related to
+**Chapter 06 Lists**.
+
+## Directory Tree
+
+```text
+chapter_06_lists/
+```
+
+## Getting Started
+
+1. See `USAGE.md` for details.
+2. Add project notes and examples.
+
+## Sample Scripts
+
+| Script | Description |
+|---|---|
+| `example_01.py` | Add description later. |
+| `example_02.py` | Add description later. |
+| `example_03.py` | Add description later. |
+
+## Notes
+
+Add study notes, important concepts, and reminders here.
+
+## Ask questions
+
+Use this section to collect questions for review.
+
+- What is the main purpose of this chapter?
+- Which scripts need more examples?
+- What concepts should be reviewed again?
