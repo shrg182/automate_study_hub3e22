@@ -13,6 +13,7 @@ Usage:
     python3 tools/utility_files/populate_utility_files_in_chapters.py
     python3 tools/utility_files/populate_utility_files_in_chapters.py --dry-run
     python3 tools/utility_files/populate_utility_files_in_chapters.py --overwrite
+    python3 tools/utility_files/populate_utility_files_in_chapters.py --overwrite --exclude-overwrite-chapters chapter_00_introduction
     python3 tools/utility_files/populate_utility_files_in_chapters.py --include-root
 """
 
@@ -95,6 +96,16 @@ def parse_args() -> argparse.Namespace:
         "--overwrite",
         action="store_true",
         help="Overwrite existing README.md, USAGE.md, and utils.py files.",
+    )
+    parser.add_argument(
+        "--exclude-overwrite-chapters",
+        nargs="*",
+        default=[],
+        metavar="CHAPTER_DIR",
+        help=(
+            "Chapter directory names to protect from overwriting, even when "
+            "--overwrite is used. Values may be space-separated or comma-separated."
+        ),
     )
     parser.add_argument(
         "--dry-run",
@@ -195,6 +206,34 @@ def discover_target_directories(chapters_dir: Path, include_root: bool) -> list[
     return targets
 
 
+def parse_excluded_chapter_names(raw_values: list[str]) -> set[str]:
+    """Normalize chapter directory names that should be protected."""
+    excluded_names: set[str] = set()
+    for raw_value in raw_values:
+        for value in raw_value.split(","):
+            normalized = value.strip().rstrip("/")
+            if normalized:
+                excluded_names.add(Path(normalized).name)
+    return excluded_names
+
+
+def is_overwrite_protected(
+    target_dir: Path,
+    chapters_dir: Path,
+    excluded_chapter_names: set[str],
+) -> bool:
+    """Return True when target_dir is inside a protected chapter directory."""
+    if not excluded_chapter_names:
+        return False
+
+    relative_parts = target_dir.relative_to(chapters_dir).parts
+    if not relative_parts:
+        return chapters_dir.name in excluded_chapter_names
+
+    chapter_dir_name = relative_parts[0]
+    return chapter_dir_name in excluded_chapter_names
+
+
 def make_directory_tree(root: Path) -> str:
     """Build a simple text tree for a directory."""
     lines = [root.name + "/"]
@@ -292,9 +331,13 @@ def write_rendered_file(
     output_path: Path,
     content: str,
     overwrite: bool,
+    overwrite_protected: bool,
     dry_run: bool,
 ) -> str:
     """Write a rendered file and return a status string."""
+    if output_path.exists() and overwrite and overwrite_protected:
+        return "protected"
+
     if output_path.exists() and not overwrite:
         return "skipped"
 
@@ -312,6 +355,7 @@ def populate_directory(
     templates: dict[str, str],
     toc_metadata: dict[int, ChapterMetadata],
     overwrite: bool,
+    overwrite_protected: bool,
     dry_run: bool,
 ) -> dict[str, str]:
     """Populate all utility files for one target directory."""
@@ -325,6 +369,7 @@ def populate_directory(
             output_path=output_path,
             content=rendered,
             overwrite=overwrite,
+            overwrite_protected=overwrite_protected,
             dry_run=dry_run,
         )
 
@@ -340,18 +385,30 @@ def main() -> None:
 
     templates = load_templates(template_dir)
     toc_metadata = load_toc_metadata(toc_file)
+    excluded_chapter_names = parse_excluded_chapter_names(
+        args.exclude_overwrite_chapters
+    )
     target_dirs = discover_target_directories(chapters_dir, args.include_root)
 
     print(f"Discovered {len(target_dirs)} target directories under {chapters_dir}")
+    if excluded_chapter_names:
+        protected_text = ", ".join(sorted(excluded_chapter_names))
+        print(f"Overwrite-protected chapters: {protected_text}")
 
     status_counts: dict[str, int] = {}
     for target_dir in target_dirs:
+        overwrite_protected = is_overwrite_protected(
+            target_dir=target_dir,
+            chapters_dir=chapters_dir,
+            excluded_chapter_names=excluded_chapter_names,
+        )
         results = populate_directory(
             target_dir=target_dir,
             chapters_dir=chapters_dir,
             templates=templates,
             toc_metadata=toc_metadata,
             overwrite=args.overwrite,
+            overwrite_protected=overwrite_protected,
             dry_run=args.dry_run,
         )
         relative_target = target_dir.relative_to(PROJECT_ROOT)
