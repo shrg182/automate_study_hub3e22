@@ -57,3 +57,6 @@ Usage:
     python3 news_report_request_list.py --report-folder putin_visit_to_china_3 --defaults-only
     python3 news_report_request_list.py --report-folder cuba_crisis
     python3 news_report_request_list.py --report-folder cuba_crisis
+
+## Science
+    python3 todo_list.py --todo-dir news_reports/Einstein_Rosen_bridge 
