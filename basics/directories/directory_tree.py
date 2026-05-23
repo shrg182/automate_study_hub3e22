@@ -5,7 +5,7 @@ directory_tree.py
 Print a directory structure as a tree, similar to the Unix `tree` command.
 
 Usage:
-    python3 directory_tree.py
+    python3 basics/directories/directory_tree.py
     python3 directory_tree.py /path/to/project
 """
 

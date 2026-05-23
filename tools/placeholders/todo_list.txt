@@ -1,2 +1,4 @@
-[ ] retrieve contents from CSV or JSON file
-[ ] populate chapter directories
+[x] retrieve contents from CSV or JSON file
+[x] populate chapter directories
+[ ] list chapter directories
+[ ] list chapter directories with their topics

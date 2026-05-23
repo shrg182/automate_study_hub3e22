@@ -83,6 +83,16 @@ def build_styles() -> dict[str, ParagraphStyle]:
             textColor=INK,
             spaceAfter=5,
         ),
+        "caption": ParagraphStyle(
+            "caption",
+            parent=sample["BodyText"],
+            fontName="Helvetica-Oblique",
+            fontSize=8,
+            leading=11,
+            alignment=TA_CENTER,
+            textColor=GRAY,
+            spaceAfter=8,
+        ),
         "credits": ParagraphStyle(
             "credits",
             parent=sample["BodyText"],

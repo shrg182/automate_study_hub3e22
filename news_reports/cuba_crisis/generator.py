@@ -14,14 +14,15 @@ from xml.sax.saxutils import escape
 
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
-from reportlab.platypus import HRFlowable, Paragraph, SimpleDocTemplate, Spacer
+from reportlab.platypus import HRFlowable, Image, Paragraph, SimpleDocTemplate, Spacer
 
 from data_model import ReportContent, build_report_content
 from styles import build_styles
 
 
 DEFAULT_REQUEST_CSV = "news_report_request_list.csv"
-DEFAULT_OUTPUT = "cuba_crisis_report_20260520.pdf"
+DEFAULT_OUTPUT = "cuba_crisis_report_20260523.pdf"
+ASSETS_DIR = Path(__file__).resolve().parent / "assets"
 
 
 @dataclass(slots=True)
@@ -50,6 +51,12 @@ def _bullet(text: str, style) -> Paragraph:
     """Create a bullet paragraph."""
 
     return Paragraph(f"&#8226; {escape(text)}", style)
+
+
+def _contains_cyrillic(text: str) -> bool:
+    """Return whether text contains Cyrillic characters."""
+
+    return any("\u0400" <= character <= "\u04ff" for character in text)
 
 
 def _parse_include(value: str) -> bool:
@@ -96,7 +103,47 @@ def _build_standard_section(title: str, paragraphs: list[str], styles) -> list:
 
     story = [_paragraph(title, styles["section_heading"])]
     for paragraph in paragraphs:
-        story.append(_bullet(paragraph, styles["bullet"]))
+        style_name = "russian_bullet" if _contains_cyrillic(paragraph) else "bullet"
+        story.append(_bullet(paragraph, styles[style_name]))
+    return story
+
+
+def _fit_image(image_path: Path, max_width: float, max_height: float) -> Image:
+    """Create an image flowable scaled to fit inside a rectangle."""
+
+    image = Image(str(image_path))
+    scale = min(max_width / image.imageWidth, max_height / image.imageHeight)
+    image.drawWidth = image.imageWidth * scale
+    image.drawHeight = image.imageHeight * scale
+    image.hAlign = "CENTER"
+    return image
+
+
+def _build_asset_images(styles) -> list:
+    """Build the image section from files in the assets folder."""
+
+    assets = [
+        (
+            "cuba_crisis_2.png",
+            "Geographic map from the assets folder showing Cuba and the surrounding region.",
+        ),
+        (
+            "cuba_crisis.jpeg",
+            "Historical crisis image from the assets folder.",
+        ),
+        (
+            "P-2H_Neptune_over_Soviet_ship_Oct_1962.jpeg",
+            "U.S. Navy P-2H Neptune over a Soviet ship during the crisis, from the assets folder.",
+        ),
+    ]
+    story = [_paragraph("Asset Images", styles["section_heading"])]
+    for filename, caption in assets:
+        image_path = ASSETS_DIR / filename
+        if not image_path.exists():
+            continue
+        story.append(_fit_image(image_path, 165 * mm, 82 * mm))
+        story.append(Paragraph(escape(caption), styles["caption"]))
+        story.append(Spacer(1, 8))
     return story
 
 
@@ -146,6 +193,8 @@ def _build_requested_section(
 
     if request.requirement == "New Vocabulary":
         story = _build_vocabulary(report, styles)
+    elif request.requirement == "Asset Images":
+        story = _build_asset_images(styles)
     elif request.requirement == "Sources":
         story = _build_sources(report, styles)
     elif request.requirement == "Credits":
@@ -203,7 +252,7 @@ def build_report(
         topMargin=20 * mm,
         bottomMargin=20 * mm,
         title=report.title,
-        author="ChatGPT",
+        author="Codex and ChatGPT",
     )
 
     story = []
@@ -225,4 +274,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

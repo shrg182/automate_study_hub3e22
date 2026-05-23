@@ -2,6 +2,8 @@
 
 Introduction report module for the Einstein-Rosen Bridge theory.
 
+[▶︎ chatgpt 2026-05-23 11:32 PM ](https://chatgpt.com/c/6a108e30-da9c-83ea-ae3c-9e9422514993)
+
 ## Scripts
 
 `data_model.py` stores the report content.
@@ -11,6 +13,8 @@ Introduction report module for the Einstein-Rosen Bridge theory.
 `generator.py` builds the PDF.
 
 `cli.py` provides the command-line entry point.
+
+The `assets/` directory stores generated illustration PNGs used in the PDF.
 
 ## Usage
 
