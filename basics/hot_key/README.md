@@ -1,111 +1,19 @@
-==== Hot Keys ====
+# Hot Key
 
-# Hot key list
+This folder stores keyboard-shortcut notes for daily Python work in VS Code.
 
-[▶︎ chatgpt 2026-05-21 1:02 PM ](https://chatgpt.com/g/g-p-69d6676fff908191a75cba648ed0034f-visual-studio-code/c/6a088348-23b0-83ea-8723-fae719da2407)
+## Files
 
+| File | Purpose |
+| --- | --- |
+| `VS_CODE_HOT_KEYS.md` | Full VS Code shortcut reference, including editing, navigation, search, terminal, and Python-specific commands. |
 
-🧙🏾‍♂️ Here is a practical **VS Code hot key list** for daily Python coding.
+## Related Scripts Created Elsewhere
 
-## 1. Basic Editing
+No Python scripts were created from this folder. It is a documentation/reference folder rather than a script folder.
 
-| Action                | Mac                   | Windows/Linux                    |
-| --------------------- | --------------------- | -------------------------------- |
-| Copy line / selection | `Command + C`         | `Ctrl + C`                       |
-| Paste                 | `Command + V`         | `Ctrl + V`                       |
-| Cut line / selection  | `Command + X`         | `Ctrl + X`                       |
-| Undo                  | `Command + Z`         | `Ctrl + Z`                       |
-| Redo                  | `Command + Shift + Z` | `Ctrl + Y` or `Ctrl + Shift + Z` |
-| Select all            | `Command + A`         | `Ctrl + A`                       |
-| Save file             | `Command + S`         | `Ctrl + S`                       |
-| Save all files             | `Command + Option + S`         | `Ctrl + S`                       |
+## Recommended Starting Point
 
-## 2. Line Operations
+Start with the "Most Useful 10 to Remember First" section in `VS_CODE_HOT_KEYS.md`, then practice those shortcuts while editing scripts in the other `basics` folders.
 
-| Action              | Mac                       | Windows/Linux          |
-| ------------------- | ------------------------- | ---------------------- |
-| Duplicate line down | `Shift + Option + Down`   | `Shift + Alt + Down`   |
-| Duplicate line up   | `Shift + Option + Up`     | `Shift + Alt + Up`     |
-| Move line down      | `Option + Down`           | `Alt + Down`           |
-| Move line up        | `Option + Up`             | `Alt + Up`             |
-| Delete current line | `Command + Shift + K`     | `Ctrl + Shift + K`     |
-| Insert line below   | `Command + Enter`         | `Ctrl + Enter`         |
-| Insert line above   | `Command + Shift + Enter` | `Ctrl + Shift + Enter` |
-
-## 3. Code Formatting
-
-| Action                 | Mac                               | Windows/Linux               |
-| ---------------------- | --------------------------------- | --------------------------- |
-| Format whole file      | `Shift + Option + F`              | `Shift + Alt + F`           |
-| Format selected code   | `Command + K`, then `Command + F` | `Ctrl + K`, then `Ctrl + F` |
-| Comment/uncomment line | `Command + /`                     | `Ctrl + /`                  |
-| Block comment          | `Shift + Option + A`              | `Shift + Alt + A`           |
-
-## 4. Search and Replace
-
-| Action             | Mac                    | Windows/Linux      |
-| ------------------ | ---------------------- | ------------------ |
-| Find in file       | `Command + F`          | `Ctrl + F`         |
-| Replace in file    | `Command + Option + F` | `Ctrl + H`         |
-| Find in project    | `Command + Shift + F`  | `Ctrl + Shift + F` |
-| Replace in project | `Command + Shift + H`  | `Ctrl + Shift + H` |
-| Go to file         | `Command + P`          | `Ctrl + P`         |
-
-## 5. Navigation
-
-| Action               | Mac                   | Windows/Linux      |
-| -------------------- | --------------------- | ------------------ |
-| Go to line           | `Control + G`         | `Ctrl + G`         |
-| Go to symbol in file | `Command + Shift + O` | `Ctrl + Shift + O` |
-| Go to definition     | `F12`                 | `F12`              |
-| Peek definition      | `Option + F12`        | `Alt + F12`        |
-| Go back              | `Control + -`         | `Alt + Left`       |
-| Go forward           | `Control + Shift + -` | `Alt + Right`      |
-
-## 6. Terminal
-
-| Action              | Mac                           | Windows/Linux              |
-| ------------------- | ----------------------------- | -------------------------- |
-| Open/close terminal | `` Control + ` ``             | `` Ctrl + ` ``             |
-| New terminal        | `Control + Shift + `          | `Ctrl + Shift + `          |
-| Clear terminal      | `Command + K` inside terminal | `Ctrl + L` inside terminal |
-
-## 7. Sidebar and Panels
-
-| Action            | Mac                   | Windows/Linux      |
-| ----------------- | --------------------- | ------------------ |
-| Show/hide sidebar | `Command + B`         | `Ctrl + B`         |
-| Explorer          | `Command + Shift + E` | `Ctrl + Shift + E` |
-| Search panel      | `Command + Shift + F` | `Ctrl + Shift + F` |
-| Source Control    | `Control + Shift + G` | `Ctrl + Shift + G` |
-| Extensions        | `Command + Shift + X` | `Ctrl + Shift + X` |
-| Command Palette   | `Command + Shift + P` | `Ctrl + Shift + P` |
-
-## 8. Python-Specific Useful Keys
-
-| Action                    | Mac                                                   | Windows/Linux                       |
-| ------------------------- | ----------------------------------------------------- | ----------------------------------- |
-| Run Python file           | Usually `Run Python File` button, or terminal command | Same                                |
-| Open Command Palette      | `Command + Shift + P`                                 | `Ctrl + Shift + P`                  |
-| Select Python interpreter | Search `Python: Select Interpreter`                   | Search `Python: Select Interpreter` |
-| Rename variable/function  | `F2`                                                  | `F2`                                |
-| Quick fix                 | `Command + .`                                         | `Ctrl + .`                          |
-
-## Most Useful 10 to Remember First
-
-For your Python study project, I recommend memorizing these first:
-
-| Action            | Mac                     |
-| ----------------- | ----------------------- |
-| Save              | `Command + S`           |
-| Format file       | `Shift + Option + F`    |
-| Comment line      | `Command + /`           |
-| Duplicate line    | `Shift + Option + Down` |
-| Move line         | `Option + Up/Down`      |
-| Delete line       | `Command + Shift + K`   |
-| Find file         | `Command + P`           |
-| Command Palette   | `Command + Shift + P`   |
-| Open terminal     | `` Control + ` ``       |
-| Show/hide sidebar | `Command + B`           |
-
-Recommended next step: practice the **Most Useful 10** in one Python file, especially duplicate line, format file, comment line, and open terminal.
+[▶︎ chatgpt 2026-04-30 ](https://chatgpt.com/g/g-p-69d6676fff908191a75cba648ed0034f/c/6a088348-23b0-83ea-8723-fae719da2407)
