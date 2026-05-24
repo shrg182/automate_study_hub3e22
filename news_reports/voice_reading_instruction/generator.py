@@ -89,7 +89,8 @@ SECTIONS = [
             "Press the system speech shortcut.",
             "To set it up, open System Settings > Accessibility > Spoken Content > Speak selection. Then choose a shortcut, voice, and speaking speed.",
         ],
-        code_blocks=["System Settings > Accessibility > Spoken Content > Speak selection"],
+        code_blocks=[
+            "System Settings > Accessibility > Spoken Content > Speak selection"],
     ),
     InstructionSection(
         title="Option 5: iPhone or iPad Speak Screen",
@@ -249,7 +250,7 @@ def build_instruction_pdf(output_path: str | Path = DEFAULT_OUTPUT) -> Path:
         _paragraph("How to Read a PDF Aloud", styles["title"]),
         _paragraph("Date: May 24, 2026", styles["meta"]),
         _paragraph(
-            "Credit: Created by ChatGPT/Codex for the Automate Study Hub news report materials.",
+            "Credit: Created by ChatGPT/Codex.",
             styles["meta"],
         ),
         _paragraph(
