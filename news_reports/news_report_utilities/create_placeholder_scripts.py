@@ -12,7 +12,7 @@ from typing_extensions import Final
 
 
 PROJECT_ROOT: Final[Path] = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "news_reports" / "putin_visit_to_china_2"
+OUTPUT_DIR = PROJECT_ROOT / "news_reports" / "voice_reading_instruction"
 
 SCRIPT_NAMES = [
     "data_model",
