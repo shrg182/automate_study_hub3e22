@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_20_sending_email_texts_and_push_notifications.
 
 Chapter:
-    Chapter 20 Sending Email Texts And Push Notifications
+    Chapter 20 - Sending Email, Texts, and Push Notifications
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter20.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 20 Sending Email Texts And Push Notifications",
-        "clean_chapter_title": "Chapter 20 Sending Email Texts And Push Notifications",
-        "chapter_url": "",
+        "chapter_number": "20",
+        "chapter_title": "Chapter 20 - Sending Email, Texts, and Push Notifications",
+        "clean_chapter_title": "Sending Email, Texts, and Push Notifications",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter20.html",
         "chapter_dir_name": "chapter_20_sending_email_texts_and_push_notifications",
     }
 

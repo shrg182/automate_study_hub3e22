@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_24_text_to_speech_and_speech_recognition_engines.
 
 Chapter:
-    Chapter 24 Text To Speech And Speech Recognition Engines
+    Chapter 24 - Text-to-Speech and Speech Recognition Engines
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter24.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 24 Text To Speech And Speech Recognition Engines",
-        "clean_chapter_title": "Chapter 24 Text To Speech And Speech Recognition Engines",
-        "chapter_url": "",
+        "chapter_number": "24",
+        "chapter_title": "Chapter 24 - Text-to-Speech and Speech Recognition Engines",
+        "clean_chapter_title": "Text-to-Speech and Speech Recognition Engines",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter24.html",
         "chapter_dir_name": "chapter_24_text_to_speech_and_speech_recognition_engines",
     }
 

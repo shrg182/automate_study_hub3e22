@@ -15,6 +15,7 @@ Usage:
     python3 tools/utility_files/populate_utility_files_in_chapters.py --overwrite
     python3 tools/utility_files/populate_utility_files_in_chapters.py --overwrite --exclude-overwrite-chapters chapter_00_introduction
     python3 tools/utility_files/populate_utility_files_in_chapters.py --include-root
+    python3 tools/utility_files/populate_utility_files_in_chapters.py --no-exclude-chapters
 """
 
 from __future__ import annotations
@@ -60,6 +61,18 @@ EXCLUDE_CHAPTERS: Final[set[str]] = {
     'chapter_03_loops',
     'chapter_04_functions',
     'chapter_05_debugging',
+    'chapter_06_lists',
+    'chapter_07_dictionaries_and_structuring_data',
+    'chapter_08_strings_and_text_editing',
+    'chapter_09_text_pattern_matching_with_regular_expressions',
+    'chapter_10_reading_and_writing_files',
+    'chapter_11_organizing_files',
+    'chapter_12_designing_and_deploying_command_line_programs',
+    'chapter_13_web_scraping',
+    'chapter_14_excel_spreadsheets',
+    'chapter_15_google_sheets',
+    'chapter_16_sqlite_databases',
+    'chapter_17_pdf_and_word_documents',
     'chapter_18_csv_json_and_xml_files',
     'chapter_19_keeping_time_scheduling_tasks_and_launching_programs',
     'chapter_20_sending_email_texts_and_push_notifications',
@@ -109,6 +122,19 @@ def parse_args() -> argparse.Namespace:
         "--include-root",
         action="store_true",
         help="Also populate utility files directly in the chapters directory.",
+    )
+    parser.add_argument(
+        "--use-exclude-chapters",
+        dest="use_exclude_chapters",
+        action="store_true",
+        default=True,
+        help="Use the built-in EXCLUDE_CHAPTERS list during discovery (default).",
+    )
+    parser.add_argument(
+        "--no-exclude-chapters",
+        dest="use_exclude_chapters",
+        action="store_false",
+        help="Ignore the built-in EXCLUDE_CHAPTERS list during discovery.",
     )
     parser.add_argument(
         "--overwrite",
@@ -169,7 +195,7 @@ def load_toc_metadata(toc_file: Path) -> dict[int, ChapterMetadata]:
 def extract_chapter_number(title: str, url: str = "") -> int | None:
     """Extract a chapter number from a title, URL, or directory name."""
     patterns = (
-        r"\bchapter[_\s-]*(\d+)\b",
+        r"\bchapter[_\s-]*(\d+)(?=\D|$)",
         r"\bchapter(\d+)\.html\b",
     )
     haystack = f"{title} {url}"
@@ -196,12 +222,18 @@ def prettify_directory_name(directory_name: str) -> str:
     return directory_name.replace("_", " ").replace("-", " ").title()
 
 
-def should_skip_directory(path: Path) -> bool:
+def should_skip_directory(path: Path, use_exclude_chapters: bool = True) -> bool:
     """Return True when a directory should not receive utility files."""
-    return path.name.startswith(".") or path.name in SKIPPED_DIRECTORY_NAMES or path.name in EXCLUDE_CHAPTERS
+    if path.name.startswith(".") or path.name in SKIPPED_DIRECTORY_NAMES:
+        return True
+    return use_exclude_chapters and path.name in EXCLUDE_CHAPTERS
 
 
-def discover_target_directories(chapters_dir: Path, include_root: bool) -> list[Path]:
+def discover_target_directories(
+    chapters_dir: Path,
+    include_root: bool,
+    use_exclude_chapters: bool,
+) -> list[Path]:
     """Discover chapter directories and subdirectories from the filesystem."""
     if not chapters_dir.is_dir():
         raise FileNotFoundError(
@@ -212,11 +244,12 @@ def discover_target_directories(chapters_dir: Path, include_root: bool) -> list[
         targets.append(chapters_dir)
 
     for path in sorted(chapters_dir.rglob("*")):
-        if not path.is_dir() or should_skip_directory(path):
+        if not path.is_dir() or should_skip_directory(path, use_exclude_chapters):
             continue
         relative_parents = path.relative_to(chapters_dir).parents
         if any(
-            parent != Path(".") and should_skip_directory(parent)
+            parent != Path(".")
+            and should_skip_directory(parent, use_exclude_chapters)
             for parent in relative_parents
         ):
             continue
@@ -409,10 +442,16 @@ def main() -> None:
     excluded_chapter_names = parse_excluded_chapter_names(
         args.exclude_overwrite_chapters
     )
-    target_dirs = discover_target_directories(chapters_dir, args.include_root)
+    target_dirs = discover_target_directories(
+        chapters_dir=chapters_dir,
+        include_root=args.include_root,
+        use_exclude_chapters=args.use_exclude_chapters,
+    )
 
     print(
         f"Discovered {len(target_dirs)} target directories under {chapters_dir}")
+    if not args.use_exclude_chapters:
+        print("Built-in EXCLUDE_CHAPTERS list is disabled.")
     if excluded_chapter_names:
         protected_text = ", ".join(sorted(excluded_chapter_names))
         print(f"Overwrite-protected chapters: {protected_text}")

@@ -1,11 +1,11 @@
-# Chapter 12 Designing And Deploying Command Line Programs
+# Chapter 12 - Designing and Deploying Command Line Programs
 
 ### chapters/chapter_12_designing_and_deploying_command_line_programs
 
-_Auto-generated on 2026-05-25 17:15:02_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter12.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter12.html
 
 **Directory:** `chapter_12_designing_and_deploying_command_line_programs`
 
@@ -14,7 +14,7 @@ _Auto-generated on 2026-05-25 17:15:02_
 This directory belongs to `chapter_12_designing_and_deploying_command_line_programs`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 12 Designing And Deploying Command Line Programs**.
+**Designing and Deploying Command Line Programs**.
 
 ## Directory Tree
 

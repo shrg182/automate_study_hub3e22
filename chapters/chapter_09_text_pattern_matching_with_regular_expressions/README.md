@@ -1,11 +1,11 @@
-# Chapter 09 Text Pattern Matching With Regular Expressions
+# Chapter 9 - Text Pattern Matching with Regular Expressions
 
 ### chapters/chapter_09_text_pattern_matching_with_regular_expressions
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter9.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter9.html
 
 **Directory:** `chapter_09_text_pattern_matching_with_regular_expressions`
 
@@ -14,7 +14,7 @@ _Auto-generated on 2026-05-25 17:15:01_
 This directory belongs to `chapter_09_text_pattern_matching_with_regular_expressions`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 09 Text Pattern Matching With Regular Expressions**.
+**Text Pattern Matching with Regular Expressions**.
 
 ## Directory Tree
 

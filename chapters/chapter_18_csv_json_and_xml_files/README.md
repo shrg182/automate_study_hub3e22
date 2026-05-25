@@ -1,11 +1,11 @@
-# Chapter 18 Csv Json And Xml Files
+# Chapter 18 - CSV, JSON, and XML Files
 
 ### chapters/chapter_18_csv_json_and_xml_files
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter18.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter18.html
 
 **Directory:** `chapter_18_csv_json_and_xml_files`
 
@@ -14,12 +14,15 @@ _Auto-generated on 2026-05-21 19:58:57_
 This directory belongs to `chapter_18_csv_json_and_xml_files`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 18 Csv Json And Xml Files**.
+**CSV, JSON, and XML Files**.
 
 ## Directory Tree
 
 ```text
 chapter_18_csv_json_and_xml_files/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started

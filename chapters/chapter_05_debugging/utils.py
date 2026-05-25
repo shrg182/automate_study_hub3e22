@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_05_debugging.
 
 Chapter:
-    Chapter 05 Debugging
+    Chapter 5 - Debugging
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter5.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 05 Debugging",
-        "clean_chapter_title": "Chapter 05 Debugging",
-        "chapter_url": "",
+        "chapter_number": "5",
+        "chapter_title": "Chapter 5 - Debugging",
+        "clean_chapter_title": "Debugging",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter5.html",
         "chapter_dir_name": "chapter_05_debugging",
     }
 

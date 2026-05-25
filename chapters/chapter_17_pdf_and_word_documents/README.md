@@ -1,11 +1,11 @@
-# Chapter 17 Pdf And Word Documents
+# Chapter 17 - PDF and Word Documents
 
 ### chapters/chapter_17_pdf_and_word_documents
 
-_Auto-generated on 2026-05-25 17:15:02_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter17.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter17.html
 
 **Directory:** `chapter_17_pdf_and_word_documents`
 
@@ -14,7 +14,7 @@ _Auto-generated on 2026-05-25 17:15:02_
 This directory belongs to `chapter_17_pdf_and_word_documents`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 17 Pdf And Word Documents**.
+**PDF and Word Documents**.
 
 ## Directory Tree
 

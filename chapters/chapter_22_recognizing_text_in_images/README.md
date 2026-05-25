@@ -1,11 +1,11 @@
-# Chapter 22 Recognizing Text In Images
+# Chapter 22 - Recognizing Text in Images
 
 ### chapters/chapter_22_recognizing_text_in_images
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter22.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter22.html
 
 **Directory:** `chapter_22_recognizing_text_in_images`
 
@@ -14,12 +14,15 @@ _Auto-generated on 2026-05-21 19:58:57_
 This directory belongs to `chapter_22_recognizing_text_in_images`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 22 Recognizing Text In Images**.
+**Recognizing Text in Images**.
 
 ## Directory Tree
 
 ```text
 chapter_22_recognizing_text_in_images/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started

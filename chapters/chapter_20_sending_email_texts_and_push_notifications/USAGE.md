@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 20 Sending Email Texts And Push Notifications
+### Chapter 20 - Sending Email, Texts, and Push Notifications
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter20.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter20.html
 
 **Directory:** `chapter_20_sending_email_texts_and_push_notifications`
 **Relative path:** `chapters/chapter_20_sending_email_texts_and_push_notifications`
@@ -22,6 +22,9 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_20_sending_email_texts_and_push_notifications/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ---

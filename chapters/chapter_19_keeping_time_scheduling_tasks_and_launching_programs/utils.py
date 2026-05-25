@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_19_keeping_time_scheduling_tasks_and_launching_programs.
 
 Chapter:
-    Chapter 19 Keeping Time Scheduling Tasks And Launching Programs
+    Chapter 19 - Keeping Time, Scheduling Tasks, and Launching Programs
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter19.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 19 Keeping Time Scheduling Tasks And Launching Programs",
-        "clean_chapter_title": "Chapter 19 Keeping Time Scheduling Tasks And Launching Programs",
-        "chapter_url": "",
+        "chapter_number": "19",
+        "chapter_title": "Chapter 19 - Keeping Time, Scheduling Tasks, and Launching Programs",
+        "clean_chapter_title": "Keeping Time, Scheduling Tasks, and Launching Programs",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter19.html",
         "chapter_dir_name": "chapter_19_keeping_time_scheduling_tasks_and_launching_programs",
     }
 

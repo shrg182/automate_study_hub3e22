@@ -1,11 +1,11 @@
-# Chapter 21 Making Graphs And Manipulating Images
+# Chapter 21 - Making Graphs and Manipulating Images
 
 ### chapters/chapter_21_making_graphs_and_manipulating_images
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter21.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter21.html
 
 **Directory:** `chapter_21_making_graphs_and_manipulating_images`
 
@@ -14,12 +14,15 @@ _Auto-generated on 2026-05-21 19:58:57_
 This directory belongs to `chapter_21_making_graphs_and_manipulating_images`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 21 Making Graphs And Manipulating Images**.
+**Making Graphs and Manipulating Images**.
 
 ## Directory Tree
 
 ```text
 chapter_21_making_graphs_and_manipulating_images/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started

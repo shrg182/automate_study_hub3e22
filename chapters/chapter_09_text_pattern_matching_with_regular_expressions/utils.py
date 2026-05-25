@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_09_text_pattern_matching_with_regular_expressions.
 
 Chapter:
-    Chapter 09 Text Pattern Matching With Regular Expressions
+    Chapter 9 - Text Pattern Matching with Regular Expressions
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter9.html
 
 Auto-generated on:
-    2026-05-25 17:15:01
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 09 Text Pattern Matching With Regular Expressions",
-        "clean_chapter_title": "Chapter 09 Text Pattern Matching With Regular Expressions",
-        "chapter_url": "",
+        "chapter_number": "9",
+        "chapter_title": "Chapter 9 - Text Pattern Matching with Regular Expressions",
+        "clean_chapter_title": "Text Pattern Matching with Regular Expressions",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter9.html",
         "chapter_dir_name": "chapter_09_text_pattern_matching_with_regular_expressions",
     }
 

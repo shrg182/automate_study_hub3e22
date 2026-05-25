@@ -1,11 +1,11 @@
-# Chapter 11 Organizing Files
+# Chapter 11 - Organizing Files
 
 ### chapters/chapter_11_organizing_files
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter11.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter11.html
 
 **Directory:** `chapter_11_organizing_files`
 
@@ -14,7 +14,7 @@ _Auto-generated on 2026-05-25 17:15:01_
 This directory belongs to `chapter_11_organizing_files`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 11 Organizing Files**.
+**Organizing Files**.
 
 ## Directory Tree
 

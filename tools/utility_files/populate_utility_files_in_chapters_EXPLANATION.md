@@ -162,6 +162,24 @@ Also generates files directly inside the root `chapters/` directory.
 
 Without this option, only subdirectories are targeted.
 
+### `--use-exclude-chapters`
+
+Uses the built-in `EXCLUDE_CHAPTERS` set during directory discovery.
+
+This is the default behavior, so you usually do not need to type this option.
+
+### `--no-exclude-chapters`
+
+Turns off the built-in `EXCLUDE_CHAPTERS` set during directory discovery.
+
+Use this when you want the script to include chapters that are normally skipped.
+
+Example:
+
+```bash
+python3 tools/utility_files/populate_utility_files_in_chapters.py --no-exclude-chapters
+```
+
 ### `--overwrite`
 
 Allows existing generated files to be overwritten.
@@ -257,7 +275,7 @@ A directory is skipped when:
 
 - Its name starts with `.`
 - Its name is in `SKIPPED_DIRECTORY_NAMES`
-- Its name is in `EXCLUDE_CHAPTERS`
+- Its name is in `EXCLUDE_CHAPTERS` and the exclude switch is enabled
 
 ### `discover_target_directories(chapters_dir, include_root)`
 
@@ -436,6 +454,41 @@ The renderer replaces placeholders only when the name exists in the context dict
 Unknown placeholders are left unchanged.
 
 This makes the renderer safer for `utils.py.template`, where normal Python code may contain braces.
+
+## How README.md Content Is Created
+
+Each chapter `README.md` file is created from this template:
+
+```text
+tools/utility_files/templates/README.md.template
+```
+
+The script does not manually write each README line by line. Instead, it loads the template, builds a context dictionary for the current chapter directory, replaces placeholders in the template, and writes the final rendered text to `README.md`.
+
+The main steps are:
+
+1. `load_templates()` reads `README.md.template`.
+2. `discover_target_directories()` finds chapter folders and subfolders.
+3. `build_context()` creates values such as `chapter_title`, `chapter_page_url`, `atbs_chapter_url`, `directory_name`, and `generated_datetime`.
+4. `render_template()` replaces placeholders like `{chapter_title}` and `{chapter_page_url}`.
+5. `write_rendered_file()` writes the finished content to `README.md`.
+
+The chapter URL comes from:
+
+```text
+tools/web_scraping/out/atbs3e_toc.json
+```
+
+For the URL to appear in a generated README, the script must be able to match the chapter directory name to a chapter number. For example, `chapter_01_python_basics` must be recognized as chapter `1`, so the script can look up chapter `1` in the TOC JSON and use its `url` field.
+
+If the README shows a blank chapter URL, the usual causes are:
+
+- The TOC JSON file is missing.
+- The TOC JSON record does not include a URL.
+- The chapter number could not be extracted from the directory name.
+- The README was generated before the URL lookup logic was fixed.
+
+After fixing the lookup logic, regenerate existing README files with `--overwrite` if you want old blank URLs to be replaced.
 
 ## Overwrite Behavior
 
@@ -718,6 +771,12 @@ Preview changes:
 
 ```bash
 python3 tools/utility_files/populate_utility_files_in_chapters.py --dry-run
+```
+
+Include chapters that are normally listed in `EXCLUDE_CHAPTERS`:
+
+```bash
+python3 tools/utility_files/populate_utility_files_in_chapters.py --no-exclude-chapters
 ```
 
 Overwrite existing files:

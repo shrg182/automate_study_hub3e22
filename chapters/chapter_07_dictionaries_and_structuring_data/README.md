@@ -1,11 +1,11 @@
-# Chapter 07 Dictionaries And Structuring Data
+# Chapter 7 - Dictionaries and Structuring Data
 
 ### chapters/chapter_07_dictionaries_and_structuring_data
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter7.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter7.html
 
 **Directory:** `chapter_07_dictionaries_and_structuring_data`
 
@@ -14,7 +14,7 @@ _Auto-generated on 2026-05-25 17:15:01_
 This directory belongs to `chapter_07_dictionaries_and_structuring_data`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 07 Dictionaries And Structuring Data**.
+**Dictionaries and Structuring Data**.
 
 ## Directory Tree
 

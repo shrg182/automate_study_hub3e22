@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_16_sqlite_databases.
 
 Chapter:
-    Chapter 16 Sqlite Databases
+    Chapter 16 - SQLite Databases
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter16.html
 
 Auto-generated on:
-    2026-05-25 17:15:02
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 16 Sqlite Databases",
-        "clean_chapter_title": "Chapter 16 Sqlite Databases",
-        "chapter_url": "",
+        "chapter_number": "16",
+        "chapter_title": "Chapter 16 - SQLite Databases",
+        "clean_chapter_title": "SQLite Databases",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter16.html",
         "chapter_dir_name": "chapter_16_sqlite_databases",
     }
 

@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_17_pdf_and_word_documents.
 
 Chapter:
-    Chapter 17 Pdf And Word Documents
+    Chapter 17 - PDF and Word Documents
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter17.html
 
 Auto-generated on:
-    2026-05-25 17:15:02
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 17 Pdf And Word Documents",
-        "clean_chapter_title": "Chapter 17 Pdf And Word Documents",
-        "chapter_url": "",
+        "chapter_number": "17",
+        "chapter_title": "Chapter 17 - PDF and Word Documents",
+        "clean_chapter_title": "PDF and Word Documents",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter17.html",
         "chapter_dir_name": "chapter_17_pdf_and_word_documents",
     }
 

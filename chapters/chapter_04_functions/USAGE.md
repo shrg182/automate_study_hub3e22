@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 04 Functions
+### Chapter 4 - Functions
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter4.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter4.html
 
 **Directory:** `chapter_04_functions`
 **Relative path:** `chapters/chapter_04_functions`
@@ -22,6 +22,9 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_04_functions/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ---

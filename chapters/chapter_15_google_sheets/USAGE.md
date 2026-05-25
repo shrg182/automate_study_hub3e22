@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 15 Google Sheets
+### Chapter 15 - Google Sheets
 
-_Auto-generated on 2026-05-25 17:15:02_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter15.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter15.html
 
 **Directory:** `chapter_15_google_sheets`
 **Relative path:** `chapters/chapter_15_google_sheets`

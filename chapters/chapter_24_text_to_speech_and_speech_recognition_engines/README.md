@@ -1,11 +1,11 @@
-# Chapter 24 Text To Speech And Speech Recognition Engines
+# Chapter 24 - Text-to-Speech and Speech Recognition Engines
 
 ### chapters/chapter_24_text_to_speech_and_speech_recognition_engines
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter24.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter24.html
 
 **Directory:** `chapter_24_text_to_speech_and_speech_recognition_engines`
 
@@ -14,12 +14,15 @@ _Auto-generated on 2026-05-21 19:58:57_
 This directory belongs to `chapter_24_text_to_speech_and_speech_recognition_engines`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 24 Text To Speech And Speech Recognition Engines**.
+**Text-to-Speech and Speech Recognition Engines**.
 
 ## Directory Tree
 
 ```text
 chapter_24_text_to_speech_and_speech_recognition_engines/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started

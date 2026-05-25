@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 06 Lists
+### Chapter 6 - Lists
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter6.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter6.html
 
 **Directory:** `chapter_06_lists`
 **Relative path:** `chapters/chapter_06_lists`

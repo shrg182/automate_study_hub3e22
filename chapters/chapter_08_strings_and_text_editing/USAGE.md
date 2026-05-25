@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 08 Strings And Text Editing
+### Chapter 8 - Strings and Text Editing
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter8.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter8.html
 
 **Directory:** `chapter_08_strings_and_text_editing`
 **Relative path:** `chapters/chapter_08_strings_and_text_editing`

@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_02_if_else_and_flow_control.
 
 Chapter:
-    Chapter 02 If Else And Flow Control
+    Chapter 2 - if-else and Flow Control
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter2.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 02 If Else And Flow Control",
-        "clean_chapter_title": "Chapter 02 If Else And Flow Control",
-        "chapter_url": "",
+        "chapter_number": "2",
+        "chapter_title": "Chapter 2 - if-else and Flow Control",
+        "clean_chapter_title": "if-else and Flow Control",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter2.html",
         "chapter_dir_name": "chapter_02_if_else_and_flow_control",
     }
 

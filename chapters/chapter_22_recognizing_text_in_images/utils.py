@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_22_recognizing_text_in_images.
 
 Chapter:
-    Chapter 22 Recognizing Text In Images
+    Chapter 22 - Recognizing Text in Images
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter22.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 22 Recognizing Text In Images",
-        "clean_chapter_title": "Chapter 22 Recognizing Text In Images",
-        "chapter_url": "",
+        "chapter_number": "22",
+        "chapter_title": "Chapter 22 - Recognizing Text in Images",
+        "clean_chapter_title": "Recognizing Text in Images",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter22.html",
         "chapter_dir_name": "chapter_22_recognizing_text_in_images",
     }
 

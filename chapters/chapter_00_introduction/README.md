@@ -1,11 +1,11 @@
-# Chapter 00 Introduction
+# Introduction
 
 ### chapters/chapter_00_introduction
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter0.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter0.html
 
 **Directory:** `chapter_00_introduction`
 
@@ -14,12 +14,15 @@ _Auto-generated on 2026-05-21 19:58:57_
 This directory belongs to `chapter_00_introduction`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 00 Introduction**.
+**Introduction**.
 
 ## Directory Tree
 
 ```text
 chapter_00_introduction/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started

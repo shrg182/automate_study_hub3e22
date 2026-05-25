@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_18_csv_json_and_xml_files.
 
 Chapter:
-    Chapter 18 Csv Json And Xml Files
+    Chapter 18 - CSV, JSON, and XML Files
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter18.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 18 Csv Json And Xml Files",
-        "clean_chapter_title": "Chapter 18 Csv Json And Xml Files",
-        "chapter_url": "",
+        "chapter_number": "18",
+        "chapter_title": "Chapter 18 - CSV, JSON, and XML Files",
+        "clean_chapter_title": "CSV, JSON, and XML Files",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter18.html",
         "chapter_dir_name": "chapter_18_csv_json_and_xml_files",
     }
 

@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 11 Organizing Files
+### Chapter 11 - Organizing Files
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter11.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter11.html
 
 **Directory:** `chapter_11_organizing_files`
 **Relative path:** `chapters/chapter_11_organizing_files`

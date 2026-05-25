@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_21_making_graphs_and_manipulating_images.
 
 Chapter:
-    Chapter 21 Making Graphs And Manipulating Images
+    Chapter 21 - Making Graphs and Manipulating Images
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter21.html
 
 Auto-generated on:
-    2026-05-21 19:58:57
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 21 Making Graphs And Manipulating Images",
-        "clean_chapter_title": "Chapter 21 Making Graphs And Manipulating Images",
-        "chapter_url": "",
+        "chapter_number": "21",
+        "chapter_title": "Chapter 21 - Making Graphs and Manipulating Images",
+        "clean_chapter_title": "Making Graphs and Manipulating Images",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter21.html",
         "chapter_dir_name": "chapter_21_making_graphs_and_manipulating_images",
     }
 

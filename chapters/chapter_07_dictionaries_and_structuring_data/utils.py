@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_07_dictionaries_and_structuring_data.
 
 Chapter:
-    Chapter 07 Dictionaries And Structuring Data
+    Chapter 7 - Dictionaries and Structuring Data
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter7.html
 
 Auto-generated on:
-    2026-05-25 17:15:01
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 07 Dictionaries And Structuring Data",
-        "clean_chapter_title": "Chapter 07 Dictionaries And Structuring Data",
-        "chapter_url": "",
+        "chapter_number": "7",
+        "chapter_title": "Chapter 7 - Dictionaries and Structuring Data",
+        "clean_chapter_title": "Dictionaries and Structuring Data",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter7.html",
         "chapter_dir_name": "chapter_07_dictionaries_and_structuring_data",
     }
 

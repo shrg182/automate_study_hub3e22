@@ -1,11 +1,11 @@
-# Chapter 10 Reading And Writing Files
+# Chapter 10 - Reading and Writing Files
 
 ### chapters/chapter_10_reading_and_writing_files
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter10.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter10.html
 
 **Directory:** `chapter_10_reading_and_writing_files`
 
@@ -14,7 +14,7 @@ _Auto-generated on 2026-05-25 17:15:01_
 This directory belongs to `chapter_10_reading_and_writing_files`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 10 Reading And Writing Files**.
+**Reading and Writing Files**.
 
 ## Directory Tree
 

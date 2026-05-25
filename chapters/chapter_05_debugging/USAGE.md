@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 05 Debugging
+### Chapter 5 - Debugging
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter5.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter5.html
 
 **Directory:** `chapter_05_debugging`
 **Relative path:** `chapters/chapter_05_debugging`
@@ -22,6 +22,9 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_05_debugging/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ---

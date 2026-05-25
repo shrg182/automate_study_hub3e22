@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_10_reading_and_writing_files.
 
 Chapter:
-    Chapter 10 Reading And Writing Files
+    Chapter 10 - Reading and Writing Files
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter10.html
 
 Auto-generated on:
-    2026-05-25 17:15:01
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 10 Reading And Writing Files",
-        "clean_chapter_title": "Chapter 10 Reading And Writing Files",
-        "chapter_url": "",
+        "chapter_number": "10",
+        "chapter_title": "Chapter 10 - Reading and Writing Files",
+        "clean_chapter_title": "Reading and Writing Files",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter10.html",
         "chapter_dir_name": "chapter_10_reading_and_writing_files",
     }
 

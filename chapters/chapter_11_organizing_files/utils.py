@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_11_organizing_files.
 
 Chapter:
-    Chapter 11 Organizing Files
+    Chapter 11 - Organizing Files
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter11.html
 
 Auto-generated on:
-    2026-05-25 17:15:01
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 11 Organizing Files",
-        "clean_chapter_title": "Chapter 11 Organizing Files",
-        "chapter_url": "",
+        "chapter_number": "11",
+        "chapter_title": "Chapter 11 - Organizing Files",
+        "clean_chapter_title": "Organizing Files",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter11.html",
         "chapter_dir_name": "chapter_11_organizing_files",
     }
 

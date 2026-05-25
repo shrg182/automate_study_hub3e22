@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 10 Reading And Writing Files
+### Chapter 10 - Reading and Writing Files
 
-_Auto-generated on 2026-05-25 17:15:01_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter10.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter10.html
 
 **Directory:** `chapter_10_reading_and_writing_files`
 **Relative path:** `chapters/chapter_10_reading_and_writing_files`

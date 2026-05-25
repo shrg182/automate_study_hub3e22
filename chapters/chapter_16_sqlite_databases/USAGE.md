@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 16 Sqlite Databases
+### Chapter 16 - SQLite Databases
 
-_Auto-generated on 2026-05-25 17:15:02_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter16.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter16.html
 
 **Directory:** `chapter_16_sqlite_databases`
 **Relative path:** `chapters/chapter_16_sqlite_databases`

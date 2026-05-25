@@ -1,11 +1,11 @@
-# Chapter 19 Keeping Time Scheduling Tasks And Launching Programs
+# Chapter 19 - Keeping Time, Scheduling Tasks, and Launching Programs
 
 ### chapters/chapter_19_keeping_time_scheduling_tasks_and_launching_programs
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter19.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter19.html
 
 **Directory:** `chapter_19_keeping_time_scheduling_tasks_and_launching_programs`
 
@@ -14,12 +14,15 @@ _Auto-generated on 2026-05-21 19:58:57_
 This directory belongs to `chapter_19_keeping_time_scheduling_tasks_and_launching_programs`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 19 Keeping Time Scheduling Tasks And Launching Programs**.
+**Keeping Time, Scheduling Tasks, and Launching Programs**.
 
 ## Directory Tree
 
 ```text
 chapter_19_keeping_time_scheduling_tasks_and_launching_programs/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started

@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 14 Excel Spreadsheets
+### Chapter 14 - Excel Spreadsheets
 
-_Auto-generated on 2026-05-25 17:15:02_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter14.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter14.html
 
 **Directory:** `chapter_14_excel_spreadsheets`
 **Relative path:** `chapters/chapter_14_excel_spreadsheets`

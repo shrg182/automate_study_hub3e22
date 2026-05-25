@@ -1,11 +1,11 @@
 # Usage Guide
 
-### Chapter 23 Controlling The Keyboard And Mouse
+### Chapter 23 - Controlling the Keyboard and Mouse
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter23.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter23.html
 
 **Directory:** `chapter_23_controlling_the_keyboard_and_mouse`
 **Relative path:** `chapters/chapter_23_controlling_the_keyboard_and_mouse`
@@ -22,6 +22,9 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_23_controlling_the_keyboard_and_mouse/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ---

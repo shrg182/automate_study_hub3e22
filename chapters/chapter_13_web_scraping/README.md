@@ -1,11 +1,11 @@
-# Chapter 13 Web Scraping
+# Chapter 13 - Web Scraping
 
 ### chapters/chapter_13_web_scraping
 
-_Auto-generated on 2026-05-25 17:15:02_
+_Auto-generated on 2026-05-25 17:41:40_
 
-> 📖 **Chapter Page:**   
-> 🔗 **ATBS Chapter Link:** 
+> 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter13.html  
+> 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter13.html
 
 **Directory:** `chapter_13_web_scraping`
 
@@ -14,7 +14,7 @@ _Auto-generated on 2026-05-25 17:15:02_
 This directory belongs to `chapter_13_web_scraping`.
 
 Use it for notes, scripts, examples, and helper files related to
-**Chapter 13 Web Scraping**.
+**Web Scraping**.
 
 ## Directory Tree
 

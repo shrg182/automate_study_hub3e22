@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_08_strings_and_text_editing.
 
 Chapter:
-    Chapter 08 Strings And Text Editing
+    Chapter 8 - Strings and Text Editing
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter8.html
 
 Auto-generated on:
-    2026-05-25 17:15:01
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 08 Strings And Text Editing",
-        "clean_chapter_title": "Chapter 08 Strings And Text Editing",
-        "chapter_url": "",
+        "chapter_number": "8",
+        "chapter_title": "Chapter 8 - Strings and Text Editing",
+        "clean_chapter_title": "Strings and Text Editing",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter8.html",
         "chapter_dir_name": "chapter_08_strings_and_text_editing",
     }
 

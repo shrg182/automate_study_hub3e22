@@ -5,13 +5,13 @@ utils.py
 Utility helper functions for chapter_12_designing_and_deploying_command_line_programs.
 
 Chapter:
-    Chapter 12 Designing And Deploying Command Line Programs
+    Chapter 12 - Designing and Deploying Command Line Programs
 
 Chapter page:
-    
+    https://automatetheboringstuff.com/3e/chapter12.html
 
 Auto-generated on:
-    2026-05-25 17:15:02
+    2026-05-25 17:41:40
 """
 
 from __future__ import annotations
@@ -58,10 +58,10 @@ def get_output_dir() -> Path:
 def chapter_info() -> dict[str, str]:
     """Return basic chapter information."""
     return {
-        "chapter_number": "",
-        "chapter_title": "Chapter 12 Designing And Deploying Command Line Programs",
-        "clean_chapter_title": "Chapter 12 Designing And Deploying Command Line Programs",
-        "chapter_url": "",
+        "chapter_number": "12",
+        "chapter_title": "Chapter 12 - Designing and Deploying Command Line Programs",
+        "clean_chapter_title": "Designing and Deploying Command Line Programs",
+        "chapter_url": "https://automatetheboringstuff.com/3e/chapter12.html",
         "chapter_dir_name": "chapter_12_designing_and_deploying_command_line_programs",
     }
 
