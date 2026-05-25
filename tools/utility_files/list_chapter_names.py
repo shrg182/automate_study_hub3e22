@@ -63,7 +63,7 @@ def print_chapter_names(root: Path) -> None:
         return
 
     for chapter_dir in chapter_dirs:
-        print(chapter_dir.name)
+        print(f"'{chapter_dir.name}', ")
 
 
 def parse_args() -> argparse.Namespace:

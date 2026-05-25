@@ -25,12 +25,13 @@ import re
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Final
+from typing import Any, Final, List
 
 
 PROJECT_ROOT: Final[Path] = Path(__file__).resolve().parents[2]
 DEFAULT_CHAPTERS_DIR: Final[Path] = PROJECT_ROOT / "chapters"
-DEFAULT_TEMPLATE_DIR: Final[Path] = PROJECT_ROOT / "tools" / "utility_files" / "templates"
+DEFAULT_TEMPLATE_DIR: Final[Path] = PROJECT_ROOT / \
+    "tools" / "utility_files" / "templates"
 DEFAULT_TOC_FILE: Final[Path] = (
     PROJECT_ROOT / "tools" / "web_scraping" / "out" / "atbs3e_toc.json"
 )
@@ -49,6 +50,23 @@ SKIPPED_DIRECTORY_NAMES: Final[set[str]] = {
     "__pycache__",
     "data",
     "output",
+}
+
+EXCLUDE_CHAPTERS: Final[set[str]] = {
+
+    'chapter_00_introduction',
+    'chapter_01_python_basics',
+    'chapter_02_if_else_and_flow_control',
+    'chapter_03_loops',
+    'chapter_04_functions',
+    'chapter_05_debugging',
+    'chapter_18_csv_json_and_xml_files',
+    'chapter_19_keeping_time_scheduling_tasks_and_launching_programs',
+    'chapter_20_sending_email_texts_and_push_notifications',
+    'chapter_21_making_graphs_and_manipulating_images',
+    'chapter_22_recognizing_text_in_images',
+    'chapter_23_controlling_the_keyboard_and_mouse',
+    'chapter_24_text_to_speech_and_speech_recognition_engines',
 }
 
 
@@ -180,13 +198,14 @@ def prettify_directory_name(directory_name: str) -> str:
 
 def should_skip_directory(path: Path) -> bool:
     """Return True when a directory should not receive utility files."""
-    return path.name.startswith(".") or path.name in SKIPPED_DIRECTORY_NAMES
+    return path.name.startswith(".") or path.name in SKIPPED_DIRECTORY_NAMES or path.name in EXCLUDE_CHAPTERS
 
 
 def discover_target_directories(chapters_dir: Path, include_root: bool) -> list[Path]:
     """Discover chapter directories and subdirectories from the filesystem."""
     if not chapters_dir.is_dir():
-        raise FileNotFoundError(f"Chapters directory not found: {chapters_dir}")
+        raise FileNotFoundError(
+            f"Chapters directory not found: {chapters_dir}")
 
     targets: list[Path] = []
     if include_root:
@@ -255,7 +274,8 @@ def load_templates(template_dir: Path) -> dict[str, str]:
     for template_name in TEMPLATE_TO_OUTPUT:
         template_path = template_dir / template_name
         if not template_path.is_file():
-            raise FileNotFoundError(f"Template file not found: {template_path}")
+            raise FileNotFoundError(
+                f"Template file not found: {template_path}")
         templates[template_name] = template_path.read_text(encoding="utf-8")
     return templates
 
@@ -290,7 +310,8 @@ def build_context(
     """Build template values for a target directory."""
     chapter_dir = find_chapter_directory(target_dir, chapters_dir)
     chapter_number = extract_chapter_number(chapter_dir.name)
-    metadata = toc_metadata.get(chapter_number) if chapter_number is not None else None
+    metadata = toc_metadata.get(
+        chapter_number) if chapter_number is not None else None
 
     chapter_title = (
         metadata.chapter_title
@@ -390,7 +411,8 @@ def main() -> None:
     )
     target_dirs = discover_target_directories(chapters_dir, args.include_root)
 
-    print(f"Discovered {len(target_dirs)} target directories under {chapters_dir}")
+    print(
+        f"Discovered {len(target_dirs)} target directories under {chapters_dir}")
     if excluded_chapter_names:
         protected_text = ", ".join(sorted(excluded_chapter_names))
         print(f"Overwrite-protected chapters: {protected_text}")
@@ -412,7 +434,8 @@ def main() -> None:
             dry_run=args.dry_run,
         )
         relative_target = target_dir.relative_to(PROJECT_ROOT)
-        result_text = ", ".join(f"{name}: {status}" for name, status in results.items())
+        result_text = ", ".join(
+            f"{name}: {status}" for name, status in results.items())
         print(f"{relative_target}: {result_text}")
 
         for status in results.values():
