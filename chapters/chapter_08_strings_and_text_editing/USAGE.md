@@ -2,7 +2,7 @@
 
 ### Chapter 08 Strings And Text Editing
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:15:01_
 
 > 📖 **Chapter Page:**   
 > 🔗 **ATBS Chapter Link:** 
@@ -22,6 +22,9 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_08_strings_and_text_editing/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ---

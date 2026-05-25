@@ -2,7 +2,7 @@
 
 ### chapters/chapter_12_designing_and_deploying_command_line_programs
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:15:02_
 
 > 📖 **Chapter Page:**   
 > 🔗 **ATBS Chapter Link:** 
@@ -20,6 +20,9 @@ Use it for notes, scripts, examples, and helper files related to
 
 ```text
 chapter_12_designing_and_deploying_command_line_programs/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started

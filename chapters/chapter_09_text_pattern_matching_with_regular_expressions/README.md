@@ -2,7 +2,7 @@
 
 ### chapters/chapter_09_text_pattern_matching_with_regular_expressions
 
-_Auto-generated on 2026-05-21 19:58:57_
+_Auto-generated on 2026-05-25 17:15:01_
 
 > 📖 **Chapter Page:**   
 > 🔗 **ATBS Chapter Link:** 
@@ -20,6 +20,9 @@ Use it for notes, scripts, examples, and helper files related to
 
 ```text
 chapter_09_text_pattern_matching_with_regular_expressions/
+|-- README.md
+|-- USAGE.md
+`-- utils.py
 ```
 
 ## Getting Started
