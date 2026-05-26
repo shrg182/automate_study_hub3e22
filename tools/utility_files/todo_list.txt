@@ -1,3 +1,4 @@
 [ ] get chapter directories, tree structure
 [ ] list chapter directories
 [ ] list chapter directories with their topics
+[ ] list chapters and topics from web_scraping/out

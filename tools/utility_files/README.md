@@ -40,3 +40,6 @@ This:
 
 **list_chapters_and_topics.py**
 
+
+1. Get the json file
+2. List items by indent for 2, 3, 4, 5, 6.

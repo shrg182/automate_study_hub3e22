@@ -27,6 +27,7 @@ EXCLUDE_DIRS: set[str] = {
     ".ruff_cache",
     ".venv",
     "__pycache__",
+    ".DS_Store"
 }
 
 
