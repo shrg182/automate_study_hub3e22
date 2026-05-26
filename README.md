@@ -127,3 +127,14 @@ python3 todo_list.py --todo-dir chapters/chapter_11
 ```bash
 python3 todo_list.py --todo-dir personal_tasks
 ```
+
+
+```bash
+    python3 todo_list.py
+    python3 todo_list.py --todo-dir work_tasks
+    python3 todo_list.py --todo-dir personal_tasks
+    python3 todo_list.py --todo-dir tools/placeholders
+    python3 todo_list.py --todo-dir tools/utility_files
+
+```
+

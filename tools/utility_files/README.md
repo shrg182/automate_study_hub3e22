@@ -35,3 +35,8 @@ This:
 **list_chapter_directories.py**
 
 [▶︎ chatgpt 2026-05-24 2:59 PM ](https://chatgpt.com/g/g-p-69d6676fff908191a75cba648ed0034f-visual-studio-code/c/6a134a6b-9cc0-83ea-9719-8b64d144a35e)
+
+## 4. List chapter and its topics
+
+**list_chapters_and_topics.py**
+

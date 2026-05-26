@@ -1,4 +1,7 @@
 [x] retrieve contents from CSV or JSON file
 [x] populate chapter directories
-[ ] list chapter directories
-[ ] list chapter directories with their topics
+[x] populate README.md, USAGE.md, utility in each directory and subdirectories
+[x] edit contents in the templates
+[x] script name is populate_utility_files_in_chapters.py
+[ ] List chapter and its subdirectories, i.e. topic directory at h3
+[ ] List chapters and topics from scrape/out directory.
