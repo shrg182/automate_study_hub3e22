@@ -2,7 +2,7 @@
 
 ### Chapter 2 - if-else and Flow Control
 
-_Auto-generated on 2026-05-25 17:41:40_
+_Auto-generated on 2026-05-26 00:26:45_
 
 > 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter2.html  
 > 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter2.html
@@ -22,9 +22,6 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_02_if_else_and_flow_control/
-|-- README.md
-|-- USAGE.md
-`-- utils.py
 ```
 
 ---

@@ -11,7 +11,7 @@ Chapter page:
     https://automatetheboringstuff.com/3e/chapter1.html
 
 Auto-generated on:
-    2026-05-25 17:41:40
+    2026-05-26 00:26:45
 """
 
 from __future__ import annotations

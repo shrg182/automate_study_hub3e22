@@ -1,8 +1,8 @@
-# Explanation: populate_utility_files_in_chapters.py
+# Explanation: populate_placeholders_in_chapters.py
 
 ## Purpose
 
-`populate_utility_files_in_chapters.py` creates or updates standard utility files inside chapter folders:
+`populate_placeholders_in_chapters.py` creates or updates standard utility files inside chapter folders:
 
 - `README.md`
 - `USAGE.md`
@@ -16,7 +16,7 @@ The script is designed for maintaining a consistent structure across chapter fol
 
 - Discovers chapter directories automatically from the filesystem.
 - Optionally includes the root `chapters/` directory with `--include-root`.
-- Loads reusable templates from `tools/utility_files/templates/`.
+- Loads reusable templates from `tools/placeholders/templates/`.
 - Supports table-of-contents metadata from `tools/web_scraping/out/atbs3e_toc.json`.
 - Renders placeholders such as `{chapter_title}`, `{directory_name}`, and `{generated_at}`.
 - Skips cache, data, output, hidden, and explicitly excluded chapter directories.
@@ -53,7 +53,7 @@ This is where the script searches for chapter directories.
 Points to the template directory:
 
 ```python
-PROJECT_ROOT / "tools" / "utility_files" / "templates"
+PROJECT_ROOT / "tools" / "placeholders" / "templates"
 ```
 
 The script expects the template files to be located there unless another directory is passed with `--template-dir`.
@@ -143,7 +143,7 @@ Sets the directory that contains template files.
 Default:
 
 ```text
-tools/utility_files/templates
+tools/placeholders/templates
 ```
 
 ### `--toc-file`
@@ -177,7 +177,7 @@ Use this when you want the script to include chapters that are normally skipped.
 Example:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py --no-exclude-chapters
+python3 tools/placeholders/populate_placeholders_in_chapters.py --no-exclude-chapters
 ```
 
 ### `--overwrite`
@@ -197,7 +197,7 @@ Values can be separated by spaces or commas.
 Example:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py \
+python3 tools/placeholders/populate_placeholders_in_chapters.py \
   --overwrite \
   --exclude-overwrite-chapters chapter_00_introduction,chapter_01_python_basics
 ```
@@ -460,7 +460,7 @@ This makes the renderer safer for `utils.py.template`, where normal Python code 
 Each chapter `README.md` file is created from this template:
 
 ```text
-tools/utility_files/templates/README.md.template
+tools/placeholders/templates/README.md.template
 ```
 
 The script does not manually write each README line by line. Instead, it loads the template, builds a context dictionary for the current chapter directory, replaces placeholders in the template, and writes the final rendered text to `README.md`.
@@ -764,31 +764,31 @@ By studying this script, you can practice:
 Create missing files only:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py
+python3 tools/placeholders/populate_placeholders_in_chapters.py
 ```
 
 Preview changes:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py --dry-run
+python3 tools/placeholders/populate_placeholders_in_chapters.py --dry-run
 ```
 
 Include chapters that are normally listed in `EXCLUDE_CHAPTERS`:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py --no-exclude-chapters
+python3 tools/placeholders/populate_placeholders_in_chapters.py --no-exclude-chapters
 ```
 
 Overwrite existing files:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py --overwrite
+python3 tools/placeholders/populate_placeholders_in_chapters.py --overwrite
 ```
 
 Overwrite files except inside selected chapters:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py \
+python3 tools/placeholders/populate_placeholders_in_chapters.py \
   --overwrite \
   --exclude-overwrite-chapters chapter_00_introduction
 ```
@@ -796,7 +796,7 @@ python3 tools/utility_files/populate_utility_files_in_chapters.py \
 Also populate the root `chapters/` directory:
 
 ```bash
-python3 tools/utility_files/populate_utility_files_in_chapters.py --include-root
+python3 tools/placeholders/populate_placeholders_in_chapters.py --include-root
 ```
 
 ## Output Summary

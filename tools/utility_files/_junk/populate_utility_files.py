@@ -14,6 +14,7 @@ Usage:
     python3 tools/utility_files/populate_utility_files.py
     python3 tools/utility_files/populate_utility_files.py --overwrite
     python3 tools/utility_files/populate_utility_files.py --dry-run
+
 """
 
 from __future__ import annotations
@@ -24,101 +25,260 @@ import logging
 import re
 import unicodedata
 from pathlib import Path
-from typing import Any
+from typing import Any, Final
+from datetime import datetime
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_DIR = PROJECT_ROOT / "tools" / "web_scraping" / "out"
-TEMPLATE_DIR = PROJECT_ROOT / "tools" / "utility_files" / "templates"
-CHAPTERS_DIR = PROJECT_ROOT / "chapters"
 
-DEFAULT_UTILITY_FILES: dict[str, str] = {
-    "README.md": "# {title}\n\nThis directory contains utility files for {title}.\n\nReview and utility notes for **{title}**.\n",
-    "USAGE.md": "# Usage Instructions for {title}\n\nThis file provides usage instructions for the utilities: {title}\n\nAnd command examples here.\n",
-    "utils.py": '''#!/usr/bin/env python3
-"""utils.py
-Utility helpers for {title}.
-"""
+PROJECT_ROOT: Final[Path] = Path(__file__).resolve().parents[2]
 
-from __future__ import annotations
+DEFAULT_CHAPTERS_DIR: Final[Path] = PROJECT_ROOT / "chapters"
+DEFAULT_TEMPLATE_DIR: Final[Path] = PROJECT_ROOT / \
+    "tools" / "utility_files" / "templates"
 
-def main() -> None:
-    """Run a small utility demo."""
-    print("Utility file for {title}")
-if __name__ == "__main__":
-    main()
-''',
+DEFAULT_JSON_CANDIDATE_FILE: Final[Path] = (
+    PROJECT_ROOT / "tools" / "web_scraping" / "out" / "atbs3e_toc.json"
+)
+
+TEMPLATE_TO_OUTPUT: Final[dict[str, str]] = {
+    "README.md.template": "README.md",
+    "USAGE.md.template": "USAGE.md",
+    "utils.py.template": "utils.py",
 }
+
 
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
         description="Populate utility files in ATBS chapter directories."
     )
+
     parser.add_argument(
-        "--base-dir",
+        "--json-file",
         type=Path,
-        default=PROJECT_ROOT,
-        help="Base directory for the project (default: current project root)",
+        default=DEFAULT_JSON_CANDIDATE_FILE,
+        help="JSON file with chapter information (default: tools/web_scraping/out/atbs3e_toc.json)",
     )
-    parser.add_argument(
-        "--toc-file",
-        type=Path,
-        default=OUTPUT_DIR / "atbs3e_toc.json",
-        help="Path to the JSON file containing chapter information (default: tools/web_scraping/out/atbs3e_toc.json)",
-    )
+
     parser.add_argument(
         "--chapters-dir",
         type=Path,
-        default=CHAPTERS_DIR,
+        default=DEFAULT_CHAPTERS_DIR,
         help="Directory containing chapter subdirectories (default: chapters)",
     )
+
+    parser.add_argument(
+        "--template-dir",
+        type=Path,
+        default=DEFAULT_TEMPLATE_DIR,
+        help="Directory containing template files (default: tools/utility_files/templates)",
+    )
+
     parser.add_argument(
         "--overwrite",
         action="store_true",
         help="Overwrite existing utility files if they already exist",
     )
+
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="Perform a dry run without creating or modifying any files",
+        help="Perform a dry run without writing any files, just log the intended actions",
     )
+
     return parser.parse_args()
 
 
-def main() -> None:
-    """Main function to populate utility files."""
-    args = parse_args()
+def find_default_json_file() -> Path:
+    """Find a default JSON file candidate in the expected output directory."""
+    if DEFAULT_JSON_CANDIDATE_FILE.is_file():
+        return DEFAULT_JSON_CANDIDATE_FILE
+    return None
 
-    # Load chapter information from the TOC JSON file
-    with open(args.toc_file, "r", encoding="utf-8") as f:
-        toc_data = json.load(f)
+    candidates = list(
+        (PROJECT_ROOT / "tools" / "web_scraping" / "out").glob("*.json"))
+    raise FileNotFoundError(
+        f"No JSON file found in expected location. Checked: {DEFAULT_JSON_CANDIDATE_FILE} and {candidates}"
+    )
 
-    for chapter in toc_data:
-        chapter_num = chapter.get("chapter_num")
-        title = chapter.get("title", f"Chapter {chapter_num}")
-        chapter_dir_name = f"chapter{chapter_num:02d}"
-        chapter_dir = args.chapters_dir / chapter_dir_name
 
-        if not chapter_dir.exists():
-            logging.warning(f"Chapter directory does not exist: {chapter_dir}")
+def load_json(json_file: Path) -> list[dict[str, Any]]:
+    """Load chapter information from a JSON file."""
+    with json_file.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if not isinstance(data, list):
+        raise ValueError(
+            f"Expected JSON data to be a list of chapter items, got {type(data)}")
+
+    return data
+
+
+def extract_chapter_number(chapter_title: str, url: str) -> int | None:
+    """Extract chapter number from title or URL."""
+    title_match = re.search(r"Chapter\s+(\d+)", chapter_title, re.IGNORECASE)
+    if title_match:
+        return int(title_match.group(1))
+
+    url_match = re.search(r"chapter(\d+)\.html", url, re.IGNORECASE)
+    if url_match:
+        return int(url_match.group(1))
+
+    return None
+
+
+def clean_chapter_title(title: str) -> str:
+    """Clean chapter title by removing 'Chapter X:' prefix."""
+    cleaned = re.sub(
+        r"^\s*chapter\s+\d+\s*:\s*", "", title, flags=re.IGNORECASE
+    )
+
+    return cleaned.strip()
+
+
+def to_snake_case(text: str) -> str:
+    """Convert text to snake_case."""
+    normalized = unicodedata.normalize("NFKD", text)
+    ascii_only = "".join(
+        ch for ch in normalized if not unicodedata.combining(ch)
+    )
+    ascii_only = ascii_only.replace("&", " and ").replace("-", " ")
+    ascii_only = re.sub(r"[^A-Za-z0-9 _]+", " ", ascii_only)
+    snake = re.sub(r"\s+", "_", ascii_only).strip("_").lower()
+    return re.sub(r"_+", "_", snake)
+
+
+def make_chapter_directory_name(chapter_title: str, chapter_number: int | None) -> str:
+    """Create a directory name for the chapter."""
+    cleaned_title = clean_chapter_title(chapter_title)
+    snake_title = to_snake_case(cleaned_title)
+
+    if chapter_number is not None:
+        return f"chapter_{chapter_number:02d}_{snake_title}"
+    else:
+        return f"chapter_{snake_title}"
+
+
+def load_templates(template_dir: Path) -> dict[str, str]:
+    """Load template files from the specified directory."""
+    templates: dict[str, str] = {}
+
+    for template_name in TEMPLATE_TO_OUTPUT:
+        template_path = template_dir / template_name
+
+        if not template_path.exists():
+            raise FileNotFoundError(
+                f"Template file not found: {template_path}")
+
+        templates[template_name] = template_path.read_text(encoding="utf-8")
+
+    return templates
+
+
+def render_template(template: str, values: dict[str, str]) -> str:
+    """Render a template by replacing placeholders with actual values."""
+
+    class SafeDict(dict):
+        def __missing__(self, key: str) -> str:
+            return "{" + key + "}"
+
+    return template.format_map(SafeDict(values))
+
+
+def build_template_values(
+    chapter_number: int,
+    chapter_title: str,
+    chapter_url: str,
+    chapter_dir_name: str,
+) -> dict[str, str]:
+    """Build a dictionary of values for rendering the template."""
+    clean_title = clean_chapter_title(chapter_title)
+    generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    return {
+        "chapter_number": str(chapter_number),
+        "chapter_title": chapter_title,
+        "chapter_clean_title": clean_chapter_title(chapter_title),
+        "chapter_url": chapter_url,
+        "chapter_dir_name": chapter_dir_name,
+        "generated_at": generated_at,
+        "project_root": str(PROJECT_ROOT),
+    }
+
+
+def populate_file(
+    output_path: Path,
+    content: str,
+    overwrite: bool = False,
+    dry_run: bool = False,
+) -> str:
+    """
+    Populate a file with the given content, respecting overwrite and dry-run options.
+    Returns a message indicating the action taken.
+    """
+    if output_path.exists() and not overwrite:
+        return "skipped (already exists)"
+
+    if dry_run:
+        if output_path.exists():
+            return "would overwrite (dry run)"
+        return "would create (dry run)"
+
+    output_path.write_text(content, encoding="utf-8")
+
+    if output_path.exists():
+        return "overwritten"
+    else:
+        return "created"
+
+
+def populate_chapter_files(
+    chapter_info: dict[str, Any],
+    templates: dict[str, str],
+    chapters_dir: Path,
+    overwrite: bool = False,
+    dry_run: bool = False,
+) -> dict[str, str]:
+    """Populate utility files for a single chapter based on the provided information and templates."""
+    chapter_title = chapter_info.get("title", "Unknown Chapter")
+    chapter_url = chapter_info.get("url", "")
+
+    chapter_number = extract_chapter_number(chapter_title, chapter_url)
+    chapter_dir_name = make_chapter_directory_name(
+        chapter_title, chapter_number)
+
+    chapter_dir = chapters_dir / chapter_dir_name
+    if not chapter_dir.exists():
+        if not dry_run:
+            chapter_dir.mkdir(parents=True)
+        logging.info(f"Created directory: {chapter_dir}")
+
+    template_values = build_template_values(
+        chapter_number=chapter_number or 0,
+        chapter_title=chapter_title,
+        chapter_url=chapter_url,
+        chapter_dir_name=chapter_dir_name,
+    )
+
+    results = {}
+
+    for template_name, output_filename in TEMPLATE_TO_OUTPUT.items():
+        template_content = templates.get(template_name)
+
+        if template_content is None:
+            logging.warning(f"Template not found: {template_name}")
             continue
 
-        context = {"title": title}
+        rendered_content = render_template(template_content, template_values)
+        output_path = chapter_dir / output_filename
 
-        for filename, template_content in DEFAULT_UTILITY_FILES.items():
-            output_path = chapter_dir / filename
-            content = template_content.format(**context)
+        action_result = populate_file(
+            output_path=output_path,
+            content=rendered_content,
+            overwrite=overwrite,
+            dry_run=dry_run,
+        )
 
-            if output_path.exists() and not args.overwrite:
-                logging.info(f"File already exists and will not be overwritten: {output_path}")
-                continue
+        results[output_filename] = action_result
+        logging.info(f"{output_filename}: {action_result} at {output_path}")
 
-            if args.dry_run:
-                logging.info(f"Dry run: would create/overwrite file at {output_path} with content:\n{content}\n")
-            else:
-                output_path.write_text(content, encoding="utf-8")
-                logging.info(f"Created/overwritten file at {output_path}")
-
-
-if __name__ == "__main__":
-    main()
+    return results

@@ -2,7 +2,7 @@
 
 ### chapters/chapter_20_sending_email_texts_and_push_notifications
 
-_Auto-generated on 2026-05-25 17:41:40_
+_Auto-generated on 2026-05-26 00:26:45_
 
 > 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter20.html  
 > 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter20.html
@@ -20,9 +20,6 @@ Use it for notes, scripts, examples, and helper files related to
 
 ```text
 chapter_20_sending_email_texts_and_push_notifications/
-|-- README.md
-|-- USAGE.md
-`-- utils.py
 ```
 
 ## Getting Started

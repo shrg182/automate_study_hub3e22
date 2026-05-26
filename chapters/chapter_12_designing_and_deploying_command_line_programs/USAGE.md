@@ -2,7 +2,7 @@
 
 ### Chapter 12 - Designing and Deploying Command Line Programs
 
-_Auto-generated on 2026-05-25 17:41:40_
+_Auto-generated on 2026-05-26 00:26:45_
 
 > 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter12.html  
 > 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter12.html
@@ -22,9 +22,6 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_12_designing_and_deploying_command_line_programs/
-|-- README.md
-|-- USAGE.md
-`-- utils.py
 ```
 
 ---

@@ -10,12 +10,12 @@ chapter metadata from the ATBS table-of-contents JSON file, renders the utility
 templates, and writes the rendered files into each discovered directory.
 
 Usage:
-    python3 tools/utility_files/populate_utility_files_in_chapters.py
-    python3 tools/utility_files/populate_utility_files_in_chapters.py --dry-run
-    python3 tools/utility_files/populate_utility_files_in_chapters.py --overwrite
-    python3 tools/utility_files/populate_utility_files_in_chapters.py --overwrite --exclude-overwrite-chapters chapter_00_introduction
-    python3 tools/utility_files/populate_utility_files_in_chapters.py --include-root
-    python3 tools/utility_files/populate_utility_files_in_chapters.py --no-exclude-chapters
+    python3 tools/placeholders/populate_utility_files_in_chapters.py
+    python3 tools/placeholders/populate_utility_files_in_chapters.py --dry-run
+    python3 tools/placeholders/populate_utility_files_in_chapters.py --overwrite
+    python3 tools/placeholders/populate_utility_files_in_chapters.py --overwrite --exclude-overwrite-chapters chapter_00_introduction
+    python3 tools/placeholders/populate_utility_files_in_chapters.py --include-root
+    python3 tools/placeholders/populate_utility_files_in_chapters.py --no-exclude-chapters
 """
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ from typing import Any, Final, List
 PROJECT_ROOT: Final[Path] = Path(__file__).resolve().parents[2]
 DEFAULT_CHAPTERS_DIR: Final[Path] = PROJECT_ROOT / "chapters"
 DEFAULT_TEMPLATE_DIR: Final[Path] = PROJECT_ROOT / \
-    "tools" / "utility_files" / "templates"
+    "tools" / "placeholders" / "templates"
 DEFAULT_TOC_FILE: Final[Path] = (
     PROJECT_ROOT / "tools" / "web_scraping" / "out" / "atbs3e_toc.json"
 )
@@ -110,7 +110,7 @@ def parse_args() -> argparse.Namespace:
         "--template-dir",
         type=Path,
         default=DEFAULT_TEMPLATE_DIR,
-        help="Directory containing template files (default: tools/utility_files/templates).",
+        help="Directory containing template files (default: tools/placeholders/templates).",
     )
     parser.add_argument(
         "--toc-file",

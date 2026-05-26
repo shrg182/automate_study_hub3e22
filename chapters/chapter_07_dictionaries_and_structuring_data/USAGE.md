@@ -2,7 +2,7 @@
 
 ### Chapter 7 - Dictionaries and Structuring Data
 
-_Auto-generated on 2026-05-25 17:41:40_
+_Auto-generated on 2026-05-26 00:26:45_
 
 > 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter7.html  
 > 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter7.html
@@ -22,9 +22,6 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_07_dictionaries_and_structuring_data/
-|-- README.md
-|-- USAGE.md
-`-- utils.py
 ```
 
 ---

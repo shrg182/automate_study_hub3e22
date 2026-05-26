@@ -2,7 +2,7 @@
 
 ### Chapter 21 - Making Graphs and Manipulating Images
 
-_Auto-generated on 2026-05-25 17:41:40_
+_Auto-generated on 2026-05-26 00:26:45_
 
 > 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter21.html  
 > 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter21.html
@@ -22,9 +22,6 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_21_making_graphs_and_manipulating_images/
-|-- README.md
-|-- USAGE.md
-`-- utils.py
 ```
 
 ---

@@ -2,7 +2,7 @@
 
 ### Chapter 10 - Reading and Writing Files
 
-_Auto-generated on 2026-05-25 17:41:40_
+_Auto-generated on 2026-05-26 00:26:45_
 
 > 📖 **Chapter Page:** https://automatetheboringstuff.com/3e/chapter10.html  
 > 🔗 **ATBS Chapter Link:** https://automatetheboringstuff.com/3e/chapter10.html
@@ -22,9 +22,6 @@ This file explains how to run scripts in this directory.
 
 ```text
 chapter_10_reading_and_writing_files/
-|-- README.md
-|-- USAGE.md
-`-- utils.py
 ```
 
 ---
