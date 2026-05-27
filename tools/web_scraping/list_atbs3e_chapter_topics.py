@@ -10,6 +10,7 @@ Usage:
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 from typing import Any
@@ -22,6 +23,33 @@ TOPICS_JSON = (
     / "out"
     / "atbs3e_chapter_topics.json"
 )
+
+
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="List chapters and topics from CSV or JSON files."
+    )
+    parser.add_argument(
+        "--toc-file",
+        type=Path,
+        default=TOPICS_JSON,
+        help="CSV or JSON containing chapter information."
+    )
+    parser.add_argument(
+        "--chapter-number",
+        type=int,
+        default=None,
+        help="Chapter number to list the information of this chapter."
+    )
+    parser.add_argument(
+        "--topic-level",
+        type=int,
+        default=None,
+        help="Topic levels from h2 to h6."
+    )
+
+    return parser.parse_args()
 
 
 def load_topic_items(json_path: Path) -> list[dict[str, Any]]:
@@ -38,7 +66,7 @@ def load_topic_items(json_path: Path) -> list[dict[str, Any]]:
     return data
 
 
-def print_topic_items(items: list[dict[str, Any]]) -> None:
+def print_topic_items(items: list[dict[str, Any]], chapter_number: int, topic_level: int) -> None:
     """Print chapter-topic items in a readable format."""
     current_chapter = None
 
