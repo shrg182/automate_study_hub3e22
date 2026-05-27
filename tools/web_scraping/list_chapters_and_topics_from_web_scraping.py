@@ -27,3 +27,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="List chapters and topics from a CSV or JSON TOC file."
     )
+    parser.add_argument(
+        "--toc-file",
+        type=Path,
+        default=DEFAULT_TOC_FILE,
+        help="CSV or JSON containing chapter information."
+    )
