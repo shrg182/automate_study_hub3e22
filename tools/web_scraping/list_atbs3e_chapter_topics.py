@@ -11,6 +11,7 @@ Usage:
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --topic-heading 4
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --topic-heading 4 --show-url
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --tree-view
+    python3 tools/web_scraping/list_atbs3e_chapter_topics.py --stats
 """
 
 from __future__ import annotations
@@ -68,7 +69,7 @@ def parse_args() -> argparse.Namespace:
         help="Show topic URLs in the listing.",
     )
 
-    parser.add_argument(
+    parser.add_argument(  # tree view
         "--tree-view",
         action="store_true",
         help="Print the chapters directory tree instead of listing topics.",
@@ -79,6 +80,12 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_TREE_ROOT,
         help=f"Directory root for --tree-view. Default: {DEFAULT_TREE_ROOT}",
+    )
+
+    parser.add_argument(
+        "--stats",
+        action="store_true",
+        help=""
     )
 
     return parser.parse_args()
