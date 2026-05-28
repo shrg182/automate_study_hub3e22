@@ -2,14 +2,15 @@
 """
 list_atbs3e_chapter_topics.py
 
-List scraped ATBS 3e chapter-topic items.
+List scraped ATBS 3e chapter-topic items or print the chapters tree.
 
 Usage:
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --topic-heading 3
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --topic-heading 4
-    python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --topic-heading 4 --show-url 1
+    python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --topic-heading 4 --show-url
+    python3 tools/web_scraping/list_atbs3e_chapter_topics.py --tree-view
 """
 
 from __future__ import annotations
@@ -19,6 +20,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from directory_tree import print_tree
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_TOPICS_JSON = (
     PROJECT_ROOT
@@ -27,6 +30,7 @@ DEFAULT_TOPICS_JSON = (
     / "out"
     / "atbs3e_chapter_topics.json"
 )
+DEFAULT_TREE_ROOT = PROJECT_ROOT / "chapters"
 
 
 def parse_args() -> argparse.Namespace:
@@ -60,10 +64,21 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument(
         "--show-url",
-        type=int,
-        choices=[0, 1],
-        default=0,
-        help="Use 1 to show URLs, 0 to hide URLs. Default: 0.",
+        action="store_true",
+        help="Show topic URLs in the listing.",
+    )
+
+    parser.add_argument(
+        "--tree-view",
+        action="store_true",
+        help="Print the chapters directory tree instead of listing topics.",
+    )
+
+    parser.add_argument(
+        "--tree-root",
+        type=Path,
+        default=DEFAULT_TREE_ROOT,
+        help=f"Directory root for --tree-view. Default: {DEFAULT_TREE_ROOT}",
     )
 
     return parser.parse_args()
@@ -136,7 +151,7 @@ def print_topic_items(
         url = item.get("url", "")
 
         if not isinstance(heading_level, int):
-            heading_level = 0
+            continue
 
         if chapter_num != current_chapter:
             current_chapter = chapter_num
@@ -151,31 +166,51 @@ def print_topic_items(
             print(f"{indent}  {url}")
 
 
+def run_tree_view(tree_root: Path) -> None:
+    """Print the chapters directory tree."""
+    if not tree_root.exists():
+        raise FileNotFoundError(f"Tree root not found: {tree_root}")
+
+    if not tree_root.is_dir():
+        raise NotADirectoryError(f"Tree root is not a directory: {tree_root}")
+
+    print_tree(tree_root)
+
+
 def main() -> None:
-    """Load, filter, and print scraped chapter-topic items."""
+    """Run the chapter-topic lister."""
     args = parse_args()
-    show_url = bool(args.show_url)
 
     try:
+        if args.tree_view:
+            run_tree_view(args.tree_root)
+            return
+
         items = load_topic_items(args.topics_file)
-    except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
+
+        filtered_items = filter_topic_items(
+            items=items,
+            chapter_number=args.chapter_number,
+            max_heading_level=args.topic_heading,
+        )
+
+        print_topic_items(
+            items=filtered_items,
+            show_url=args.show_url,
+        )
+
+        print()
+        print(f"Displayed topic items: {len(filtered_items)}")
+        print(f"Total topic items in file: {len(items)}")
+
+    except (
+        FileNotFoundError,
+        NotADirectoryError,
+        ValueError,
+        json.JSONDecodeError,
+    ) as exc:
         print(f"Error: {exc}")
         raise SystemExit(1) from exc
-
-    filtered_items = filter_topic_items(
-        items=items,
-        chapter_number=args.chapter_number,
-        max_heading_level=args.topic_heading,
-    )
-
-    print_topic_items(
-        items=filtered_items,
-        show_url=show_url,
-    )
-
-    print()
-    print(f"Displayed topic items: {len(filtered_items)}")
-    print(f"Total topic items in file: {len(items)}")
 
 
 if __name__ == "__main__":
