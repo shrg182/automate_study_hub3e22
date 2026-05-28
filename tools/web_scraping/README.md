@@ -35,3 +35,6 @@ Chapter 10: Input Validation
 ```
 
 That would make your tool feel like a professional CLI utility.
+
+
+## show_atbs3e_chapter_topic_stats
