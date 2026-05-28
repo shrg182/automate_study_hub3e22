@@ -49,3 +49,82 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_TOPICS_JSON,
         help=f"Path to chapter topics JSON file. Default: {DEFAULT_TOPICS_JSON}"
     )
+
+    parser.add_argument(
+        "--output-file",
+        type=Path,
+        default=DEFAULT_OUTPUT_TXT,
+        help=f"Output text file path. Default: {DEFAULT_OUTPUT_TXT}."
+    )
+
+    parser.add_argument(
+        "--chapter-number",
+        type=int,
+        default=None,
+        help="Only export topics from this chapter number."
+    )
+
+    parser.add_argument(
+        "--topic-heading",
+        type=int,
+        choices=range[2, 7],
+        metavar="{2,3,4,5,6}",
+        default=None,
+        help="Export topics up to this heading level. Example: 4 exports H2, H3, H4."
+    )
+
+    parser.add_argument(
+        "--show-url",
+        action="store_true",
+        help="Include topic URLs in the exported text file."
+    )
+
+    return parser.parse_args()
+
+
+def load_topic_items(json_path: Path) -> list[dict[str, Any]]:
+    """Load chapter-topic items from a JSON file."""
+    if not json_path.exists():
+        raise FileNotFoundError(f"JSON file not found: {json_path}")
+
+    with json_path.open("r", encoding="utf-8") as json_file:
+        data = json.load(json_file)
+
+    if not isinstance(data, list):
+        raise ValueError("Expected JSON data to be a list of topic items.")
+
+    return data
+
+
+def filter_topic_items(
+    items: list[dict[str, Any]],
+    chapter_number: int | None,
+    max_heading_level: int | None
+) -> list[dict[str, Any]]:
+    """Filter topic items by chapter number and maximum heading level."""
+    filtered_items: list[dict[str, Any]] = {}
+
+    for item in items:
+        item_chapter_num = item.get("chapter_num")
+        item_heading_level = item.get("heading_level")
+
+        if chapter_number is not None and item_chapter_num != chapter_number:
+            continue
+
+        if item_heading_level is not None:
+            if not isinstance(item_heading_level, int):
+                continue
+
+            if item_heading_level > max_heading_level:
+                continue
+
+        filtered_items.append(item)
+
+    return sorted(
+        filtered_items,
+        key=lambda item: (
+            item.get("chapter_num", 999),
+            item.get("heading_level", 999),
+            item.get("title", "")
+        )
+    )
