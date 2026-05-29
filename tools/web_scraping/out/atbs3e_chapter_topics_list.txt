@@ -1,0 +1,334 @@
+Chapter 0: INTRODUCTION
+========================================================================
+ Who Is This Book For?
+ Coding Conventions Used in This Book
+ What Is Programming?
+ What Is Python?
+ Common Myths About Programming
+   Programmers Don’t Need to Know Much Math
+   You Are Not Too Old to Learn Programming
+   AI Won’t Replace Programmers
+ About This Book
+ Downloading and Installing Python
+ Downloading and Installing Mu
+ Starting Mu
+ Starting IDLE
+ The Interactive Shell
+ How to Find Help
+ Asking Smart Programming Questions
+ New to the Third Edition
+ Summary
+
+Chapter 1: 1 PYTHON BASICS
+========================================================================
+ 1 PYTHON BASICS
+   Entering Expressions into the Interactive Shell
+   The Integer, Floating-Point, and String Data Types
+   String Concatenation and Replication
+   Storing Values in Variables
+   Your First Program
+   Dissecting the Program
+   How Computers Store Data with Binary Numbers
+   Summary
+   Practice Questions
+
+Chapter 2: 2 IF-ELSE AND FLOW CONTROL
+========================================================================
+ 2 IF-ELSE AND FLOW CONTROL
+   Boolean Values
+   Comparison Operators
+   Boolean Operators
+   Mixing Boolean and Comparison Operators
+   Components of Flow Control
+   Flow Control Statements
+   A Short Program: Opposite Day
+   A Short Program: Dishonest Capacity Calculator
+   Summary
+   Practice Questions
+
+Chapter 3: 3 LOOPS
+========================================================================
+ 3 LOOPS
+   while Loop Statements
+   for Loops and the range() Function
+   Importing Modules
+   Ending a Program Early with sys.exit()
+   A Short Program: Guess the Number
+   A Short Program: Rock, Paper, Scissors
+   Summary
+   Practice Questions
+
+Chapter 4: 4 FUNCTIONS
+========================================================================
+ 4 FUNCTIONS
+   Creating Functions
+   Arguments and Parameters
+   Return Values and return Statements
+   The None Value
+   Named Parameters
+   The Call Stack
+   Local and Global Scopes
+   Exception Handling
+   A Short Program: Zigzag
+   A Short Program: Spike
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 5: 5 DEBUGGING
+========================================================================
+ 5 DEBUGGING
+   Raising Exceptions
+   Assertions
+   Logging
+   Mu’s Debugger
+   Summary
+   Practice Questions
+   Practice Program: Debugging Coin Toss
+
+Chapter 6: 6 LISTS
+========================================================================
+ 6 LISTS
+   The List Data Type
+   Working with Lists
+   Augmented Assignment Operators
+   Methods
+   Short-Circuiting Boolean Operators
+   A Short Program: Magic 8 Ball with a List
+   Sequence Data Types
+   References
+   A Short Program: The Matrix Screensaver
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 7: 7 DICTIONARIES AND STRUCTURING DATA
+========================================================================
+ 7 DICTIONARIES AND STRUCTURING DATA
+   The Dictionary Data Type
+   Model Real-World Things Using Data Structures
+   Nested Dictionaries and Lists
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 8: 8 STRINGS AND TEXT EDITING
+========================================================================
+ 8 STRINGS AND TEXT EDITING
+   Working with Strings
+   F-Strings
+   F-String Alternatives: %s and format()
+   Useful String Methods
+   Numeric Code Points of Characters
+   Copying and Pasting Strings
+   A Short Program: Pig Latin
+   Summary
+   Practice Questions
+   Practice Program: Table Printer
+
+Chapter 9: 9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS
+========================================================================
+ 9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS
+   Finding Text Patterns Without Regular Expressions
+   Finding Text Patterns with Regular Expressions
+   The Syntax of Regular Expressions
+   Qualifier Syntax: What Characters to Match
+   Quantifier Syntax: How Many Qualifiers to Match
+   Greedy and Non-greedy Matching
+   Matching at the Start and End of a String
+   Case-Insensitive Matching
+   Substituting Strings
+   Managing Complex Regexes with Verbose Mode
+   Combining re.IGNORECASE, re.DOTALL, and re.VERBOSE
+   Humre: A Module for Human-Readable Regexes
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 10: 10 READING AND WRITING FILES
+========================================================================
+ 10 READING AND WRITING FILES
+   Files and Filepaths
+   The File Reading and Writing Process
+   Saving Variables with the shelve Module
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 11: 11 ORGANIZING FILES
+========================================================================
+ 11 ORGANIZING FILES
+   The shutil Module
+   Walking a Directory Tree
+   Compressing Files with the zipfile Module
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 12: 12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS
+========================================================================
+ 12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS
+   A Program by Any Other Name
+   Using the Terminal
+   Virtual Environments
+   Installing Python Packages with pip
+   Self-Aware Python Programs
+   Text-Based Program Design
+   A Short Program: Snowstorm
+   Pop-up Message Boxes with PyMsgBox
+   Deploying Python Programs
+   A Short Program: Copying the Current Working Directory
+   A Short Program: Clipboard Recorder
+   Compiling Python Programs with PyInstaller
+   Summary
+   Practice Questions
+   Practice Program: Make Your Programs Deployable
+
+Chapter 13: 13 WEB SCRAPING
+========================================================================
+ 13 WEB SCRAPING
+   HTTP and HTTPS
+   Downloading Files from the Web with the requests Module
+   Accessing a Weather API
+   Understanding HTML
+   Parsing HTML with Beautiful Soup
+   Controlling the Browser with Selenium
+   Controlling the Browser with Playwright
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 14: 14 EXCEL SPREADSHEETS
+========================================================================
+ 14 EXCEL SPREADSHEETS
+   Reading Excel Files
+   Writing Excel Documents
+   Setting the Font Style of Cells
+   Formulas
+   Adjusting Rows and Columns
+   Charts
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 15: 15 GOOGLE SHEETS
+========================================================================
+ 15 GOOGLE SHEETS
+   Installing and Setting Up EZSheets
+   Spreadsheet Objects
+   Sheet Objects
+   Google Forms
+   Working with Google Sheets Quotas
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 16: 16 SQLITE DATABASES
+========================================================================
+ 16 SQLITE DATABASES
+   Spreadsheets vs. Databases
+   SQLite vs. Other SQL Databases
+   Creating Databases and Tables
+   CRUD Database Operations
+   Rolling Back Transactions
+   Backing Up Databases
+   Altering and Dropping Tables
+   Joining Multiple Tables with Foreign Keys
+   In-Memory Databases and Backups
+   Copying Databases
+   SQLite Apps
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 17: 17 PDF AND WORD DOCUMENTS
+========================================================================
+ 17 PDF AND WORD DOCUMENTS
+   PDF Documents
+   Word Documents
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 18: 18 CSV, JSON, AND XML FILES
+========================================================================
+ 18 CSV, JSON, AND XML FILES
+   The CSV Format
+   Versatile Plaintext Formats
+   Summary
+   Practice Questions
+   Practice Program: Excel-to-CSV Converter
+
+Chapter 19: 19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS
+========================================================================
+ 19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS
+   The time Module
+   The datetime Module
+   Launching Other Programs from Python
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 20: 20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS
+========================================================================
+ 20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS
+   The Gmail API
+   SMS Email Gateways
+   Push Notifications
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 21: 21 MAKING GRAPHS AND MANIPULATING IMAGES
+========================================================================
+ 21 MAKING GRAPHS AND MANIPULATING IMAGES
+   Computer Image Fundamentals
+   Manipulating Images with Pillow
+   Drawing on Images
+   Copying and Pasting Images to the Clipboard
+   Creating Graphs with Matplotlib
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 22: 22 RECOGNIZING TEXT IN IMAGES
+========================================================================
+ 22 RECOGNIZING TEXT IN IMAGES
+   Installing Tesseract and PyTesseract
+   OCR Fundamentals
+   Recognizing Text in Non-English Languages
+   The NAPS2 Scanner Application
+   Summary
+   Practice Questions
+   Practice Program: Browser Text Scraper
+
+Chapter 23: 23 CONTROLLING THE KEYBOARD AND MOUSE
+========================================================================
+ 23 CONTROLLING THE KEYBOARD AND MOUSE
+   Setting Up Accessibility Apps on macOS
+   Staying on Track
+   Controlling Mouse Movement
+   Controlling Mouse Interaction
+   Planning Your Mouse Movements
+   Taking Screenshots
+   Image Recognition
+   Getting Window Information
+   Controlling the Keyboard
+   Setting Up GUI Automation Scripts
+   Displaying Message Boxes
+   Summary
+   Practice Questions
+   Practice Programs
+
+Chapter 24: 24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES
+========================================================================
+ 24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES
+   Text-to-Speech Engine
+   Speech Recognition
+   Creating Subtitle Files
+   Downloading Videos from Websites
+   Summary
+   Practice Questions
+   Practice Programs
+
+Displayed topic items: 258
