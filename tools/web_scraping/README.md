@@ -41,3 +41,37 @@ That would make your tool feel like a professional CLI utility.
 
 ## export_atbs3e_chapter_topics_txt.py
 
+---
+
+--export-txt √
+--export-md
+--tree-view √
+--color
+--stats √
+--summary
+
+1. --tree-view
+2. --stats
+3. --export-txt
+4. --export-md
+5. --color
+6. --summary
+
+
+```bash
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --tree-view
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py --stats
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py --summary
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-md
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-txt
+```
+
+main
+ ├── add-tree-view
+ ├── add-topic-stats
+ ├── add-export-md
+ ├── add-export-txt
+ ├── add-color-output
+ └── add-summary-generator

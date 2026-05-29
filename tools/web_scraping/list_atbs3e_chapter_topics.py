@@ -12,6 +12,7 @@ Usage:
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --topic-heading 4 --show-url
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --tree-view
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --stats
+    python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-txt
 """
 
 from __future__ import annotations
@@ -22,6 +23,14 @@ from pathlib import Path
 from typing import Any
 
 from directory_tree import print_tree
+from show_atbs3e_chapter_topic_stats import print_chapter_stats, print_summary_stats
+from export_atbs3e_chapter_topics_txt import (
+    DEFAULT_OUTPUT_TXT,
+    build_text_output,
+    export_text_file,
+    filter_topic_items,
+    load_topic_items,
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_TOPICS_JSON = (
@@ -85,7 +94,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--stats",
         action="store_true",
-        help=""
+        help="Show topic statistics by chapter.",
+    )
+
+    parser.add_argument(
+        "--export-txt",
+        action="store_true",
+        help="Export the topic listing to a TXT file.",
+    )
+
+    parser.add_argument(
+        "--output-file",
+        type=Path,
+        default=DEFAULT_OUTPUT_TXT,
+        help=f"Output text file path. Default: {DEFAULT_OUTPUT_TXT}",
     )
 
     return parser.parse_args()
@@ -184,6 +206,36 @@ def run_tree_view(tree_root: Path) -> None:
     print_tree(tree_root)
 
 
+def run_export_txt(
+    topics_file: Path,
+    output_path: Path,
+    chapter_number: int | None,
+    topic_heading: int | None,
+    show_url: bool,
+) -> None:
+    """Export chapter-topic items to a plain text file."""
+    items = load_topic_items(topics_file)
+
+    filtered_items = filter_topic_items(
+        items=items,
+        chapter_number=chapter_number,
+        max_heading_level=topic_heading,
+    )
+
+    output_text = build_text_output(
+        items=filtered_items,
+        show_url=show_url,
+    )
+
+    export_text_file(
+        content=output_text,
+        output_path=output_path,
+    )
+
+    print(f"Exported {len(filtered_items)} topic items.")
+    print(f"TXT: {output_path.resolve()}")
+
+
 def main() -> None:
     """Run the chapter-topic lister."""
     args = parse_args()
@@ -191,6 +243,16 @@ def main() -> None:
     try:
         if args.tree_view:
             run_tree_view(args.tree_root)
+            return
+
+        if args.export_txt:
+            run_export_txt(
+                topics_file=args.topics_file,
+                output_path=args.output_file,
+                chapter_number=args.chapter_number,
+                topic_heading=args.topic_heading,
+                show_url=args.show_url,
+            )
             return
 
         items = load_topic_items(args.topics_file)
