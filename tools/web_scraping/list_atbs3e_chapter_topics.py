@@ -31,6 +31,11 @@ from export_atbs3e_chapter_topics_txt import (
     filter_topic_items,
     load_topic_items,
 )
+from export_atbs3e_chapter_topics_md import (
+    DEFAULT_OUTPUT_MD,
+    build_markdown_output,
+    export_markdown_file,
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_TOPICS_JSON = (
@@ -108,6 +113,19 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_OUTPUT_TXT,
         help=f"Output text file path. Default: {DEFAULT_OUTPUT_TXT}",
+    )
+
+    parser.add_argument(
+        "--export-md",
+        action="store_true",
+        help="Export the topic listing to a Markdown file.",
+    )
+
+    parser.add_argument(
+        "--output-markdown",
+        type=Path,
+        default=DEFAULT_OUTPUT_MD,
+        help=f"Output markdown file path. Default: {DEFAULT_OUTPUT_MD}"
     )
 
     return parser.parse_args()
@@ -236,6 +254,36 @@ def run_export_txt(
     print(f"TXT: {output_path.resolve()}")
 
 
+def run_export_md(
+    topics_file: Path,
+    output_path: Path,
+    chapter_number: int | None,
+    topic_heading: int | None,
+    show_url: bool,
+) -> None:
+    """Export chapter-topic items to a plain text file."""
+    items = load_topic_items(topics_file)
+
+    filtered_items = filter_topic_items(
+        items=items,
+        chapter_number=chapter_number,
+        max_heading_level=topic_heading,
+    )
+
+    output_text = build_markdown_output(
+        items=filtered_items,
+        show_url=show_url,
+    )
+
+    export_text_file(
+        content=output_text,
+        output_path=output_path,
+    )
+
+    print(f"Exported {len(filtered_items)} topic items.")
+    print(f"TXT: {output_path.resolve()}")
+
+
 def main() -> None:
     """Run the chapter-topic lister."""
     args = parse_args()
@@ -249,6 +297,16 @@ def main() -> None:
             run_export_txt(
                 topics_file=args.topics_file,
                 output_path=args.output_file,
+                chapter_number=args.chapter_number,
+                topic_heading=args.topic_heading,
+                show_url=args.show_url,
+            )
+            return
+
+        if args.export_md:
+            run_export_md(
+                topics_file=args.topics_file,
+                output_path=args.output_markdown,
                 chapter_number=args.chapter_number,
                 topic_heading=args.topic_heading,
                 show_url=args.show_url,

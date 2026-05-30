@@ -65,6 +65,7 @@ python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --t
 python3 tools/web_scraping/list_atbs3e_chapter_topics.py --stats
 python3 tools/web_scraping/list_atbs3e_chapter_topics.py --summary
 python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-md
+python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-md --chapter-number 10
 python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-txt
 python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-txt --output-file tools/web_scraping/out/chapter_topics_list_with_url.txt --show-url
 ```

@@ -3,725 +3,725 @@
 
 ## Chapter 0: INTRODUCTION
 
-- Who Is This Book For?
+- About This Book
+- Asking Smart Programming Questions
 - Coding Conventions Used in This Book
+- Common Myths About Programming
+- Downloading and Installing Mu
+- Downloading and Installing Python
+- How to Find Help
+- New to the Third Edition
+- Starting IDLE
+- Starting Mu
+- Summary
+- The Interactive Shell
 - What Is Programming?
 - What Is Python?
-- Common Myths About Programming
+- Who Is This Book For?
+  - AI Won’t Replace Programmers
   - Programmers Don’t Need to Know Much Math
   - You Are Not Too Old to Learn Programming
-  - AI Won’t Replace Programmers
-- About This Book
-- Downloading and Installing Python
-- Downloading and Installing Mu
-- Starting Mu
-- Starting IDLE
-- The Interactive Shell
-- How to Find Help
-- Asking Smart Programming Questions
-- New to the Third Edition
-- Summary
 
 ## Chapter 1: 1 PYTHON BASICS
 
 - 1 PYTHON BASICS
-  - Entering Expressions into the Interactive Shell
-  - The Integer, Floating-Point, and String Data Types
-  - String Concatenation and Replication
-  - Storing Values in Variables
-    - Assignment Statements
-    - Variable Names
-  - Your First Program
   - Dissecting the Program
+  - Entering Expressions into the Interactive Shell
+  - How Computers Store Data with Binary Numbers
+  - Practice Questions
+  - Storing Values in Variables
+  - String Concatenation and Replication
+  - Summary
+  - The Integer, Floating-Point, and String Data Types
+  - Your First Program
+    - Assignment Statements
     - Comments
-    - The print() Function
-    - The input() Function
     - The Greeting Message
+    - The input() Function
     - The len() Function
+    - The print() Function
+    - The round() and abs() Functions
     - The str(), int(), and float() Functions
     - The type() Function
-    - The round() and abs() Functions
-  - How Computers Store Data with Binary Numbers
-  - Summary
-  - Practice Questions
+    - Variable Names
 
 ## Chapter 2: 2 IF-ELSE AND FLOW CONTROL
 
 - 2 IF-ELSE AND FLOW CONTROL
+  - A Short Program: Dishonest Capacity Calculator
+  - A Short Program: Opposite Day
+  - Boolean Operators
   - Boolean Values
   - Comparison Operators
-  - Boolean Operators
-  - Mixing Boolean and Comparison Operators
   - Components of Flow Control
-    - Conditions
-    - Blocks of Code
-    - Program Execution
   - Flow Control Statements
-    - if
-    - else
-    - elif
-  - A Short Program: Opposite Day
-  - A Short Program: Dishonest Capacity Calculator
-  - Summary
+  - Mixing Boolean and Comparison Operators
   - Practice Questions
+  - Summary
+    - Blocks of Code
+    - Conditions
+    - Program Execution
+    - elif
+    - else
+    - if
 
 ## Chapter 3: 3 LOOPS
 
 - 3 LOOPS
-  - while Loop Statements
-    - An Annoying while Loop
-    - break Statements
-    - continue Statements
-  - for Loops and the range() Function
-    - An Equivalent while Loop
-    - Arguments to range()
-  - Importing Modules
-  - Ending a Program Early with sys.exit()
   - A Short Program: Guess the Number
   - A Short Program: Rock, Paper, Scissors
-  - Summary
+  - Ending a Program Early with sys.exit()
+  - Importing Modules
   - Practice Questions
+  - Summary
+  - for Loops and the range() Function
+  - while Loop Statements
+    - An Annoying while Loop
+    - An Equivalent while Loop
+    - Arguments to range()
+    - break Statements
+    - continue Statements
 
 ## Chapter 4: 4 FUNCTIONS
 
 - 4 FUNCTIONS
-  - Creating Functions
-  - Arguments and Parameters
-  - Return Values and return Statements
-  - The None Value
-  - Named Parameters
-  - The Call Stack
-  - Local and Global Scopes
-    - Scope Rules
-      - Code That Is in the Global Scope Can’t Use Local Variables
-      - Code That Is in a Local Scope Can’t Use Variables in Other Local Scopes
-      - Code That Is in a Local Scope Can Use Global Variables
-      - Local and Global Variables Can Have the Same Name
-    - The global Statement
-    - Scope Identification
-  - Exception Handling
-  - A Short Program: Zigzag
   - A Short Program: Spike
-  - Summary
-  - Practice Questions
+  - A Short Program: Zigzag
+  - Arguments and Parameters
+  - Creating Functions
+  - Exception Handling
+  - Local and Global Scopes
+  - Named Parameters
   - Practice Programs
-    - The Collatz Sequence
+  - Practice Questions
+  - Return Values and return Statements
+  - Summary
+  - The Call Stack
+  - The None Value
     - Input Validation
+    - Scope Identification
+    - Scope Rules
+    - The Collatz Sequence
+    - The global Statement
+      - Code That Is in a Local Scope Can Use Global Variables
+      - Code That Is in a Local Scope Can’t Use Variables in Other Local Scopes
+      - Code That Is in the Global Scope Can’t Use Local Variables
+      - Local and Global Variables Can Have the Same Name
 
 ## Chapter 5: 5 DEBUGGING
 
 - 5 DEBUGGING
-  - Raising Exceptions
   - Assertions
   - Logging
-    - The logging Module
-    - Logfiles
-    - A Poor Practice: Debugging with print()
-    - Logging Levels
-    - Disabled Logging
   - Mu’s Debugger
-    - Debugging an Addition Program
-    - Setting Breakpoints
-  - Summary
-  - Practice Questions
   - Practice Program: Debugging Coin Toss
+  - Practice Questions
+  - Raising Exceptions
+  - Summary
+    - A Poor Practice: Debugging with print()
+    - Debugging an Addition Program
+    - Disabled Logging
+    - Logfiles
+    - Logging Levels
+    - Setting Breakpoints
+    - The logging Module
 
 ## Chapter 6: 6 LISTS
 
 - 6 LISTS
-  - The List Data Type
-    - Indexes
-    - Negative Indexes
-    - Slices
-    - The len() Function
-    - Value Updates
-    - Concatenation and Replication
-    - del Statements
-  - Working with Lists
-    - for Loops and Lists
-    - The in and not in Operators
-    - The Multiple Assignment Trick
-    - List Item Enumeration
-    - Random Selection and Ordering
+  - A Short Program: Magic 8 Ball with a List
+  - A Short Program: The Matrix Screensaver
   - Augmented Assignment Operators
   - Methods
-    - Finding Values
-    - Adding Values
-    - Removing Values
-    - Sorting Values
-    - Reversing Values
-  - Short-Circuiting Boolean Operators
-  - A Short Program: Magic 8 Ball with a List
-  - Sequence Data Types
-    - Mutable and Immutable Data Types
-    - The Tuple Data Type
-    - List and Tuple Type Conversion
-  - References
-    - Arguments
-    - The copy() and deepcopy() Functions
-  - A Short Program: The Matrix Screensaver
-  - Summary
-  - Practice Questions
   - Practice Programs
-    - Comma Code
+  - Practice Questions
+  - References
+  - Sequence Data Types
+  - Short-Circuiting Boolean Operators
+  - Summary
+  - The List Data Type
+  - Working with Lists
+    - Adding Values
+    - Arguments
     - Coin Flip Streaks
+    - Comma Code
+    - Concatenation and Replication
+    - Finding Values
+    - Indexes
+    - List Item Enumeration
+    - List and Tuple Type Conversion
+    - Mutable and Immutable Data Types
+    - Negative Indexes
+    - Random Selection and Ordering
+    - Removing Values
+    - Reversing Values
+    - Slices
+    - Sorting Values
+    - The Multiple Assignment Trick
+    - The Tuple Data Type
+    - The copy() and deepcopy() Functions
+    - The in and not in Operators
+    - The len() Function
+    - Value Updates
+    - del Statements
+    - for Loops and Lists
 
 ## Chapter 7: 7 DICTIONARIES AND STRUCTURING DATA
 
 - 7 DICTIONARIES AND STRUCTURING DATA
-  - The Dictionary Data Type
-    - Comparing Dictionaries and Lists
-    - Returning Keys and Values
-    - Checking Whether a Key Exists
-    - Setting Default Values
   - Model Real-World Things Using Data Structures
+  - Nested Dictionaries and Lists
+  - Practice Programs
+  - Practice Questions
+  - Summary
+  - The Dictionary Data Type
+    - Checking Whether a Key Exists
+    - Chess Dictionary Validator
+    - Comparing Dictionaries and Lists
+    - Fantasy Game Inventory
+    - List-to-Dictionary Loot Conversion
+    - Returning Keys and Values
+    - Setting Default Values
     - Step 1: Set Up the Program
     - Step 2: Create a Chessboard Template
     - Step 3: Print the Current Chessboard
     - Step 4: Manipulate the Chessboard
-  - Nested Dictionaries and Lists
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - Chess Dictionary Validator
-    - Fantasy Game Inventory
-    - List-to-Dictionary Loot Conversion
 
 ## Chapter 8: 8 STRINGS AND TEXT EDITING
 
 - 8 STRINGS AND TEXT EDITING
-  - Working with Strings
-    - String Literals
-      - Double Quotes
-      - Escape Sequences
-      - Raw Strings
-      - Multiline Strings
-      - Multiline Comments
-    - Indexes and Slices
-    - The in and not in Operators
-  - F-Strings
+  - A Short Program: Pig Latin
+  - Copying and Pasting Strings
   - F-String Alternatives: %s and format()
+  - F-Strings
+  - Numeric Code Points of Characters
+  - Practice Program: Table Printer
+  - Practice Questions
+  - Summary
   - Useful String Methods
+  - Working with Strings
     - Changing the Case
     - Checking String Characteristics
     - Checking the Start or End of a String
+    - Indexes and Slices
     - Joining and Splitting Strings
     - Justifying and Centering Text
     - Removing Whitespace
-  - Numeric Code Points of Characters
-  - Copying and Pasting Strings
     - Step 1: Copy and Paste from the Clipboard
     - Step 2: Separate the Lines of Text
     - Step 3: Join the Modified Lines
-  - A Short Program: Pig Latin
-  - Summary
-  - Practice Questions
-  - Practice Program: Table Printer
+    - String Literals
+    - The in and not in Operators
+      - Double Quotes
+      - Escape Sequences
+      - Multiline Comments
+      - Multiline Strings
+      - Raw Strings
 
 ## Chapter 9: 9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS
 
 - 9 TEXT PATTERN MATCHING WITH REGULAR EXPRESSIONS
+  - Case-Insensitive Matching
+  - Combining re.IGNORECASE, re.DOTALL, and re.VERBOSE
   - Finding Text Patterns Without Regular Expressions
   - Finding Text Patterns with Regular Expressions
-  - The Syntax of Regular Expressions
-    - Grouping with Parentheses
-    - Using Escape Characters
-    - Matching Characters from Alternate Groups
-    - Returning All Matches
-  - Qualifier Syntax: What Characters to Match
-    - Using Character Classes and Negative Character Classes
-    - Using Shorthand Character Classes
-    - Matching Everything with the Dot Character
-    - Being Careful What You Match For
-  - Quantifier Syntax: How Many Qualifiers to Match
-    - Matching an Optional Pattern
-    - Matching Zero or More Qualifiers
-    - Matching One or More Qualifiers
-    - Matching a Specific Number of Qualifiers
   - Greedy and Non-greedy Matching
-    - Matching Everything
-    - Matching Newline Characters
-  - Matching at the Start and End of a String
-  - Case-Insensitive Matching
-  - Substituting Strings
+  - Humre: A Module for Human-Readable Regexes
   - Managing Complex Regexes with Verbose Mode
-  - Combining re.IGNORECASE, re.DOTALL, and re.VERBOSE
+  - Matching at the Start and End of a String
+  - Practice Programs
+  - Practice Questions
+  - Qualifier Syntax: What Characters to Match
+  - Quantifier Syntax: How Many Qualifiers to Match
+  - Substituting Strings
+  - Summary
+  - The Syntax of Regular Expressions
+    - Being Careful What You Match For
+    - Grouping with Parentheses
+    - Ideas for Similar Programs
+    - Matching Characters from Alternate Groups
+    - Matching Everything
+    - Matching Everything with the Dot Character
+    - Matching Newline Characters
+    - Matching One or More Qualifiers
+    - Matching Zero or More Qualifiers
+    - Matching a Specific Number of Qualifiers
+    - Matching an Optional Pattern
+    - Regex Version of the strip() Method
+    - Returning All Matches
     - Step 1: Create a Regex for Phone Numbers
     - Step 2: Create a Regex for Email Addresses
     - Step 3: Find All Matches in the Clipboard Text
     - Step 4: Join the Matches into a String
-    - Ideas for Similar Programs
-  - Humre: A Module for Human-Readable Regexes
-  - Summary
-  - Practice Questions
-  - Practice Programs
     - Strong Password Detection
-    - Regex Version of the strip() Method
+    - Using Character Classes and Negative Character Classes
+    - Using Escape Characters
+    - Using Shorthand Character Classes
 
 ## Chapter 10: 10 READING AND WRITING FILES
 
 - 10 READING AND WRITING FILES
   - Files and Filepaths
-    - Standardizing Path Separators
-    - Joining Paths
+  - Practice Programs
+  - Practice Questions
+  - Saving Variables with the shelve Module
+  - Summary
+  - The File Reading and Writing Process
     - Accessing the Current Working Directory
     - Accessing the Home Directory
-    - Specifying Absolute vs. Relative Paths
+    - Checking Path Validity
     - Creating New Folders
-    - Handling Absolute and Relative Paths
-    - Getting the Parts of a Filepath
     - Finding File Sizes and Timestamps
     - Finding Files Using Glob Patterns
-    - Checking Path Validity
-  - The File Reading and Writing Process
+    - Getting the Parts of a Filepath
+    - Handling Absolute and Relative Paths
+    - Joining Paths
+    - Mad Libs
     - Opening Files
     - Reading the Contents of Files
-    - Writing to Files
-    - Using with Statements
-  - Saving Variables with the shelve Module
+    - Regex Search
+    - Specifying Absolute vs. Relative Paths
+    - Standardizing Path Separators
     - Step 1: Store the Quiz Data in a Dictionary
     - Step 2: Create the Quiz File
     - Step 3: Create the Answer Options
     - Step 4: Write the Content to the Files
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - Mad Libs
-    - Regex Search
+    - Using with Statements
+    - Writing to Files
 
 ## Chapter 11: 11 ORGANIZING FILES
 
 - 11 ORGANIZING FILES
+  - Compressing Files with the zipfile Module
+  - Practice Programs
+  - Practice Questions
+  - Summary
   - The shutil Module
+  - Walking a Directory Tree
+    - Converting Dates from American- to European-Style
     - Copying Files and Folders
+    - Creating and Adding to ZIP Files
+    - Deleting Unneeded Files
+    - Deleting to the Recycle Bin
+    - Extracting from ZIP Files
+    - Ideas for Other Programs
     - Moving and Renaming Files and Folders
     - Permanently Deleting Files and Folders
-    - Deleting to the Recycle Bin
-  - Walking a Directory Tree
-  - Compressing Files with the zipfile Module
-    - Creating and Adding to ZIP Files
     - Reading ZIP Files
-    - Extracting from ZIP Files
+    - Renumbering Files
+    - Selectively Copying
     - Step 1: Figure Out the ZIP File’s Name
     - Step 2: Create the New ZIP File
     - Step 3: Walk the Directory Tree
-    - Ideas for Other Programs
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - Selectively Copying
-    - Deleting Unneeded Files
-    - Renumbering Files
-    - Converting Dates from American- to European-Style
 
 ## Chapter 12: 12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS
 
 - 12 DESIGNING AND DEPLOYING COMMAND LINE PROGRAMS
   - A Program by Any Other Name
-  - Using the Terminal
-    - The cd, pwd, dir, and ls Commands
-    - The PATH Environment Variable
-    - PATH Editing
-      - Windows
-      - macOS and Linux
-    - The which and where Commands
-  - Virtual Environments
+  - A Short Program: Clipboard Recorder
+  - A Short Program: Copying the Current Working Directory
+  - A Short Program: Snowstorm
+  - Compiling Python Programs with PyInstaller
+  - Deploying Python Programs
   - Installing Python Packages with pip
+  - Pop-up Message Boxes with PyMsgBox
+  - Practice Program: Make Your Programs Deployable
+  - Practice Questions
   - Self-Aware Python Programs
+  - Summary
   - Text-Based Program Design
-    - Short Command Names
-    - Command Line Arguments
+  - Using the Terminal
+  - Virtual Environments
     - Clipboard I/O
     - Colorful Text with Bext
-    - Terminal Clearing
+    - Command Line Arguments
+    - PATH Editing
+    - Short Command Names
     - Sound and Text Notification
-  - A Short Program: Snowstorm
-  - Pop-up Message Boxes with PyMsgBox
-  - Deploying Python Programs
+    - Terminal Clearing
+    - The PATH Environment Variable
+    - The cd, pwd, dir, and ls Commands
+    - The which and where Commands
+    - Ubuntu Linux
+    - Ubuntu Linux
+    - Ubuntu Linux
+    - Windows
+    - Windows
     - Windows
     - macOS
-    - Ubuntu Linux
-  - A Short Program: Copying the Current Working Directory
-    - Windows
     - macOS
-    - Ubuntu Linux
-  - A Short Program: Clipboard Recorder
-    - Windows
     - macOS
-    - Ubuntu Linux
-  - Compiling Python Programs with PyInstaller
-  - Summary
-  - Practice Questions
-  - Practice Program: Make Your Programs Deployable
+      - Windows
+      - macOS and Linux
 
 ## Chapter 13: 13 WEB SCRAPING
 
 - 13 WEB SCRAPING
-  - HTTP and HTTPS
-    - Step 1: Figure Out the URL
-    - Step 2: Handle the Command Line Arguments
-    - Step 3: Retrieve the Clipboard Content
-    - Ideas for Similar Programs
-  - Downloading Files from the Web with the requests Module
-    - Downloading Web Pages
-    - Checking for Errors
-    - Saving Downloaded Files to the Hard Drive
   - Accessing a Weather API
-    - Requesting a Latitude and Longitude
-    - Fetching the Current Weather
-    - Getting a Weather Forecast
-    - Exploring APIs
-  - Understanding HTML
-    - Exploring the Format
-    - Viewing a Web Page’s Source
-    - Opening Your Browser’s Developer Tools
-    - Finding HTML Elements
+  - Controlling the Browser with Playwright
+  - Controlling the Browser with Selenium
+  - Downloading Files from the Web with the requests Module
+  - HTTP and HTTPS
   - Parsing HTML with Beautiful Soup
+  - Practice Programs
+  - Practice Questions
+  - Summary
+  - Understanding HTML
+    - 2048
+    - Checking for Errors
+    - Clicking Browser Buttons
+    - Clicking Browser Buttons
+    - Clicking Elements on the Page
+    - Clicking Elements on the Page
     - Creating a Beautiful Soup Object
+    - Downloading Web Pages
+    - Exploring APIs
+    - Exploring the Format
+    - Fetching the Current Weather
+    - Filling Out and Submitting Forms
+    - Filling Out and Submitting Forms
+    - Finding Elements on the Page
+    - Finding Elements on the Page
+    - Finding HTML Elements
     - Finding an Element
     - Getting Data from an Element’s Attributes
-    - Step 1: Get the Search Page
-    - Step 2: Find All Results
-    - Step 3: Open Web Browsers for Each Result
+    - Getting a Weather Forecast
     - Ideas for Similar Programs
-    - Step 1: Design the Program
-    - Step 2: Download the Web Page
-    - Step 3: Find and Download the Comic Image
-    - Step 4: Save the Image and Find the Previous Comic
     - Ideas for Similar Programs
-  - Controlling the Browser with Selenium
-    - Starting a Selenium-Controlled Browser
-    - Clicking Browser Buttons
-    - Finding Elements on the Page
-    - Clicking Elements on the Page
-    - Filling Out and Submitting Forms
-    - Sending Special Keys
-  - Controlling the Browser with Playwright
-    - Starting a Playwright-Controlled Browser
-    - Clicking Browser Buttons
-    - Finding Elements on the Page
-    - Clicking Elements on the Page
-    - Filling Out and Submitting Forms
-    - Sending Special Keys
-  - Summary
-  - Practice Questions
-  - Practice Programs
+    - Ideas for Similar Programs
     - Image Site Downloader
-    - 2048
     - Link Verification
+    - Opening Your Browser’s Developer Tools
+    - Requesting a Latitude and Longitude
+    - Saving Downloaded Files to the Hard Drive
+    - Sending Special Keys
+    - Sending Special Keys
+    - Starting a Playwright-Controlled Browser
+    - Starting a Selenium-Controlled Browser
+    - Step 1: Design the Program
+    - Step 1: Figure Out the URL
+    - Step 1: Get the Search Page
+    - Step 2: Download the Web Page
+    - Step 2: Find All Results
+    - Step 2: Handle the Command Line Arguments
+    - Step 3: Find and Download the Comic Image
+    - Step 3: Open Web Browsers for Each Result
+    - Step 3: Retrieve the Clipboard Content
+    - Step 4: Save the Image and Find the Previous Comic
+    - Viewing a Web Page’s Source
 
 ## Chapter 14: 14 EXCEL SPREADSHEETS
 
 - 14 EXCEL SPREADSHEETS
+  - Adjusting Rows and Columns
+  - Charts
+  - Formulas
+  - Practice Programs
+  - Practice Questions
   - Reading Excel Files
-    - Opening a Workbook
-    - Getting Sheets from the Workbook
-    - Getting Cells from the Sheets
-    - Converting Between Column Letters and Numbers
-    - Getting Rows and Columns
-    - Step 1: Read the Spreadsheet Data
-    - Step 2: Populate the Data Structure
-    - Step 3: Write the Results to a File
-    - Ideas for Similar Programs
+  - Setting the Font Style of Cells
+  - Summary
   - Writing Excel Documents
-    - Creating and Saving Excel Files
+    - Blank Row Inserter
+    - Converting Between Column Letters and Numbers
     - Creating and Removing Sheets
-    - Writing Values to Cells
+    - Creating and Saving Excel Files
+    - Freezing Panes
+    - Getting Cells from the Sheets
+    - Getting Rows and Columns
+    - Getting Sheets from the Workbook
+    - Ideas for Similar Programs
+    - Ideas for Similar Programs
+    - Merging and Unmerging Cells
+    - Multiplication Table Maker
+    - Opening a Workbook
+    - Setting Row Height and Column Width
+    - Step 1: Read the Spreadsheet Data
     - Step 1: Set Up a Data Structure with the Updated Information
     - Step 2: Check All Rows and Update Incorrect Prices
-    - Ideas for Similar Programs
-  - Setting the Font Style of Cells
-  - Formulas
-  - Adjusting Rows and Columns
-    - Setting Row Height and Column Width
-    - Merging and Unmerging Cells
-    - Freezing Panes
-  - Charts
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - Multiplication Table Maker
-    - Blank Row Inserter
+    - Step 2: Populate the Data Structure
+    - Step 3: Write the Results to a File
+    - Writing Values to Cells
 
 ## Chapter 15: 15 GOOGLE SHEETS
 
 - 15 GOOGLE SHEETS
-  - Installing and Setting Up EZSheets
-    - Creating a New Google Cloud Project
-    - Enabling the Sheets and Drive APIs
-    - Configuring the OAuth Consent Screen
-    - Creating Credentials
-    - Logging In with the Credentials File
-    - Revoking the Credentials File
-  - Spreadsheet Objects
-    - Creating, Uploading, and Listing Spreadsheets
-    - Accessing Spreadsheet Attributes
-    - Downloading and Uploading Spreadsheets
-    - Deleting Spreadsheets
-  - Sheet Objects
-    - Reading and Writing Data
-      - Addressing Columns and Rows
-      - Reading and Writing Entire Columns and Rows
-    - Creating, Moving, and Deleting Sheets
-    - Copying Sheets
   - Google Forms
+  - Installing and Setting Up EZSheets
+  - Practice Programs
+  - Practice Questions
+  - Sheet Objects
+  - Spreadsheet Objects
+  - Summary
+  - Working with Google Sheets Quotas
+    - Accessing Spreadsheet Attributes
+    - Configuring the OAuth Consent Screen
+    - Converting Spreadsheets to Other Formats
+    - Copying Sheets
+    - Creating Credentials
+    - Creating a New Google Cloud Project
+    - Creating, Moving, and Deleting Sheets
+    - Creating, Uploading, and Listing Spreadsheets
+    - Deleting Spreadsheets
+    - Downloading Google Forms Data
+    - Downloading and Uploading Spreadsheets
+    - Enabling the Sheets and Drive APIs
+    - Finding Mistakes in a Spreadsheet
+    - Logging In with the Credentials File
+    - Reading and Writing Data
+    - Revoking the Credentials File
     - Step 1: Audit the Fake Blockchain
     - Step 2: Make Transactions
-  - Working with Google Sheets Quotas
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - Downloading Google Forms Data
-    - Converting Spreadsheets to Other Formats
-    - Finding Mistakes in a Spreadsheet
+      - Addressing Columns and Rows
+      - Reading and Writing Entire Columns and Rows
 
 ## Chapter 16: 16 SQLITE DATABASES
 
 - 16 SQLITE DATABASES
-  - Spreadsheets vs. Databases
-  - SQLite vs. Other SQL Databases
+  - Altering and Dropping Tables
+  - Backing Up Databases
+  - CRUD Database Operations
+  - Copying Databases
   - Creating Databases and Tables
+  - In-Memory Databases and Backups
+  - Joining Multiple Tables with Foreign Keys
+  - Practice Programs
+  - Practice Questions
+  - Rolling Back Transactions
+  - SQLite Apps
+  - SQLite vs. Other SQL Databases
+  - Spreadsheets vs. Databases
+  - Summary
+    - Cat Vaccination Checker
     - Connecting to Databases
     - Creating Tables
     - Defining Data Types
-    - Listing Tables and Columns
-  - CRUD Database Operations
-    - Inserting Data into the Database
-      - Transactions
-      - SQL Injection Attacks
-    - Reading Data from the Database
-      - Looping over Query Results
-      - Filtering Retrieved Data
-      - Ordering the Results
-      - Limiting the Number of Results
-      - Creating Indexes for Faster Data Reading
-    - Updating Data in the Database
     - Deleting Data from the Database
-  - Rolling Back Transactions
-  - Backing Up Databases
-  - Altering and Dropping Tables
-  - Joining Multiple Tables with Foreign Keys
-  - In-Memory Databases and Backups
-  - Copying Databases
-  - SQLite Apps
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - Cat Vaccination Checker
+    - Inserting Data into the Database
+    - Listing Tables and Columns
     - Meal Ingredients Database
+    - Reading Data from the Database
+    - Updating Data in the Database
+      - Creating Indexes for Faster Data Reading
+      - Filtering Retrieved Data
+      - Limiting the Number of Results
+      - Looping over Query Results
+      - Ordering the Results
+      - SQL Injection Attacks
+      - Transactions
 
 ## Chapter 17: 17 PDF AND WORD DOCUMENTS
 
 - 17 PDF AND WORD DOCUMENTS
   - PDF Documents
-    - Extracting Text
-    - Post-Processing with AI
-    - Extracting Images
-    - Creating PDFs from Other Pages
-      - Rotating Pages
-      - Inserting Blank Pages
-      - Adding Watermarks and Overlays
-      - Encrypting and Decrypting PDFs
-    - Step 1: Find All PDF Files
-    - Step 2: Open Each PDF
-    - Step 3: Save the Results
-    - Ideas for Similar Programs
+  - Practice Programs
+  - Practice Questions
+  - Summary
   - Word Documents
-    - Reading Word Documents
-    - Getting the Full Text from a .docx File
-    - Styling Paragraph and Run Objects
-    - Applying Run Attributes
-    - Writing Word Documents
     - Adding Headings
     - Adding Line and Page Breaks
     - Adding Pictures
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - PDF Paranoia
+    - Applying Run Attributes
+    - Creating PDFs from Other Pages
     - Custom Invitations
+    - Extracting Images
+    - Extracting Text
+    - Getting the Full Text from a .docx File
+    - Ideas for Similar Programs
+    - PDF Paranoia
     - PDF Password Breaker
+    - Post-Processing with AI
+    - Reading Word Documents
+    - Step 1: Find All PDF Files
+    - Step 2: Open Each PDF
+    - Step 3: Save the Results
+    - Styling Paragraph and Run Objects
+    - Writing Word Documents
+      - Adding Watermarks and Overlays
+      - Encrypting and Decrypting PDFs
+      - Inserting Blank Pages
+      - Rotating Pages
 
 ## Chapter 18: 18 CSV, JSON, AND XML FILES
 
 - 18 CSV, JSON, AND XML FILES
+  - Practice Program: Excel-to-CSV Converter
+  - Practice Questions
+  - Summary
   - The CSV Format
-    - Reading CSV Files
+  - Versatile Plaintext Formats
     - Accessing Data in a for Loop
-    - Writing CSV Files
-    - Using Tabs Instead of Commas
     - Handling Header Rows
+    - Ideas for Similar Programs
+    - JSON
+    - Reading CSV Files
     - Step 1: Loop Through Each File
     - Step 2: Read the File
     - Step 3: Write the New CSV File
-    - Ideas for Similar Programs
-  - Versatile Plaintext Formats
-    - JSON
-      - Reading JSON Data
-      - Writing JSON Data
+    - Using Tabs Instead of Commas
+    - Writing CSV Files
     - XML
+      - Reading JSON Data
       - Reading XML Files
+      - Writing JSON Data
       - Writing XML Files
-  - Summary
-  - Practice Questions
-  - Practice Program: Excel-to-CSV Converter
 
 ## Chapter 19: 19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS
 
 - 19 KEEPING TIME, SCHEDULING TASKS, AND LAUNCHING PROGRAMS
-  - The time Module
-    - Returning the Epoch Timestamp
-    - Pausing Programs
-    - Step 1: Set Up the Program to Track Times
-    - Step 2: Track and Print Lap Times
-    - Ideas for Similar Programs
-  - The datetime Module
-    - Representing Duration
-    - Pausing Until a Specific Date
-    - Converting datetime Objects into Strings
-    - Converting Strings into datetime Objects
   - Launching Other Programs from Python
-    - Passing Command Line Arguments to Processes
-    - Receiving Output Text from Launched Commands
-    - Running Task Scheduler, launchd, and cron
-    - Opening Files with Default Applications
-    - Step 1: Count Down
-    - Step 2: Play the Sound File
-    - Ideas for Similar Programs
-  - Summary
-  - Practice Questions
   - Practice Programs
-    - Prettified Stopwatch
+  - Practice Questions
+  - Summary
+  - The datetime Module
+  - The time Module
+    - Converting Strings into datetime Objects
+    - Converting datetime Objects into Strings
     - Friday the 13th Finder
+    - Ideas for Similar Programs
+    - Ideas for Similar Programs
+    - Opening Files with Default Applications
+    - Passing Command Line Arguments to Processes
+    - Pausing Programs
+    - Pausing Until a Specific Date
+    - Prettified Stopwatch
+    - Receiving Output Text from Launched Commands
+    - Representing Duration
+    - Returning the Epoch Timestamp
+    - Running Task Scheduler, launchd, and cron
+    - Step 1: Count Down
+    - Step 1: Set Up the Program to Track Times
+    - Step 2: Play the Sound File
+    - Step 2: Track and Print Lap Times
 
 ## Chapter 20: 20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS
 
 - 20 SENDING EMAIL, TEXTS, AND PUSH NOTIFICATIONS
-  - The Gmail API
-    - Enabling the API
-    - Sending Mail
-    - Reading Mail
-    - Searching for Mail
-    - Downloading Attachments
-  - SMS Email Gateways
+  - Practice Programs
+  - Practice Questions
   - Push Notifications
+  - SMS Email Gateways
+  - Summary
+  - The Gmail API
+    - Auto Unsubscriber
+    - Downloading Attachments
+    - Email-Based Computer Control
+    - Enabling the API
+    - Reading Mail
+    - Receiving Notifications
+    - Searching for Mail
+    - Sending Mail
     - Sending Notifications
     - Transmitting Metadata
-    - Receiving Notifications
-  - Summary
-  - Practice Questions
-  - Practice Programs
     - Umbrella Reminder
-    - Auto Unsubscriber
-    - Email-Based Computer Control
 
 ## Chapter 21: 21 MAKING GRAPHS AND MANIPULATING IMAGES
 
 - 21 MAKING GRAPHS AND MANIPULATING IMAGES
   - Computer Image Fundamentals
+  - Copying and Pasting Images to the Clipboard
+  - Creating Graphs with Matplotlib
+  - Drawing on Images
+  - Manipulating Images with Pillow
+  - Practice Programs
+  - Practice Questions
+  - Summary
+    - Additional Components
+    - Bar Graphs and Pie Charts
+    - Changing Individual Pixels
     - Colors and RGBA Values
     - Coordinates and Box Tuples
-  - Manipulating Images with Pillow
-    - Working with the Image Data Type
+    - Creating Custom Seating Cards
     - Cropping Images
+    - Ideas for Similar Programs
+    - Identifying Photo Folders on the Hard Drive
+    - Line Graphs and Scatter Plots
     - Pasting Images onto Other Images
     - Resizing Images
     - Rotating and Flipping Images
-    - Changing Individual Pixels
+    - Shapes
     - Step 1: Open the Logo Image
     - Step 2: Loop Over All Files
     - Step 3: Resize the Images
     - Step 4: Add the Logo and Save the Changes
-    - Ideas for Similar Programs
-  - Drawing on Images
-    - Shapes
-      - Points
-      - Lines
-      - Rectangles
-      - Ellipses
-      - Polygons
-      - A Drawing Example
     - Text
-  - Copying and Pasting Images to the Clipboard
-  - Creating Graphs with Matplotlib
-    - Line Graphs and Scatter Plots
-    - Bar Graphs and Pie Charts
-    - Additional Components
-  - Summary
-  - Practice Questions
-  - Practice Programs
     - Tile Maker
-    - Identifying Photo Folders on the Hard Drive
-    - Creating Custom Seating Cards
+    - Working with the Image Data Type
+      - A Drawing Example
+      - Ellipses
+      - Lines
+      - Points
+      - Polygons
+      - Rectangles
 
 ## Chapter 22: 22 RECOGNIZING TEXT IN IMAGES
 
 - 22 RECOGNIZING TEXT IN IMAGES
   - Installing Tesseract and PyTesseract
-    - Windows
-    - macOS
-    - Linux
-    - PyTesseract
   - OCR Fundamentals
-    - Preprocessing an Image
-    - Fixing Mistakes Using Large Language Models
+  - Practice Program: Browser Text Scraper
+  - Practice Questions
   - Recognizing Text in Non-English Languages
+  - Summary
   - The NAPS2 Scanner Application
+    - Fixing Mistakes Using Large Language Models
     - Installing and Setting Up NAPS2
+    - Linux
+    - Preprocessing an Image
+    - PyTesseract
     - Running NAPS2 from Python
     - Specifying Input
-  - Summary
-  - Practice Questions
-  - Practice Program: Browser Text Scraper
+    - Windows
+    - macOS
 
 ## Chapter 23: 23 CONTROLLING THE KEYBOARD AND MOUSE
 
 - 23 CONTROLLING THE KEYBOARD AND MOUSE
-  - Setting Up Accessibility Apps on macOS
-  - Staying on Track
-    - Pauses and Fail-Safes
-    - Logouts
-  - Controlling Mouse Movement
-    - Moving the Mouse
-    - Getting the Current Position
   - Controlling Mouse Interaction
+  - Controlling Mouse Movement
+  - Controlling the Keyboard
+  - Displaying Message Boxes
+  - Getting Window Information
+  - Image Recognition
+  - Planning Your Mouse Movements
+  - Practice Programs
+  - Practice Questions
+  - Setting Up Accessibility Apps on macOS
+  - Setting Up GUI Automation Scripts
+  - Staying on Track
+  - Summary
+  - Taking Screenshots
     - Clicking
     - Dragging
-    - Scrolling
-  - Planning Your Mouse Movements
-  - Taking Screenshots
-  - Image Recognition
-  - Getting Window Information
-    - Obtaining the Active Window
     - Finding Windows with Other Functions
+    - Getting the Current Position
+    - Logouts
+    - Looking Busy
     - Manipulating Windows
-  - Controlling the Keyboard
+    - Moving the Mouse
+    - Obtaining the Active Window
+    - Pauses and Fail-Safes
+    - Pressing and Releasing the Keyboard
+    - Reading Text Fields with the Clipboard
+    - Running Hotkey Combinations
+    - Scrolling
     - Sending Key Press Strings
     - Specifying Key Names
-    - Pressing and Releasing the Keyboard
-    - Running Hotkey Combinations
-  - Setting Up GUI Automation Scripts
-  - Displaying Message Boxes
-  - Summary
-  - Practice Questions
-  - Practice Programs
-    - Looking Busy
-    - Reading Text Fields with the Clipboard
     - Writing a Game-Playing Bot
 
 ## Chapter 24: 24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES
 
 - 24 TEXT-TO-SPEECH AND SPEECH RECOGNITION ENGINES
-  - Text-to-Speech Engine
-    - Generating Speech
-    - Saving Speech Audio to WAV Files
-  - Speech Recognition
   - Creating Subtitle Files
   - Downloading Videos from Websites
-  - Summary
-  - Practice Questions
   - Practice Programs
+  - Practice Questions
+  - Speech Recognition
+  - Summary
+  - Text-to-Speech Engine
     - Adding Voice to Guess the Number
+    - Generating Speech
+    - Saving Speech Audio to WAV Files
     - Singing “99 Bottles of Beer”
     - YouTube Transcriber
 
