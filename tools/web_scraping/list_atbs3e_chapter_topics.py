@@ -12,7 +12,9 @@ Usage:
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --topic-heading 4 --show-url
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --tree-view
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --stats
+    python3 tools/web_scraping/list_atbs3e_chapter_topics.py --stats --color
     python3 tools/web_scraping/list_atbs3e_chapter_topics.py --export-txt
+    python3 tools/web_scraping/list_atbs3e_chapter_topics.py --chapter-number 10 --color
 """
 
 from __future__ import annotations
@@ -45,7 +47,33 @@ DEFAULT_TOPICS_JSON = (
     / "out"
     / "atbs3e_chapter_topics.json"
 )
+
 DEFAULT_TREE_ROOT = PROJECT_ROOT / "chapters"
+
+RESET = "\033[0m"
+BOLD = "\033[1m"
+DIM = "\033[2m"
+CYAN = "\033[36m"
+GREEN = "\033[32m"
+BLUE = "\033[34m"
+YELLOW = "\033[33m"
+MAGENTA = "\033[35m"
+
+HEADING_COLORS = {
+    2: GREEN,
+    3: BLUE,
+    4: YELLOW,
+    5: MAGENTA,
+    6: DIM,
+}
+
+
+def color_text(text: str, color_code: str, use_color: bool) -> str:
+    """Return colored text when color output is enabled."""
+    if not use_color or not color_code:
+        return text
+
+    return f"{color_code}{text}{RESET}"
 
 
 def parse_args() -> argparse.Namespace:
@@ -128,6 +156,12 @@ def parse_args() -> argparse.Namespace:
         help=f"Output markdown file path. Default: {DEFAULT_OUTPUT_MD}"
     )
 
+    parser.add_argument(
+        "--color",
+        action="store_true",
+        help="Use colored terminal output.",
+    )
+
     return parser.parse_args()
 
 
@@ -182,6 +216,7 @@ def filter_topic_items(
 def print_topic_items(
     items: list[dict[str, Any]],
     show_url: bool,
+    use_color: bool,
 ) -> None:
     """Print chapter-topic items in a readable format."""
     if not items:
@@ -202,15 +237,26 @@ def print_topic_items(
 
         if chapter_num != current_chapter:
             current_chapter = chapter_num
+            chapter_line = f"Chapter {chapter_num}: {chapter_title}"
+
             print()
-            print(f"Chapter {chapter_num}: {chapter_title}")
-            print("=" * 72)
+            print(color_text(chapter_line, BOLD + CYAN, use_color))
+            print(color_text("=" * 72, CYAN, use_color))
 
         indent = "  " * max(0, heading_level - 2)
-        print(f"{indent}* H{heading_level} {title}")
+        heading_color = HEADING_COLORS.get(heading_level, "")
+
+        heading_label = color_text(
+            f"H{heading_level}",
+            heading_color,
+            use_color,
+        )
+        topic_title = color_text(title, heading_color, use_color)
+
+        print(f"{indent}* {heading_label} {topic_title}")
 
         if show_url and url:
-            print(f"{indent}  {url}")
+            print(f"{indent}  {color_text(url, DIM, use_color)}")
 
 
 def run_tree_view(tree_root: Path) -> None:
@@ -324,6 +370,7 @@ def main() -> None:
         print_topic_items(
             items=filtered_items,
             show_url=args.show_url,
+            use_color=args.color,
         )
 
         print()
